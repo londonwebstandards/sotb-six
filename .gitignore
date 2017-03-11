@@ -1,3 +1,11 @@
+# Only committing dist folder for now (Ginestra)
+# Ignore everything:
+*
+
+# Except for the themes directories:
+!dist/
+!.gitignore
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
