@@ -11,7 +11,8 @@ Open `dist/index.html` in your preferred browser and that's it.
 
 These are the basic requirements in order to edit and build the project:
 
-### Node.js
+### Node.js
+
 The recommended way to have Node installed is through [nvm](https://github.com/creationix/nvm) (Node Version Manager). There's a handy `.nvmrc` in the root of the project, once you have `nvm` installed, just run the following command:
 
     $ nvm use
