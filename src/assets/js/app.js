@@ -1,1 +1,2 @@
+/* global $ */
 $(document).foundation();
