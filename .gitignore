@@ -73,3 +73,9 @@ target/
 local.py
 logs/
 static/
+
+# node stuff
+node_modules
+
+# bower stuff
+bower_components
