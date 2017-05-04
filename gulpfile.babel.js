@@ -17,7 +17,7 @@ const $ = plugins();
 const PRODUCTION = !!(yargs.argv.production);
 
 // Load settings from settings.yml
-const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
+const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS, CONST } = loadConfig();
 
 function loadConfig () {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
@@ -35,7 +35,7 @@ gulp.task('default',
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean (done) {
-  del([PATHS.dist], done);
+  return del([PATHS.dist]);
 }
 
 // Copy files out of the assets folder

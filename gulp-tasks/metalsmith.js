@@ -1,29 +1,33 @@
+/* global PRODUCTION PATH CONST */
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const filter = require('gulp-filter');
 const fs = require('fs');
 const replace = require('gulp-replace');
+const browserSync = require('browser-sync');
+// Metalsmith-specific requires
+const gulpsmith = require('gulpsmith');
+const frontMatter = require('gulp-front-matter');
+const assign = require('lodash.assign');
+const handlebars = require('handlebars');
+const htmlMinifier = require('metalsmith-html-minifier');
+const markdown = require('metalsmith-markdown');
+const layouts = require('metalsmith-layouts');
+const pageTitles = require('metalsmith-page-titles');
+const permalinks = require('metalsmith-permalinks');
+const sitemap = require('metalsmith-mapsite');
+const debug = require('metalsmith-debug');
 
 // reads the content of package.json
-var getPackageJson = function () {
+function getPackageJson () {
   return JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-};
+}
 
-// run metalsmith (static site generator)
-gulp.task('metalsmith', function () {
-  const gulpsmith = require('gulpsmith');
-  const frontMatter = require('gulp-front-matter');
-  const assign = require('lodash.assign');
-  const handlebars = require('handlebars');
-  const htmlMinifier = require('metalsmith-html-minifier');
-  const markdown = require('metalsmith-markdown');
-  const layouts = require('metalsmith-layouts');
-  const pageTitles = require('metalsmith-page-titles');
-  const permalinks = require('metalsmith-permalinks');
-  const sitemap = require('metalsmith-mapsite');
-  const tags = require('metalsmith-tags');
-  const debug = require('metalsmith-debug');
-
+/** run metalsmith (static site generator)
+ * if `PRODUCTION` is set to true, additionally append the package.json version
+ * to the css file
+ */
+function metalsmith () { // eslint-disable-line no-unused-vars
   var fmFilter = filter('**/*.{html,md,htb}', { restore: true }); // filter out files with front matter
 
   // reget package
@@ -32,6 +36,7 @@ gulp.task('metalsmith', function () {
   // register Handlebars helpers
   handlebars.registerHelper('moment', require('helper-moment'));
   require('swag').registerHelpers(handlebars);
+  // custom helpers
   handlebars.registerHelper('ext2Png', function (str) {
     return str.substr(0, str.lastIndexOf('.')) + '.png';
   });
@@ -39,7 +44,7 @@ gulp.task('metalsmith', function () {
     return str.substr(0, str.lastIndexOf('.')) + '.jpg';
   });
 
-  return gulp.src('./src/**/*')
+  return gulp.src('./src/pages/**/*')
     .pipe(fmFilter)
      // grab files with front matter and assign them as a property so metalsmith will find it
     .pipe(frontMatter({
@@ -54,44 +59,28 @@ gulp.task('metalsmith', function () {
       gulpsmith()
         .metadata({
           'site': {
-            'title': SITE_TITLE
+            'title': CONST.title
           }
         })
         .use(pageTitles())
         .use(markdown())
         .use(permalinks(':collection/:title'))
-        .use(tags({
-          'handle': 'tags',
-          'path': 'portfolio/:tag/index.html',
-          'layout': 'landing-tags.hbs',
-          // provide posts sorted by 'date' (optional)
-          'sortBy': 'date',
-          // sort direction (optional)
-          'reverse': true,
-          // skip updating metalsmith's metadata object.
-          // useful for improving performance on large blogs
-          // (optional)
-          'skipMetadata': false,
-          // 'slug': function(tag) { return tag.toLowerCase() },
-          'slug': { 'mode': 'rfc3986' },
-          'hyphenate': true
-        }))
         .use(layouts({
           'engine': 'handlebars',
-          'directory': path.templates,
-          'partials': path.templates + '/partials'
+          'directory': PATH.templates,
+          'partials': PATH.templates + '/partials'
         }))
         .use(sitemap({
-          'hostname': 'http://peach.smartart.it',
+          'hostname': 'http://stateofthebrowser.org',
           'changefreq': 'yearly',
-          'pattern': [ '{illustration,photo,pixelart}/**', 'about/*' ],
+          'pattern': [ '{illustration,photo,pixelart}/**', 'about/*' ], // FIXME do something here
           'omitIndex': true
         }))
         .use(htmlMinifier())
         .use(debug())
    )
-    .pipe(gulpIf(production, replace('.css', '.' + pkg.version + '.css')))
-    .pipe(gulpIf(production, replace(/(main|vendor|modernizr)\.js/g, '$1.' + pkg.version + '.js')))
-    .pipe(gulp.dest('./' + path.build))
+    .pipe(gulpIf(PRODUCTION, replace('.css', '.' + pkg.version + '.css')))
+    // .pipe(gulpIf(PRODUCTION, replace(/(main|vendor|modernizr)\.js/g, '$1.' + pkg.version + '.js')))
+    .pipe(gulp.dest('./' + PATH.dist))
     .pipe(browserSync.reload({ stream: true }));
-});
+}

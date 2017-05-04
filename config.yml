@@ -7,6 +7,8 @@ COMPATIBILITY:
   - "ie >= 9"
   - "ios >= 7"
 
+CONST:
+  title: "State of the Browser 7"
 # UnCSS will use these settings
 UNCSS_OPTIONS:
   html:
@@ -19,6 +21,9 @@ UNCSS_OPTIONS:
 PATHS:
   # Path to dist folder
   dist: "dist"  
+  # Path to templates folder with handlebar files mostly, 
+  # NOTE: contains a subdirectory named "partials"
+  templates: "src/templates"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
