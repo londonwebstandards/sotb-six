@@ -5,7 +5,7 @@ import yargs from 'yargs';
 import browser from 'browser-sync';
 import gulp from 'gulp';
 import panini from 'panini';
-import rimraf from 'rimraf';
+import del from 'del';
 import sherpa from 'style-sherpa';
 import yaml from 'js-yaml';
 import fs from 'fs';
@@ -35,7 +35,7 @@ gulp.task('default',
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean (done) {
-  rimraf(PATHS.dist, done);
+  del([PATHS.dist], done);
 }
 
 // Copy files out of the assets folder
