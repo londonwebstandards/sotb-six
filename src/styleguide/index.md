@@ -123,13 +123,82 @@ As you've probably noticed in the examples above, you have access to a small, me
   <div class="small-9 columns">9, last</div>
 </div>
 
+---
+# Colours
 
+## Brand Colours
 
-# Colors
+<p class="lead">Below the list of primary brand colours</p>
 
-<p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>\_settings.scss</code></p>
+<div class="row up-1 medium-up-3 large-up-5">
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #DDA700"></span>
+      #DDA700 - Gold Tips
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #C83F18"></span>
+      #C83F18 - Tomato
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #C61440"></span>
+      #C61440 - Crimson
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #711F56"></span>
+      #711F56 - Pompadour
+    </div>
+  </div>
+</div>
 
 ---
+## Greys
+
+<p class="lead">Below the list of greys colours</p>
+
+<div class="row up-1 medium-up-3 large-up-5">
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #E6E6E6"></span>
+      #E6E6E6 - Athens Grey
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #cacaca"></span>
+      #cacaca - Iron
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a - Aluminium
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #0a0a0a"></span>
+      #0a0a0a - Nero
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #fefefe"></span>
+      #fefefe - White
+    </div>
+  </div>
+</div>
+
+---
+## Foundation Colors
+
+<p class="lead">Below the list of colours used by Foundation</p>
 
 <div class="row up-1 medium-up-3 large-up-5">
   <div class="column">
@@ -164,7 +233,7 @@ As you've probably noticed in the examples above, you have access to a small, me
   </div>
 </div>
 
-
+---
 
 # Typography
 
