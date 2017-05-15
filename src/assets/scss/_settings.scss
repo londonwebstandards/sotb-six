@@ -42,6 +42,7 @@
 //  37. Top Bar
 
 @import 'util/util';
+@import url('https://fonts.googleapis.com/css?family=Average');
 
 // 1. Global
 // ---------
@@ -72,7 +73,7 @@ $white: #fefefe;
 $body-background: $light-gray;
 $body-font-color: $black;
 // $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: 'Lora', serif;
+$body-font-family: 'Average', serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;

@@ -1,0 +1,21 @@
+/** Site navigation **/
+
+.site-nav {
+    font-family: $header-font-family;
+    font-size: rem-calc(20);
+    a {
+        color: $black;
+    }
+
+    li {
+        border-right: 1px solid $white;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:hover {
+            background: scale-color($light-gray, $lightness: -10%);
+        }
+    }
+}
