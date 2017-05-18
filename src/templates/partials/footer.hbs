@@ -1,6 +1,10 @@
 <footer class="site-footer">
   <div class="row">
     <div class="large-12columns">
+      {{^broughtBy}}
+      <p><em>Brought to you by</em></p>
+      {{>logo-LWS-grey}}
+      {{/broughtBy}}
       <p>&copy; 2017 London Web Standards</p>
     </div>
   </div>

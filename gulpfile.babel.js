@@ -25,7 +25,7 @@ function loadConfig () {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
-gulp.series(clean, gulp.parallel(metalsmith, sass, javascript, images, copy), styleGuide));
+  gulp.series(clean, gulp.parallel(metalsmith, sass, javascript, images, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -195,7 +195,7 @@ function reload (done) {
 function watch () {
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/pages/**/*.md').on('all', gulp.series(metalsmith, browser.reload));
-  // gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
+  gulp.watch('src/templates/**/*.hbs').on('all', gulp.series(metalsmith, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));

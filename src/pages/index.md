@@ -13,4 +13,4 @@ At [Conway Hall](https://conwayhall.org.uk/) in [Red Lion Square, Holborn, Londo
 
 More news will be announced soon, Speakers, Sponsors, etc.
 
-For more updates, follow us on [Twitter](https://twitter.com/webstandards).s
+For more updates, follow us on [Twitter](https://twitter.com/webstandards).
