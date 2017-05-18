@@ -1,7 +1,8 @@
 /** Site header **/
 
 .site-header {
-  background-color: scale-color($sotb-yellow, $lightness: 87%);
+  color: $light-gray;
+  background-color: scale-color($sotb-purple, $lightness: -70%);
   text-align: center;
 
   h1 {
@@ -18,6 +19,7 @@
     max-width: rem-calc(350);
 
     &#lws-logo-horizontal {
+      fill: $light-gray;
       max-width: rem-calc(150);
     }
 
