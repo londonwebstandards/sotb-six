@@ -6,13 +6,6 @@
 
 /** Globals **/
 
-/** Main section **/
-
-section.main {
-    background: $white;
-    padding-top: rem-calc(24);
-}
-
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
@@ -62,5 +55,6 @@ section.main {
 @import "base";
 
 @import "components/site-header";
+@import "components/site-content";
 @import "components/site-footer";
 @import "components/site-nav";
