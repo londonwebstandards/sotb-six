@@ -49,6 +49,9 @@ function getPackageJson () {
   return JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 }
 
+// get package
+const pkg = getPackageJson();
+
 /** run metalsmith (static site generator)
  * if `PRODUCTION` is set to true, additionally append the package.json version
  * to the css file
@@ -68,10 +71,7 @@ function metalsmith () { // eslint-disable-line no-unused-vars
   const debug = require('metalsmith-debug');
 
   // filter out files with front matter
-  var fmFilter = $.filter('**/*.{html,md,htb}', { restore: true });
-
-  // reget package
-  var pkg = getPackageJson();
+  const fmFilter = $.filter('**/*.{html,md,htb}', { restore: true });
 
   // register Handlebars helpers
   handlebars.registerHelper('moment', require('helper-moment'));
@@ -148,8 +148,11 @@ function sass () {
     // Comment in the pipe below to run UnCSS in production
     // .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
     .pipe($.if(PRODUCTION, $.cssnano()))
+    .pipe($.if(PRODUCTION, $.rename({
+      suffix: `.${pkg.version}`
+    })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(gulp.dest(`${PATHS.dist}/assets/css/`))
     .pipe(browser.reload({ stream: true }));
 }
 
