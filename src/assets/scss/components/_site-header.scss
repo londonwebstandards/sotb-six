@@ -1,0 +1,28 @@
+/** Site header **/
+
+.site-header {
+  background-color: scale-color($sotb-yellow, $lightness: 87%);
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  svg {
+    max-width: rem-calc(350);
+
+    &#lws-logo-horizontal {
+      max-width: rem-calc(150);
+    }
+
+    &#sotb-vector-logo {
+      padding-top: rem-calc(30);
+    }
+  }
+}

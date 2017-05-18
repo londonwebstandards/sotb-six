@@ -1,0 +1,29 @@
+/** Site navigation **/
+
+.site-nav {
+  font-family: $header-font-family;
+  font-size: rem-calc(20);
+
+  a {
+    color: $black;
+
+    &:hover {
+      background: scale-color($light-gray, $lightness: -10%);
+    }
+
+    &.disabled {
+    color: $dark-gray;
+    background: $light-gray;
+    cursor: default;
+    }
+  }
+
+  li + li {
+    border-left: 1px solid $white;
+
+    @include breakpoint(small only) {
+      border-left: 0;
+      border-top: 1px solid $white;
+    }
+  }
+}
