@@ -1,0 +1,40 @@
+@mixin colorise-arrows($hover: false, $dim-colour: false) {
+  @each $key, $colour in $lws-palette {
+    @if $hover {
+      .lws-logo__#{$key} {
+        fill: $dim-colour;
+      }
+
+      &:hover .lws-logo__#{$key} {
+        fill: $colour;        
+      }
+    }
+    @else {
+      &__#{$key} {
+        fill: $colour;
+      }
+    }
+  }
+}
+
+.lws-logo {
+  max-width: rem-calc(150);
+
+  &__title-group {
+    fill: $light-gray;
+  }
+
+  @include colorise-arrows;
+
+  &--grey {
+    @include colorise-arrows(true, $dark-gray);
+  }
+
+  &--grey &__title-group {
+    fill: $dark-gray;
+  }
+
+  &--grey:hover &__title-group {
+    fill: $black;
+  }
+}

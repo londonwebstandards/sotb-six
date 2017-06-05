@@ -2,7 +2,7 @@
 
 .site-header {
   color: $light-gray;
-  background-color: scale-color($sotb-purple, $lightness: -70%);
+  background-color: scale-color(map-get($sotb-palette, purple), $lightness: -70%);
   text-align: center;
 
   h1 {
