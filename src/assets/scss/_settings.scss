@@ -60,10 +60,22 @@ $foundation-palette: (
   alert: #cc4b37,
 );
 // custom colours
-$sotb-yellow: #dda700; // rgb(221, 167, 0)
-$sotb-orange: #c83f18; // rgb(200, 73, 39)
-$sotb-fuxia: #c61440; // rgb(198, 20, 64)
-$sotb-purple: #711f56; // rgb(109, 32, 92)
+$sotb-palette: (
+  yellow: #dda700, // rgb(221, 167, 0)
+  orange: #c83f18, // rgb(200, 73, 39)
+  fuxia: #c61440, // rgb(198, 20, 64)
+  purple: #711f56 // rgb(109, 32, 92)
+);
+$lws-palette: (
+  arr1: #F47421,
+  arr2: #EE2A7B,
+  arr3: #92278F,
+  arr4: #2B3990,
+  arr5: #0099BD,
+  arr6: #1F8A71,
+  arr7: #BED73C,
+  arr8: #FEE110
+);
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
