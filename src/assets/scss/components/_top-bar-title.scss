@@ -1,0 +1,40 @@
+.top-bar-title {
+  margin: .5rem 1rem;
+  padding: 0;
+  position: relative;
+  
+  &__label {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &::after {
+      content: "menu";
+    }
+  }
+
+  // overriding Zurb's scheiße
+  label.top-bar-title__label {
+    margin: 0;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__toggle:checked ~ &__label::after {
+    font-size: 2rem;
+    content: "×";
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 2rem;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    font-size: .9rem;
+  }
+}
