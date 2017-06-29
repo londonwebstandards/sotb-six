@@ -1,6 +1,6 @@
 ---
 title: Call for Speakers
-description: State of the Browser 6 - Saturday 16 September 2017
+description: Would you like to speak? Get in touch!
 draft: false
 layout: default.hbs
 ---

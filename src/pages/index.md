@@ -1,6 +1,6 @@
 ---
-title: State of the Browser 2017
-description: State of the Browser 6 - Saturday 16 September 2017
+title: State of the Browser 6
+description: State of the Browser is a conference aimed at technologists gravitating around web standards
 draft: false
 layout: default.hbs
 broughtBy: true

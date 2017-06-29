@@ -1,6 +1,6 @@
 ---
 title: Location
-description: Conway Hall is located at 25 Red Lion Square, London WC1R 4RL - State of the Browser 6 - Saturday 16 September 2017
+description: This year we are once again at the lovely, historic Conway Hall, in Holborn
 draft: false
 layout: default.hbs
 ---
