@@ -112,8 +112,7 @@ function metalsmith () { // eslint-disable-line no-unused-vars
         }))
         .use(sitemap({
           'hostname': 'http://stateofthebrowser.com',
-          'changefreq': 'yearly',
-          'pattern': [ '{illustration,photo,pixelart}/**', 'about/*' ], // FIXME do something here
+          'changefreq': 'daily',
           'omitIndex': true
         }))
         .use(htmlMinifier())
