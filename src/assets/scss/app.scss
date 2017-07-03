@@ -52,11 +52,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import "base";
+@import 'base';
 
-@import "components/top-bar-title";
-@import "components/lws-logo";
-@import "components/site-header";
-@import "components/site-content";
-@import "components/site-footer";
-@import "components/site-nav";
+@import 'components/top-bar-title';
+@import 'components/lws-logo';
+@import 'components/site-header';
+@import 'components/site-content';
+@import 'components/site-footer';
+@import 'components/site-nav';

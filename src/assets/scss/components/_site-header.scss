@@ -1,8 +1,9 @@
 /** Site header **/
 
 .site-header {
-  color: $light-gray;
   background-color: scale-color(map-get($sotb-palette, purple), $lightness: -70%);
+  color: $light-gray;
+  padding-top: 1rem;
   text-align: center;
 
   h1 {
@@ -18,12 +19,7 @@
   svg {
     max-width: rem-calc(350);
 
-    &#lws-logo-horizontal {
-      fill: $light-gray;
-      max-width: rem-calc(150);
-    }
-
-    &#sotb-vector-logo {
+    .sotb-vector-logo {
       padding-top: rem-calc(30);
     }
   }

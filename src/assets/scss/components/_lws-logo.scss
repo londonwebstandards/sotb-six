@@ -1,5 +1,5 @@
 // internal mixin to generate procedurally the classes for the arrows
-@mixin _colorise-arrows($hover: false, $dim-colour: false) {
+@mixin colorise-arrows($hover: false, $dim-colour: false) {
   @each $key, $colour in $lws-palette {
     @if $hover {
       .lws-logo__#{$key} {
@@ -7,7 +7,7 @@
       }
 
       &:hover .lws-logo__#{$key} {
-        fill: $colour;        
+        fill: $colour;
       }
     }
     @else {
@@ -19,16 +19,15 @@
 }
 
 .lws-logo {
+  @include colorise-arrows;
   max-width: rem-calc(150);
 
   &__title-group {
     fill: $light-gray;
   }
 
-  @include _colorise-arrows;
-
   &--grey {
-    @include _colorise-arrows(true, $dark-gray);
+    @include colorise-arrows(true, $dark-gray);
   }
 
   &--grey &__title-group {

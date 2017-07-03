@@ -12,9 +12,9 @@
     }
 
     &.disabled {
-    color: $dark-gray;
-    background: $light-gray;
-    cursor: default;
+      background: $light-gray;
+      color: $dark-gray;
+      cursor: default;
     }
   }
 

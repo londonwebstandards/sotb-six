@@ -1,11 +1,6 @@
 /** Footer **/
 .site-footer {
-  text-align: center;
-  padding: rem-calc(24);
   color: $dark-gray;
-
-  #lws-logo-horizontal {
-    max-width: rem-calc(150);
-    fill: $dark-gray;
-  }
+  padding: rem-calc(24);
+  text-align: center;
 }
