@@ -20,14 +20,14 @@ UNCSS_OPTIONS:
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"  
-  # Path to templates folder with handlebar files mostly, 
+  dist: "dist"
+  # Path to templates folder with handlebar files mostly,
   # NOTE: contains a subdirectory named "partials"
   templates: "src/templates"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
-    - "!src/assets/{img,js,scss}/**/*"
+    - "!src/assets/{img,js,scss,favicons}{,/**/*}"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "bower_components/foundation-sites/scss"
