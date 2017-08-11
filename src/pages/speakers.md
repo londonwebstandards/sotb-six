@@ -11,4 +11,4 @@ layout: simple.hbs
 
 <hr>
 
-<a href="//2015.stateofthebrowser.coms" class="secondary button">SOTB 5 Speakers</a>
+<a href="http://sotb2015.wpengine.com/" class="secondary button">SOTB 5 Speakers</a>

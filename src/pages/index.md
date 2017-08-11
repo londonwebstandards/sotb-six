@@ -25,6 +25,10 @@ London Web Standards brings together web professionals who are working for a bet
 
 In 2011 London Web Standards organised a one-day conference focusing on the &ldquo;State of the Browser&rdquo;, at Ravensbourne. This was attended by 140 web professionals. The conference was streamed live over the internet and at its peak was watched by over 200 people. State of the Browser (SOTB) was then repeated in 2012 and 2013, with 175 delegates. In 2014 we moved to Conway Hall in Red Lion Square in central London and SOTB was attended by almost 400 people. We took a year off in 2016 but now we're back.
 
+<p class="text-center">
+  <a href="http://sotb2015.wpengine.com/" class="secondary large button">State of the Browser 5</a>
+</p>
+
 <hr>
 
 For more updates, follow us on [Twitter](https://twitter.com/webstandards).
