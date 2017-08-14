@@ -3,4 +3,5 @@
 <url> <loc>http://stateofthebrowser.com/</loc> <changefreq>daily</changefreq> </url>
 <url> <loc>http://stateofthebrowser.com/location/</loc> <changefreq>daily</changefreq> </url>
 <url> <loc>http://stateofthebrowser.com/speakers/</loc> <changefreq>daily</changefreq> </url>
+<url> <loc>http://stateofthebrowser.com/sponsors/</loc> <changefreq>daily</changefreq> </url>
 </urlset>
