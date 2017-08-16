@@ -17,15 +17,9 @@
       <div class="row">
         <ul>
           <li>
-            <article>
-              <heading>
-                <picture>
-                  <img src="/assets/img/{{this.picture}}">
-                  <figcaption>{{this.title}}</figcaption>
-                </picture>
-                <h3>{{ this.description }}</h3>
-              </heading>
-            </article>
+            {{>speaker-card}}
+          </li>
+        </ul>
       </div>
       {{/each}}
 
