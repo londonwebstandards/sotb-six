@@ -3,7 +3,9 @@ title: State of the Browser 6
 description: State of the Browser is a one-day, single-track conference with widely varying talks about the modern web
 draft: false
 layout: default.hbs
+lastmod: 2017-08-16
 broughtBy: true
+permalink: false
 ---
 ## Saturday 16 September 2017
 

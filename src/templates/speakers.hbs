@@ -13,15 +13,17 @@
 
     <main class="site-content">
 
-      {{#each collections.speakers}}
-      <div class="row">
-        <ul>
-          <li>
+      {{#if collections.speakers}}
+        <ul class="speakers-list row align-spaced">
+          {{#each collections.speakers}}
+          <li class="small-8 medium-3 large-3 columns">
             {{>speaker-card}}
           </li>
+          {{/each}}
         </ul>
-      </div>
-      {{/each}}
+
+        <hr>
+      {{/if}}
 
       {{>page}}
 

@@ -3,6 +3,7 @@ title: Speakers
 description: List of speakers for the event
 draft: false
 layout: speakers.hbs
+lastmod: 2017-08-16
 ---
 
 ## Thinking of submitting a talk?

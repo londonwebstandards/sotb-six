@@ -125,7 +125,7 @@ function metalsmith () { // eslint-disable-line no-unused-vars
           'partials': `${PATHS.templates}/partials`
         }))
         .use(sitemap({
-          'hostname': 'http://stateofthebrowser.com',
+          'hostname': 'http://www.stateofthebrowser.com',
           'changefreq': 'daily',
           'omitIndex': true
         }))
