@@ -100,7 +100,9 @@ function metalsmith () { // eslint-disable-line no-unused-vars
       gulpsmith()
         .metadata({
           'site': {
-            'title': CONST.title
+            'title': CONST.title,
+            'logo': `${CONST.baseURL}/assets/img/${CONST.logo}`,
+            'URL': CONST.baseURL
           }
         })
         .use(collections({
@@ -125,7 +127,7 @@ function metalsmith () { // eslint-disable-line no-unused-vars
           'partials': `${PATHS.templates}/partials`
         }))
         .use(sitemap({
-          'hostname': 'http://www.stateofthebrowser.com',
+          'hostname': CONST.baseURL,
           'changefreq': 'daily',
           'omitIndex': true
         }))
