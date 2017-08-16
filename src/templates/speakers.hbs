@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#22091a">
+    <meta name="theme-color" content="#22091a">
+    {{>twitter-card}}
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Google Fonts - Sans serif / Serif pairing -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    {{>analytics}}
+  </head>
+  <body>
+    {{>nav}}
+
+    {{>header}}
+
+    <main class="site-content">
+
+      {{#each collections.speakers}}
+      <div class="row">
+        <ul>
+          <li>
+            <article>
+              <heading>
+                <picture>
+                  <img src="/assets/img/{{this.picture}}">
+                  <figcaption>{{this.title}}</figcaption>
+                </picture>
+                <h3>{{ this.description }}</h3>
+              </heading>
+            </article>
+      </div>
+      {{/each}}
+
+      {{>page}}
+
+    </main>
+
+    {{>footer}}
+
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>

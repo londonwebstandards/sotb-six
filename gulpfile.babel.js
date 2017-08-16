@@ -62,6 +62,7 @@ function metalsmith () { // eslint-disable-line no-unused-vars
   const frontMatter = require('gulp-front-matter');
   const assign = require('lodash.assign');
   const handlebars = require('handlebars');
+  const collections = require('metalsmith-collections');
   const htmlMinifier = require('metalsmith-html-minifier');
   const markdown = require('metalsmith-markdown');
   const layouts = require('metalsmith-layouts');
@@ -102,13 +103,26 @@ function metalsmith () { // eslint-disable-line no-unused-vars
             'title': CONST.title
           }
         })
+        .use(collections({
+          speakers: {
+            pattern: 'speakers/*.md',
+            sortBy: 'title',
+            refer: false
+          }
+        }))
         .use(pageTitles())
         .use(markdown())
-        .use(permalinks(':collection/:title'))
+        .use(permalinks({
+          pattern: ':title',
+          linksets: [{
+            match: { collection: 'speakers' },
+            pattern: 'speakers/:title'
+          }]
+        }))
         .use(layouts({
           'engine': 'handlebars',
           'directory': PATHS.templates,
-          'partials': PATHS.templates + '/partials'
+          'partials': `${PATHS.templates}/partials`
         }))
         .use(sitemap({
           'hostname': 'http://stateofthebrowser.com',
