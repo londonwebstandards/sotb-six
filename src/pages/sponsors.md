@@ -9,7 +9,7 @@ lastmod: 2017-08-16
 
 Sponsoring SOTB 6 will give you access to hundred of web professionals at the event, more via our mailing list (2000+) and more via our twitter account (2600+), event website and talks posted on Vimeo (all talks are filmed).
 
-Download the <a href="/assets/downloads/Sponsors_Pack_SOTB6_2017.pdf">Sponsors Pack</a> [169 KB].
+Download the <a href="/assets/downloads/Sponsors_Pack_SOTB6_2017.pdf">Sponsors Pack</a> [PDF - 217K].
 
 <hr>
 
