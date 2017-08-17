@@ -9,6 +9,8 @@ COMPATIBILITY:
 
 CONST:
   title: "State of the Browser 6"
+  logo: "sotb-logo.png"
+  baseURL: "https://www.stateofthebrowser.com"
 # UnCSS will use these settings
 UNCSS_OPTIONS:
   html:

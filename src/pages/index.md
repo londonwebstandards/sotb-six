@@ -1,5 +1,4 @@
 ---
-title: State of the Browser 6
 description: State of the Browser is a one-day, single-track conference with widely varying talks about the modern web
 draft: false
 layout: default.hbs
