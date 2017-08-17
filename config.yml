@@ -8,7 +8,7 @@ COMPATIBILITY:
   - "ios >= 7"
 
 CONST:
-  title: "State of the Browser 7"
+  title: "State of the Browser 6"
 # UnCSS will use these settings
 UNCSS_OPTIONS:
   html:

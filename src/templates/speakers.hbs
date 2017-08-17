@@ -13,15 +13,18 @@
 
     <main class="site-content">
 
-      <div class="row gallery">
-        <div class="small-offset-2 small-8 medium-offset-4 medium-4 columns">
-          <a href="https://samsunginter.net/" title="Samsung Internet">
-            <img src="/assets/img/logo-Samsung-Dark_Font.svg">
-          </a>
-        </div>
-      </div>
+      {{#if collections.speakers}}
+        <ul class="speakers-list row align-spaced">
+          {{#each collections.speakers}}
+          <li class="small-8 medium-3 large-3 columns">
+            {{>speaker-card}}
+          </li>
+          {{/each}}
+        </ul>
 
-      <hr> 
+        <hr>
+      {{/if}}
+
       {{>page}}
 
     </main>

@@ -1,8 +1,9 @@
 ---
 title: Speakers
-description: List of speakers for SOTB6
+description: List of speakers for the event
 draft: false
-layout: default.hbs
+layout: speakers.hbs
+lastmod: 2017-08-16
 ---
 
 ## Thinking of submitting a talk?

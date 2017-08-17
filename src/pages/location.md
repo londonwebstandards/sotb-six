@@ -3,6 +3,7 @@ title: Location
 description: This year we are once again at the lovely, historic Conway Hall, in Holborn
 draft: false
 layout: simple.hbs
+lastmod: 2017-08-10
 ---
 
 ## Conway Hall

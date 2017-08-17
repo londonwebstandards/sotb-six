@@ -1,0 +1,28 @@
+.speaker {
+  &__picture {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 70%;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__talk {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &--card {
+    margin-bottom: 2rem;
+  }
+}
