@@ -1,8 +1,10 @@
 ---
 title: Seren Davies
 description: Accessibility is more than just supporting screenreaders
-twitter: ninjanails
-picture: oeYLdWOO_400x400.jpg
+speaker:
+  name: Seren Davies
+  twitter: ninjanails
+  picture: oeYLdWOO_400x400.jpg
 lastmod: 2017-08-16
 private: true
 ---
