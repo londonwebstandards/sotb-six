@@ -1,8 +1,10 @@
 ---
 title: Peter O'Shaughnessy
+speaker:
+  name: Peter O'Shaughnessy
+  twitter: poshaughnessy
+  picture: w9wnWS9R_400x400.jpg
 description: Samsung Internet and the Rise of the "Chromia"
-twitter: poshaughnessy
-picture: w9wnWS9R_400x400.jpg
 lastmod: 2017-08-16
 private: true
 ---

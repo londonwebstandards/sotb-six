@@ -1,8 +1,10 @@
 ---
 title: Peter Gasston
 description: Growing Up, Getting Serious
-twitter: stopsatgreen
-picture: peter_opie_400x400.png
+speaker:
+  name: Peter Gasston
+  twitter: stopsatgreen
+  picture: peter_opie_400x400.png
 lastmod: 2017-08-16
 private: true
 ---
