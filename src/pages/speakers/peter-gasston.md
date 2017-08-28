@@ -5,8 +5,10 @@ speaker:
   name: Peter Gasston
   twitter: stopsatgreen
   picture: peter_opie_400x400.png
+  bio: Peter is a veteran web developer who now works as a technologist at rehabstudio on projects for clients including Google and Facebook, and in partnership with some of the world’s biggest creative agencies. He’s the author of The Book of CSS3 and The Modern Web, and has written for Net Magazine, Smashing Magazine and A List Apart.
 lastmod: 2017-08-16
 private: true
+layout: speaker.hbs
 ---
 
 ## Growing Up, Getting Serious

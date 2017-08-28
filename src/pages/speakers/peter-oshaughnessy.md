@@ -4,9 +4,11 @@ speaker:
   name: Peter O'Shaughnessy
   twitter: poshaughnessy
   picture: poshaughnessy_400x400.jpg
+  bio: I'm a developer, writer and speaker on web APIs and the future of the web. I've been a developer since graduating in 2003 and mostly developing for the web since 2005. My key technology interests are around how web and native app capabilities are converging (e.g. Progressive Web App technologies) and how the physical and digital worlds are converging (Physical Web, Web Bluetooth, VR, Mixed Reality...) I joined Samsung Internet's new developer advocacy team last year, to help developers fulfil their ambitions with the latest web technologies.
 description: Samsung Internet and the Rise of the "Chromia"
 lastmod: 2017-08-16
 private: true
+layout: speaker.hbs
 ---
 
 ## Samsung Internet and the Rise of the "Chromia"

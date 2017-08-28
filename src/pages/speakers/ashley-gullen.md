@@ -5,8 +5,10 @@ speaker:
   name: Ashley Gullen
   twitter: AshleyGullen
   picture: AshleyGullen_400x400.jpg
+  bio: Founder of Scirra, developing game creation tools for ~10 years. Construct 2 was one of the first HTML5 game engines on the market, and Construct 3 is one of the first commercial game creation tools to run in the browser.
 lastmod: 2017-08-16
 private: true
+layout: speaker.hbs
 ---
 
 ## Porting a large Windows app to the web
