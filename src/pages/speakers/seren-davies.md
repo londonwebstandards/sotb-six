@@ -4,7 +4,7 @@ description: Accessibility is more than just supporting screenreaders
 speaker:
   name: Seren Davies
   twitter: ninjanails
-  picture: oeYLdWOO_400x400.jpg
+  picture: ninjanails_400x400.jpg
 lastmod: 2017-08-16
 private: true
 ---
