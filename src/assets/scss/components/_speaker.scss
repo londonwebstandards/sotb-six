@@ -25,12 +25,12 @@
       position: relative;
     }
 
-    &-list > *:first-child > & {
+    &-list > *:first-child & {
       clip-path: polygon(62% 0, 0 0, 0 100%, 62% 100%);
       right: 10%;
     }
 
-    &-list > *:last-child > & {
+    &-list > *:last-child & {
       clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 100%);
       right: -10%;
     }
@@ -43,16 +43,51 @@
   &__talk {
     font-size: 1.2rem;
     font-style: italic;
-    font-weight: bold;
     line-height: 1.4;
     text-align: center;
 
     @include breakpoint(medium) {
       font-size: 1.1rem;
     }
+
+    > a {
+      color: map-get($sotb-palette, purple);
+    }
   }
 
-  &--card {
+  &__twitter {
+    border: 2px solid #1da1f2;
+    color: #1da1f2;
+    display: inline-block;
+    padding: 0.85em 1em;
+
+    &::before {
+      background-image: url('/assets/img/twitter-logo.svg');
+      background-repeat: no-repeat;
+      background-size: 1em;
+      content: '';
+      display: inline-block;
+      height: 1em;
+      vertical-align: text-bottom;
+      width: 1.2em;
+    }
+
+    &:hover {
+      color: #657786;
+    }
+  }
+
+  &__card {
     margin-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

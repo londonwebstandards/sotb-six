@@ -14,21 +14,11 @@
     {{>header}}
 
     <main class="site-content">
+      {{>speaker-card-large}}
 
-      {{#if collections.speakers}}
-        <ul class="speakers-list row align-spaced">
-          {{#collections.speakers}}
-          <li class="small-10 medium-4 large-4 column">
-            {{>speaker-card}}
-          </li>
-          {{/collections.speakers}}
-        </ul>
-
-        <hr>
-      {{/if}}
-
-      {{>page}}
-
+      <div class="text-center">
+        <a class="button button-secondary" href="/speakers">See all speakers</a>
+      </div>
     </main>
 
     {{>footer}}
