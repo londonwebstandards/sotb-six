@@ -1,29 +1,34 @@
-<article class="speaker__card speaker__card--large">
-  {{#if this.speaker}}
-    <img class="speaker__picture" src="/assets/img/{{this.speaker.picture}}">
-    <h3 class="speaker__name">
-      <a href="https://twitter.com/{{this.speaker.twitter}}" title="{{this.speaker.name}}'s Twitter profile">
-        {{this.speaker.name}}
-      </a>
-    </h3>
+<article class="talk talk--large">
+  {{#if speaker}}
+    <div class="speaker__card row align-center">
+      <div class="medium-3 columns">
+        <img class="speaker__picture" src="/assets/img/{{speaker.picture}}">
+      </div>
+      <div class="medium-6 columns speaker__content">
+        <p>{{{speaker.bio}}}</p>
+        <p><a class="speaker__twitter" href="https://twitter.com/{{speaker.twitter}}" title="{{speaker.name}}'s Twitter profile">@{{speaker.twitter}}</a></p>
+      </div>
+    </div>
   {{else}}
-    <ul class="speaker__picture-list">
-    {{#each this.speakers}}
-      <li>
-        <img class="speaker__picture" src="/assets/img/{{this.picture}}">
-      </li>          
+    <ul class="row align-center speaker__list">
+    {{#each speakers}}
+      <li class="medium-6 column talk__speaker">
+        <div class="speaker__card row">
+          <div class="medium-4 column">
+            <img class="speaker__picture" src="/assets/img/{{picture}}">
+          </div>
+          <div class="medium-8 column speaker__content">
+            <p>{{bio}}</p>
+            <p><a class="speaker__twitter" href="https://twitter.com/{{twitter}}" title="{{name}}'s Twitter profile">@{{twitter}}</a></p>
+          </div>
+        </div>
+      </li>
     {{/each}}
     </ul>
-    <h3 class="speaker__name">
-      {{#each this.speakers}}
-        {{#if @last }}
-        &amp;
-        {{/if}}
-        <a href="https://twitter.com/{{this.twitter}}" title="{{this.name}}'s Twitter profile">
-          {{this.name}}
-        </a>
-      {{/each}}
-    </h3>
   {{/if}}
-  <p class="speaker__talk subheader"><a href="/{{this.path}}">{{ this.description }}</a></p>
+  <div class="row">
+    <div class="large-12 column">
+      {{{contents}}}
+    </div>
+  </div>
 </article>

@@ -11,7 +11,7 @@ speakers:
     bio: Creative Technologist. Arty phone geek. Slayer of pixels. “One Web” evangelist. Fashion Terrorist. Frequently NSFW.
 description: Ask not what your Design System can do for you...
 lastmod: 2017-08-16
-private: true
+private: false
 layout: speaker.hbs
 ---
 

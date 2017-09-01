@@ -1,29 +1,33 @@
-<article class="speaker--card">
-  {{#if this.speaker}}
-    <img class="speaker__picture" src="/assets/img/{{this.speaker.picture}}">
+<article class="speaker__card">
+  {{#if speaker}}
+    <a title="See details about {{speaker.name}}'s talk" href="/{{path}}"> 
+      <img class="speaker__picture" src="/assets/img/{{speaker.picture}}">
+    </a>
     <h3 class="speaker__name">
-      <a href="https://twitter.com/{{this.speaker.twitter}}" title="{{this.speaker.name}}'s Twitter profile">
-        {{this.speaker.name}}
+      <a title="See details about {{speaker.name}}'s talk" href="/{{path}}">
+        {{speaker.name}}
       </a>
     </h3>
   {{else}}
     <ul class="speaker__picture-list">
-    {{#each this.speakers}}
+    {{#speakers}}
       <li>
-        <img class="speaker__picture" src="/assets/img/{{this.picture}}">
+         <a title="See details about {{name}}'s talk" href="/{{../path}}"> 
+          <img class="speaker__picture" src="/assets/img/{{picture}}">
+         </a> 
       </li>          
-    {{/each}}
+    {{/speakers}}
     </ul>
     <h3 class="speaker__name">
-      {{#each this.speakers}}
+      {{#each speakers}}
         {{#if @last }}
         &amp;
         {{/if}}
-        <a href="https://twitter.com/{{this.twitter}}" title="{{this.name}}'s Twitter profile">
-          {{this.name}}
+        <a title="See details about {{speaker.name}}'s talk" href="{{path}}">
+          {{name}}
         </a>
       {{/each}}
     </h3>
   {{/if}}
-  <p class="speaker__talk subheader">{{ this.description }}</p>
+  <p class="speaker__talk subheader"><a title="See details about the talk '{{description}}'" href="/{{path}}">{{ description }}</a></p>
 </article>
