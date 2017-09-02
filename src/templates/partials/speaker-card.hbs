@@ -12,7 +12,7 @@
     <ul class="speaker__picture-list">
     {{#speakers}}
       <li>
-         <a title="See details about {{name}}'s talk" href="/{{../path}}"> 
+         <a title="See details about the talk" href="/{{../path}}"> 
           <img class="speaker__picture" src="/assets/img/{{picture}}">
          </a> 
       </li>          
@@ -23,7 +23,7 @@
         {{#if @last }}
         &amp;
         {{/if}}
-        <a title="See details about {{speaker.name}}'s talk" href="{{path}}">
+        <a title="See details about {{name}}'s talk" href="/{{../path}}">
           {{name}}
         </a>
       {{/each}}
