@@ -1,10 +1,18 @@
 <article class="speaker__card">
   {{#if speaker}}
+    {{#unless draft}}
     <a title="See details about {{speaker.name}}'s talk" href="/{{path}}"> 
+    {{/unless}}
       <img class="speaker__picture" src="/assets/img/{{speaker.picture}}">
+    {{#unless draft}}
     </a>
+    {{/unless}}
     <h3 class="speaker__name">
+      {{#if draft }}
+      <a title="{{speaker.name}} Twitter Profile" href="https://twitter.com/{{speaker.twitter}}">
+      {{else}}
       <a title="See details about {{speaker.name}}'s talk" href="/{{path}}">
+      {{/if}}
         {{speaker.name}}
       </a>
     </h3>
@@ -29,5 +37,9 @@
       {{/each}}
     </h3>
   {{/if}}
-  <p class="speaker__talk subheader"><a title="See details about the talk '{{description}}'" href="/{{path}}">{{ description }}</a></p>
+  <p class="speaker__talk subheader">
+    {{#unless draft}}<a title="See details about the talk '{{description}}'" href="/{{path}}">{{/unless}}
+    {{ description }}
+    {{#unless draft}}</a>{{/unless}}
+  </p>
 </article>

@@ -5,7 +5,12 @@
         <img class="speaker__picture" src="/assets/img/{{speaker.picture}}">
       </div>
       <div class="small-12 medium-6 columns speaker__content">
-        <p>{{{speaker.bio}}}</p>
+        <p>{{{speaker.bio}}}
+          {{#if speaker.website }}
+          <br>
+          <a href="{{speaker.website}}" title="{{speaker.name}} website">{{speaker.website}}</a>
+          {{/if}}
+        </p>
         <p><a class="speaker__twitter" href="https://twitter.com/{{speaker.twitter}}" title="{{speaker.name}}'s Twitter profile">@{{speaker.twitter}}</a></p>
       </div>
     </div>
