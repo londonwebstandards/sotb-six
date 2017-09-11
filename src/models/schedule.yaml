@@ -1,0 +1,42 @@
+- time: '9:30'
+  title: Registration
+- time: '9:50'
+  title: Housekeeping
+- time: '10:00'
+  title: Ashley Gullen - "Porting a large Windows app to the web"
+  link: ashley-gullen
+- time: '10:30'
+  title: Cristiano Rastelli - "Let There Be Peace On CSS"
+  link: cristiano-rastelli
+- time: '11:00'
+  title: Coffee break
+- time: '11:30'
+  title: Robert King - "An Introduction to HTTP2"
+  link: robert-king
+- time: '12:00'
+  title: Seren Davies - "Accessibility is more than just supporting screenreaders"
+  link: seren-davies
+- time: '12:30'
+  title: Jean-Yves Perrier - "Mark 57 – The future Firefox"
+  link: jean-yves-perrier
+- time: '13:00'
+  title: Lunch break
+- time: '14:00'
+  title: Léonie Watson - "TBA"
+  link: leonie-watson
+- time: '14:30'
+  title: Peter O'Shaughnessy - "Samsung Internet and the Rise of the "Chromia""
+  link: peter-oshaugnessy
+- time: '15:00'
+  title: TBA
+  link:
+- time: '15:30'
+  title: Coffee break
+- time: '16:00'
+  title: James Nash & Marcos Peebles - "Ask not what your Design System can do for you..."
+  link: james-nash-marcos-peebles
+- time: '16:30'
+  title: Peter Gasston - "Growing Up, Getting Serious"
+  link: peter-gasston
+- time: '17:00'
+  title: Pub

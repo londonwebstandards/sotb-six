@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {{>head}}
+    {{>favicons}}
+    {{>twitter-card}}
+    {{>og}}
+    {{>analytics}}
+  </head>
+  <body>
+    {{>async-css}}
+    {{>nav}}
+
+    {{>header}}
+
+    <main class="site-content">
+
+      {{>page}}
+
+      {{#if data}}
+        <table>
+          {{#data}}
+          <tr>
+            <td>{{time}}</td>
+            <td>
+              {{#if link }}
+                <a href="/speakers/{{link}}">
+              {{else}}
+                <em>
+              {{/if}}
+              {{title}}
+              {{#if link }}
+                </a>
+              {{else}}
+                </em>
+              {{/if}}
+            </td>
+          </tr>
+          {{/data}}
+        </table>
+
+        <hr>
+      {{/if}}
+
+    </main>
+
+    {{>footer}}
+
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
