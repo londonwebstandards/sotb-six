@@ -21,7 +21,7 @@
         <table>
           {{#data}}
           <tr>
-            <td>{{time}}</td>
+            <td><time>{{time}}</time></td>
             <td>
               {{#if link }}
                 <a href="/speakers/{{link}}">
@@ -30,7 +30,7 @@
               {{/if}}
               {{title}}
               {{#if link }}
-                </a>
+                </a> &mdash; {{name}}
               {{else}}
                 </em>
               {{/if}}

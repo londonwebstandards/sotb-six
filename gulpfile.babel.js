@@ -110,7 +110,7 @@ function metalsmith () { // eslint-disable-line no-unused-vars
         .use(collections({
           speakers: {
             pattern: 'speakers/*.md',
-            sortBy: 'title',
+            sortBy: 'order',
             refer: false
           }
         }))

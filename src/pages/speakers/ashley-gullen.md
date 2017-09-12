@@ -9,6 +9,7 @@ speaker:
 lastmod: 2017-08-16
 private: false
 layout: speaker.hbs
+order: 1
 ---
 
 ## Porting a large Windows app to the web

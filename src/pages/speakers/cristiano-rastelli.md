@@ -9,6 +9,7 @@ speaker:
 lastmod: 2017-09-04
 private: false
 layout: speaker.hbs
+order: 2
 ---
 
 ## Let There Be Peace On CSS

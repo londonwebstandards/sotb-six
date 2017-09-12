@@ -9,6 +9,7 @@ description: Samsung Internet and the Rise of the "Chromia"
 lastmod: 2017-08-16
 private: false
 layout: speaker.hbs
+order: 7
 ---
 
 ## Samsung Internet and the Rise of the "Chromia"

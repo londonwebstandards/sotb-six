@@ -9,6 +9,7 @@ speaker:
 lastmod: 2017-08-16
 private: false
 layout: speaker.hbs
+order: 10
 ---
 
 ## Growing Up, Getting Serious
