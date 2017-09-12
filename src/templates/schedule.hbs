@@ -15,14 +15,15 @@
 
     <main class="site-content">
 
-      {{>page}}
 
       {{#if data}}
-        <table>
+      <div class="row align-center">
+      <div class="large-6">
+        <table class="schedule">
           {{#data}}
-          <tr>
-            <td><time>{{time}}</time></td>
-            <td>
+          <tr class="schedule__row">
+            <td class="schedule__time"><time>{{time}}</time></td>
+            <td{{#if name }} class="schedule__talk"{{/if}}>
               {{#if link }}
                 <a href="/speakers/{{link}}">
               {{else}}
@@ -30,18 +31,22 @@
               {{/if}}
               {{title}}
               {{#if link }}
-                </a> &mdash; {{name}}
+                </a> 
               {{else}}
                 </em>
               {{/if}}
+              {{#if name }}&mdash; {{name}}{{/if}}
             </td>
           </tr>
           {{/data}}
         </table>
-
-        <hr>
+      </div></div>
       {{/if}}
-
+      <div class="row">
+        <div class="large-12 text-center column">
+          {{{contents}}}
+        </div>
+      </div>
     </main>
 
     {{>footer}}

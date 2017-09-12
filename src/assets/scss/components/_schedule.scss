@@ -1,0 +1,16 @@
+.schedule {
+  border: 0;
+  border-spacing: 0;
+  padding: 0;
+  width: auto;
+
+  &__time,
+  &__talk {
+    font-size: 1.2em;
+  }
+
+  &__time {
+    font-weight: bold;
+    text-align: right;
+  }
+}
