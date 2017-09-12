@@ -1,7 +1,7 @@
 <article class="speaker__card">
   {{#if speaker}}
     {{#unless draft}}
-    <a title="See details about {{speaker.name}}'s talk" href="/{{path}}"> 
+    <a title="See details about {{speaker.name}}'s talk" href="/{{path}}" aria-hidden="true" tabindex="-1"> 
     {{/unless}}
       <img class="speaker__picture" src="/assets/img/{{speaker.picture}}">
     {{#unless draft}}
@@ -11,7 +11,7 @@
       {{#if draft }}
       <a title="{{speaker.name}} Twitter Profile" href="https://twitter.com/{{speaker.twitter}}">
       {{else}}
-      <a title="See details about {{speaker.name}}'s talk" href="/{{path}}">
+      <a title="See details about {{speaker.name}}'s talk" href="/{{path}}" aria-hidden="true" tabindex="-1">
       {{/if}}
         {{speaker.name}}
       </a>
@@ -20,7 +20,7 @@
     <ul class="speaker__picture-list">
     {{#speakers}}
       <li>
-         <a title="See details about the talk" href="/{{../path}}"> 
+         <a title="See details about the talk" href="/{{../path}}" aria-hidden="true" tabindex="-1"> 
           <img class="speaker__picture" src="/assets/img/{{picture}}">
          </a> 
       </li>          
@@ -31,7 +31,7 @@
         {{#if @last }}
         &amp;
         {{/if}}
-        <a title="See details about {{name}}'s talk" href="/{{../path}}">
+        <a title="See details about {{name}}'s talk" href="/{{../path}}" aria-hidden="true" tabindex="-1">
           {{name}}
         </a>
       {{/each}}
