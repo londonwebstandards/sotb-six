@@ -5,7 +5,7 @@ speaker:
   name: Seren Davies
   twitter: ninjanails
   picture: ninjanails_400x400.jpg
-  bio: Seren is a Software Engineer at Elsevier. In-between working and promoting accessibility she can can be found doing the occasional bit of nail art.
+  bio: Seren is a Software Engineer at Elsevier. In between working and promoting accessibility she can can be found doing the occasional bit of nail art.
 lastmod: 2017-08-16
 private: false
 layout: speaker.hbs
