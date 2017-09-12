@@ -63,13 +63,14 @@ function metalsmith () { // eslint-disable-line no-unused-vars
   const assign = require('lodash.assign');
   const handlebars = require('handlebars');
   const collections = require('metalsmith-collections');
+  const dataLoader = require('metalsmith-data-loader');
+  const debug = require('metalsmith-debug');
   const htmlMinifier = require('metalsmith-html-minifier');
-  const markdown = require('metalsmith-markdown');
   const layouts = require('metalsmith-layouts');
+  const sitemap = require('metalsmith-mapsite');
+  const markdown = require('metalsmith-markdown');
   const pageTitles = require('metalsmith-page-titles');
   const permalinks = require('metalsmith-permalinks');
-  const sitemap = require('metalsmith-mapsite');
-  const debug = require('metalsmith-debug');
 
   // filter out files with front matter
   const fmFilter = $.filter('**/*.{html,md,htb}', { restore: true });
@@ -105,10 +106,11 @@ function metalsmith () { // eslint-disable-line no-unused-vars
             'URL': CONST.baseURL
           }
         })
+        .use(dataLoader())
         .use(collections({
           speakers: {
             pattern: 'speakers/*.md',
-            sortBy: 'title',
+            sortBy: 'order',
             refer: false
           }
         }))
@@ -219,6 +221,7 @@ function reload (done) {
 function watch () {
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/pages/**/*.md').on('all', gulp.series(metalsmith, browser.reload));
+  gulp.watch('src/models/**/*.yaml').on('all', gulp.series(metalsmith, browser.reload));
   gulp.watch('src/templates/**/*.hbs').on('all', gulp.series(metalsmith, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));

@@ -9,12 +9,13 @@ description: Samsung Internet and the Rise of the "Chromia"
 lastmod: 2017-08-16
 private: false
 layout: speaker.hbs
+order: 7
 ---
 
 ## Samsung Internet and the Rise of the "Chromia"
 
-"Google Chrome is not the only browser based on the Chromium project. Samsung Internet - along with Opera, Brave, Yandex, Vivaldi and others - all come from the same open source foundations, to which Samsung and others are major contributors.
+Google Chrome is not the only browser based on the Chromium project. Samsung Internet - along with Opera, Brave, Yandex, Vivaldi and others - all come from the same open source foundations, to which Samsung and others are major contributors.
 
 Having a vibrant community of browsers, each pushing forwards in interesting ways, helps to advance the web. However, many of these “Chromia” tend to be under the radar for developers, especially since some prominent analytics and market share services do not count them correctly. In fact, they may have hundreds of millions of active users. Samsung Internet is one of the top 3 or 4 mobile browsers worldwide.
 
-In this talk, I’ll shed some light on these browsers we might not think about so often. I’ll cover Samsung’s motivations for developing our own browser, launching a developer relations team and opening up our first public beta. I’ll share some of the web technologies we’re most excited about, including the latest PWA advances, Web Payments and WebVR. Plus, how we’re contributing back into open source and web standards - and how we hope to help advance the web platform in the future."
+In this talk, I’ll shed some light on these browsers we might not think about so often. I’ll cover Samsung’s motivations for developing our own browser, launching a developer relations team and opening up our first public beta. I’ll share some of the web technologies we’re most excited about, including the latest PWA advances, Web Payments and WebVR. Plus, how we’re contributing back into open source and web standards - and how we hope to help advance the web platform in the future.
