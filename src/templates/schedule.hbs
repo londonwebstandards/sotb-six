@@ -19,8 +19,9 @@
       {{#if data}}
       <div class="row align-center">
       <div class="large-6">
+        <h3>{{data.date}}</h3>
         <table class="schedule">
-          {{#data}}
+          {{#data.schedule}}
           <tr class="schedule__row">
             <td class="schedule__time"><time>{{time}}</time></td>
             <td{{#if name }} class="schedule__talk"{{/if}}>
@@ -38,10 +39,11 @@
               {{#if name }}&mdash; {{name}}{{/if}}
             </td>
           </tr>
-          {{/data}}
+          {{/data.schedule}}
         </table>
       </div></div>
       {{/if}}
+      
       <div class="row">
         <div class="large-12 text-center column">
           {{{contents}}}
