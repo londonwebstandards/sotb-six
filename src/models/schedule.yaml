@@ -28,26 +28,23 @@ schedule:
     link: jean-yves-perrier
   - time: '13:00'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
-  - time: '14:00'
+  - time: '14:15'
     name: Léonie Watson
     title: State of accessibility
     link: l-onie-watson
-  - time: '14:30'
+  - time: '14:45'
     name: Peter O'Shaughnessy
     title: Samsung Internet and the Rise of the "Chromia"
     link: peter-o-shaughnessy
-  - time: '15:00'
-    name: '-'
-    title: '-'
-  - time: '15:30'
+  - time: '15:15'
     title: Coffee break
-  - time: '16:00'
+  - time: '15:45'
     name: James Nash & Marcos Peebles
     title: Ask not what your Design System can do for you...
     link: james-nash-marcos-peebles
-  - time: '16:30'
+  - time: '16:15'
     name: Peter Gasston
     title: Growing Up, Getting Serious
     link: peter-gasston
-  - time: '17:00'
+  - time: '16:45'
     title: Pub (Craft Beer Co.) - 10 minute walk, please join us!
