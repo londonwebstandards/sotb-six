@@ -1,0 +1,7 @@
+.lunch-list {
+  list-style: none;
+
+  > * {
+    margin-bottom: 1em;
+  }
+}

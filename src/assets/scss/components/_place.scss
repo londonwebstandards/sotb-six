@@ -1,0 +1,9 @@
+.place {
+  border: 2px solid $light-gray;
+  padding: 0.5em;
+
+  &__title {
+    color: map-get($sotb-palette, purple);
+    text-align: left;
+  }
+}

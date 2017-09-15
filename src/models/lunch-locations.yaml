@@ -1,0 +1,47 @@
+- name: The Enterprise
+  type: Pub
+  address: 38 Red Lion St, Holborn, London WC1R 4PN
+  website: http://www.the-enterprise.co.uk/menus.asp
+  googlemaps: https://goo.gl/maps/VY23kMp3Shx
+  distance: 1 min
+- name: Holborn Whippet
+  type: Pub
+  address: 25-29 Sicilian Ave, London WC1A 2QH
+  website: https://holbornwhippet.com/food-menu
+  googlemaps: https://goo.gl/maps/kb835Shf5gv
+  distance: 4 min
+- name: Spaghetti House
+  type: Italian
+  address: 20 Sicilian Ave, London WC1A 2QD
+  website: http://www.spaghettihouse.co.uk/menus
+  googlemaps: https://goo.gl/maps/AGU5xCiKaLy
+  distance: 4 min
+- name: Eat
+  type: Sandwich Chain
+  address: 126 High Holborn, London WC1V 6QA
+  website: https://eat.co.uk/
+  googlemaps: https://goo.gl/maps/VKkfVdkJyQ12
+  distance: 6 min
+- name: Kozzy Cafe
+  type: Cafe, Mediterranean
+  address: 53 Red Lion St, Holborn, London WC1R 4PD
+  googlemaps: https://goo.gl/maps/bqwqMd9jYwL2
+  distance: 2 min
+- name: Hummus Bros
+  type: Mediterranean Restaurant
+  address: 37-63 Southampton Row, London WC1B 4DA
+  website: https://hbros.co.uk/ourfood/
+  googlemaps: https://goo.gl/maps/pxK1jqBLmLF2
+  distance: 4 min
+- name: Hiba Express
+  type: Lebanese
+  address: 113 High Holborn, London WC1V 6JJ
+  website: https://www.hiba-express.co.uk/
+  googlemaps: https://goo.gl/maps/VofmrXp1TMs
+  distance: 4 min
+- name: Wagamama
+  type: Japanese
+  address: 123 Kingsway, London WC2B 6PA
+  website: https://www.wagamama.com/restaurants/holborn
+  googlemaps: https://goo.gl/maps/63i7B6HXZRP2
+  distance: 6 min
