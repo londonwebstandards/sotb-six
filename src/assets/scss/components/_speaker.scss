@@ -55,28 +55,6 @@
     }
   }
 
-  &__twitter {
-    border: 2px solid #1da1f2;
-    color: #1da1f2;
-    display: inline-block;
-    padding: 0.85em 1em;
-
-    &::before {
-      background-image: url('/assets/img/twitter-logo.svg');
-      background-repeat: no-repeat;
-      background-size: 1em;
-      content: '';
-      display: inline-block;
-      height: 1em;
-      vertical-align: text-bottom;
-      width: 1.2em;
-    }
-
-    &:hover {
-      color: #657786;
-    }
-  }
-
   &__card {
     margin-bottom: 2rem;
   }
