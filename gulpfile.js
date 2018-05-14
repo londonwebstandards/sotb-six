@@ -71,7 +71,7 @@ function styleGuide(done) {
 // Task: grab static assets (fonts, etc.) and move them to the build folder
 function assets() {
   return gulp
-    .src([`${paths.assets.src}/**/*`, `!${paths.assets.src}/**/*.{scss}`], {
+    .src(paths.assets.src, {
       dot: true
     })
     .pipe(gulp.dest(paths.assets.dest))

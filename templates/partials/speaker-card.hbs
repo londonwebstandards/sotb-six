@@ -3,7 +3,7 @@
     {{#unless draft}}
     <a title="See details about {{speaker.name}}'s talk" href="/{{path}}" aria-hidden="true" tabindex="-1"> 
     {{/unless}}
-      <img class="speaker__picture" src="/assets/img/{{speaker.picture}}">
+      <img class="speaker__picture" src="/images/{{speaker.picture}}">
     {{#unless draft}}
     </a>
     {{/unless}}
@@ -21,7 +21,7 @@
     {{#speakers}}
       <li>
          <a title="See details about the talk" href="/{{../path}}" aria-hidden="true" tabindex="-1"> 
-          <img class="speaker__picture" src="/assets/img/{{picture}}">
+          <img class="speaker__picture" src="/images/{{picture}}">
          </a> 
       </li>          
     {{/speakers}}

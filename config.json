@@ -28,7 +28,7 @@
       "partials": "partials/"
     },
     "assets": {
-      "src": [ "static/assets/*", "static/images/*.gif" ],
+      "src": [ "static/assets/*" ],
       "dest": "dist/"
     }
   }

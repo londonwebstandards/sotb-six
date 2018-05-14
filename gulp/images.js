@@ -11,7 +11,7 @@ const paths = require("../config.json").paths;
 
 function images() {
   return gulp
-    .src([paths.images.src])
+    .src([`${paths.images.src}**/*`])
     .pipe(cache("images"))
     .pipe(
       imagemin(

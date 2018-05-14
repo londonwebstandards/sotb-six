@@ -4,8 +4,9 @@
   "description": "State of the Browser static website.",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build --production",
+    "start": "npm run clean && gulp",
+    "build": "npm run clean && gulp build --production",
+    "clean": "gulp clean",
     "test": "stylelint src/assets/scss/**/*.scss"
   },
   "author": "LWS <organisers@londonwebstandards.org>",
