@@ -19,6 +19,7 @@
       "dest": "dist/images/"
     },
     "pages": {
+      "models": "src/models/*",
       "src": "pages/**/*.md",
       "dest": "dist/"
     },
