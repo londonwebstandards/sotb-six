@@ -1,6 +1,14 @@
 {
-  "extends": ["eslint:recommended", "standard"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["prettier"],
   "rules": {
-    "semi": ["error", "always"]
+    "prettier/prettier": "error"
   }
 }
