@@ -12,6 +12,7 @@ const size = require("gulp-size");
 // non-gulp modules
 const del = require("del");
 const argv = require("yargs").argv;
+const eyeglass = require("eyeglass");
 const sherpa = require("style-sherpa");
 
 // internal modules
@@ -36,29 +37,21 @@ options.setCachebust(cachebust);
  * In production, the CSS is compressed
  */
 function styles() {
-  return (
-    gulp
-      .src(paths.styles.src)
-      .pipe(gulpIf(PRODUCTION, sourcemaps.init()))
-      .pipe(
-        sass({
-          includePaths: paths.sass
-        }).on("error", sass.logError)
-      )
-      .pipe(
-        autoprefixer({
-          browsers: "last 2"
-        })
-      )
-      // Comment in the pipe below to run UnCSS in production
-      // .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
-      .pipe(gulpIf(PRODUCTION, cssnano()))
-      // .pipe(gulpIf(PRODUCTION, $.rename({
-      //   suffix: `.${pkg.version}`
-      // })))
-      .pipe(gulpIf(!PRODUCTION, sourcemaps.write()))
-      .pipe(gulp.dest(`${paths.styles.dest}`))
-  );
+  const sassOpts = {};
+
+  return gulp
+    .src(paths.styles.src)
+    .pipe(gulpIf(!PRODUCTION, sourcemaps.init()))
+    .pipe(sass(eyeglass(sassOpts)))
+    .pipe(
+      autoprefixer({
+        cascade: false
+      })
+    )
+    .pipe(cssnano())
+    .pipe(gulpIf(PRODUCTION, cachebust.resources()))
+    .pipe(gulpIf(!PRODUCTION, sourcemaps.write(".")))
+    .pipe(gulp.dest(paths.styles.dest));
 }
 
 /**

@@ -85,5 +85,9 @@
     ]
   },
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "eyeglass": "^1.5.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "motion-ui": "^1.2.3"
+  }
 }
