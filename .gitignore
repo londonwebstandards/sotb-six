@@ -45,3 +45,5 @@ node_modules
 
 # bower stuff
 bower_components
+
+dist/
