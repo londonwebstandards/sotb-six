@@ -16,29 +16,8 @@ nosetests.xml
 coverage.xml
 *,cover
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
 # Local
 .DS_Store
-.ai
-.babelrc
-.tox/
-.vagrant/
-.vagrant_provisioning/playbook.retry
-local.py
-logs/
-static/
 
 # node stuff
 node_modules
