@@ -2,17 +2,32 @@
 description: State of the Browser is a one-day, single-track conference with widely varying talks about the modern web
 draft: false
 layout: default.hbs
-lastmod: 2017-08-16
+lastmod: 2017-09-16
 broughtBy: true
 permalink: false
 ---
-## Saturday 16 September 2017
 
-At [Conway Hall](https://conwayhall.org.uk/) in [Red Lion Square, Holborn, London](https://goo.gl/maps/HL9XGSxDgxu).
+## 16 September 2017
+
+### Thank you!
+
+<p class="text-center"><em>The event is now over, thank you for participating!</em></p>
 
 <p class="text-center">
-  <a href="https://getinvited.to/webstandards/sotb6/" class="primary large button">Grab your ticket</a>
+  To stay up-to-date with the upcoming events, follow us on Twitter:
 </p>
+
+<p class="text-center">
+  <a href="https://twitter.com/webstandards" class="cta cta--twitter">@webstandards</a>
+</p>
+
+<hr>
+
+### We are on the lookout for new speakers.
+
+If you think you might like to speak at one of our monthly events or you know someone who you think should be a speaker, get in touch. We can pair you with an experienced speaker as your mentor
+
+<hr>
 
 ### About State of the Browser
 
