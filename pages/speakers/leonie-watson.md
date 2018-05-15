@@ -6,7 +6,8 @@ speaker:
   twitter: LeonieWatson
   picture: LeonieWatson_400x400.png
   bio: Accessibility engineer, W3C Web Platform WG co-chair, writer and speaker, screen reader user, tequila drinker and crime fiction junkie.
-lastmod: 2017-09-12
+published: 2017-09-12
+lastmod: 2018-05-15
 private: false
 draft: false
 layout: speaker.hbs
