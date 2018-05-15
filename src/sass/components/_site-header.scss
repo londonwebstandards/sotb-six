@@ -1,9 +1,9 @@
 /** Site header **/
 
 .site-header {
+  padding-top: 1rem;
   background-color: scale-color(map-get($sotb-palette, purple), $lightness: -70%);
   color: $light-gray;
-  padding-top: 1rem;
   text-align: center;
 
   h1 {
