@@ -1,0 +1,71 @@
+.speaker {
+  &__picture-list {
+    position: relative;
+    margin: 0;
+    list-style: none;
+
+    > *:first-child {
+      top: 25%;
+    }
+
+    > *:last-child {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 70%;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+
+    // overriding when inside a list
+    &-list & {
+      position: relative;
+    }
+
+    &-list > *:first-child & {
+      right: 10%;
+      clip-path: polygon(62% 0, 0 0, 0 100%, 62% 100%);
+    }
+
+    &-list > *:last-child & {
+      right: -10%;
+      clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 100%);
+    }
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__talk {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      font-size: 1.1rem;
+    }
+
+    > a {
+      color: map-get($sotb-palette, purple);
+    }
+  }
+
+  &__card {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

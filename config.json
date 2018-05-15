@@ -1,0 +1,35 @@
+
+{
+  "title": "State of the Browser 6",
+  "description": "State of the Browser is a one-day, single-track conference with widely varying talks about the modern web",
+  "URL": "//www.stateofthebrowser.com",
+  "paths": {
+    "styles": {
+      "src": [ "src/sass/**/*.scss" ],
+      "dest": "dist/styles/"
+    },
+    "scripts": {
+      "main": "src/scripts/main.js",
+      "modules": "src/scripts/**/*.js",
+      "src": "src/scripts/",
+      "dest": "dist/scripts/"
+    },
+    "images": {
+      "src": "static/images/",
+      "dest": "dist/images/"
+    },
+    "pages": {
+      "models": "src/models/*",
+      "src": "pages/**/*.md",
+      "dest": "dist/"
+    },
+    "templates": {
+      "src": "templates/",
+      "partials": "partials/"
+    },
+    "assets": {
+      "src": [ "static/assets/*" ],
+      "dest": "dist/"
+    }
+  }
+}

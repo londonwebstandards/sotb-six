@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {{>head}}
+    {{>favicons}}
+    {{>twitter-card}}
+    {{>og}}
+    {{>analytics}}
+  </head>
+  <body>
+    {{>async-css}}
+    {{>nav}}
+
+    {{>header}}
+
+    <main class="site-content">
+
+      <div class="row gallery">
+        <div class="small-offset-2 small-8 medium-offset-4 medium-4 columns">
+          <a href="https://samsunginter.net/" title="Samsung Internet">
+            <img src="/images/logo-Samsung-Dark_Font.svg">
+          </a>
+        </div>
+      </div>
+
+      <hr>
+      <h2 class="vertical-space subheader">Supporters</h2>
+
+      <div class="row gallery">
+        <p class="small-offset-2 small-8 medium-offset-5 medium-2 columns">
+          <a href="https://responsivedesign.is/" title="Responsive Web Design">
+            <img src="/images/responsivedesign-logo.svg">
+          </a>
+        </p>
+      </div>
+
+      <hr> 
+      {{>page}}
+
+    </main>
+
+    {{>footer}}
+
+  </body>
+</html>

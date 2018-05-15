@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {{>head}}
+    {{>favicons}}
+    {{>twitter-card}}
+    {{>og}}
+    {{>analytics}}
+  </head>
+  <body>
+    {{>async-css}}
+    {{>nav}}
+
+    {{>header}}
+
+    <main class="site-content">
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{>page}}
+
+    </main>
+
+    {{>footer}}
+
+  </body>
+</html>

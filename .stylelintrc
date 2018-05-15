@@ -9,7 +9,7 @@
     "selector-no-qualifying-type": [
       true,
       {
-        "ignore": [ "attribute", "class" ]
+        "ignore": [ "attribute" ]
       }
     ],
     "max-nesting-depth": 2,
@@ -56,6 +56,35 @@
         "hasBlock": true
       },
       "rules"
-    ]
+    ],
+    "order/properties-order": [
+      [
+        "content",
+        "display",
+        "width",
+        "height",
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left",
+        "border",
+        "border-*"
+      ],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ],
+    "order/properties-alphabetical-order": null
   }
 }
