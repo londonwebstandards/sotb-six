@@ -1,23 +1,33 @@
-<nav class="site-nav">
-  <div class="nav-menu">
-    <input 
-      type="checkbox"
-      class="nav-menu__toggle"
-      id="nav-menu__toggle"
-      name="nav-menu__toggle"/>
-    <label 
-      for="nav-menu__toggle"
-      class="nav-menu__label"
-      id="nav-menu__label"
-      aria-label="menu"></label>
-    <ul 
-      class="nav-menu__entries"
-      id="nav-menu__entries"
-      aria-labelledby="nav-menu__label">
+<div class="site-nav">
+  <nav class="nav-menu" 
+       id="nav-menu"
+       role="navigation"
+       aria-expanded="false"
+       aria-label="Main menu">
+    <a href="#nav-menu__toggle"
+       role="button"
+       class="nav-menu__close"
+       id="nav-menu__close"
+       aria-expanded="false"
+       aria-controls="nav-menu"
+       aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span aria-hidden="true">×</span>
+    </a>
+    <ul class="nav-menu__entries">
       <li><a href="/speakers">Speakers</a></li>
       <li><a href="/schedule">Schedule</a></li>
       <li><a href="/location">Location</a></li>
       <li><a href="/sponsors">Sponsors</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
+  <a href="#nav-menu"
+     role="button"
+     class="nav-menu__toggle"
+     id="nav-menu__toggle"
+     aria-expanded="false"
+     aria-controls="nav-menu"
+     aria-label="Open main menu">
+    <span class="sr-only">Open main</span> menu
+  </a>
+</div>
