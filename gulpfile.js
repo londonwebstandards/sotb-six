@@ -88,7 +88,7 @@ function clearCaches(done) {
 
 function watch(done) {
   gulp.watch(
-    paths.scripts.src,
+    paths.scripts.modules,
     gulp.series(scripts.bundle, browserSync.reload)
   );
   gulp.watch(paths.styles.src, gulp.series(styles, browserSync.reloadCSS));
