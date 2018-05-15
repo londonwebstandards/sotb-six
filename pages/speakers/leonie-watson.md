@@ -18,3 +18,7 @@ order: 6
 What is the current state of accessibility in the browser? Which browser has the best accessibility support for HTML5 elements? Which elements still need a semantic polyfill? How do browser processing models impact accessibility performance? What does the future of accessibility mechanics in the browser look like?
 
 Léonie will endeavour to answer these (and other) questions that touch on code, performance, reliability, and the future possibilities of accessibility mechanics in the browser.
+
+### Watch the talk
+
+<iframe src="https://player.vimeo.com/video/255238953" width="640" height="360" frameborder="0" allowfullscreen></iframe>
