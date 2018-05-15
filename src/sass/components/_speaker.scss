@@ -1,8 +1,8 @@
 .speaker {
   &__picture-list {
-    list-style: none;
-    margin: 0;
     position: relative;
+    margin: 0;
+    list-style: none;
 
     > *:first-child {
       top: 25%;
@@ -15,10 +15,10 @@
   }
 
   &__picture {
-    border-radius: 50%;
     display: block;
-    margin: 0 auto 1rem;
     width: 70%;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
 
     // overriding when inside a list
     &-list & {
@@ -26,13 +26,13 @@
     }
 
     &-list > *:first-child & {
-      clip-path: polygon(62% 0, 0 0, 0 100%, 62% 100%);
       right: 10%;
+      clip-path: polygon(62% 0, 0 0, 0 100%, 62% 100%);
     }
 
     &-list > *:last-child & {
-      clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 100%);
       right: -10%;
+      clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 100%);
     }
   }
 

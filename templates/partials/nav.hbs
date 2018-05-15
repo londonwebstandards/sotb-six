@@ -1,20 +1,23 @@
 <nav class="site-nav">
-  <div class="top-bar">
-    <div class="top-bar-title">
-      <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-        <input class="top-bar-title__toggle" type="checkbox" id="top-bar-title__toggle" name="top-bar-title__toggle" data-toggle/>
-        <label class="top-bar-title__label" for="top-bar-title__toggle" aria-label="menu"></label>
-      </span>
-    </div>
-    <div id="responsive-menu">
-      <div class="menu-centered">
-        <ul class="vertical medium-horizontal menu">
-          <li><a href="/speakers">Speakers</a></li>
-          <li><a href="/schedule">Schedule</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/sponsors">Sponsors</a></li>
-        </ul>
-      </div>
-    </div>
+  <div class="nav-menu">
+    <input 
+      type="checkbox"
+      class="nav-menu__toggle"
+      id="nav-menu__toggle"
+      name="nav-menu__toggle"/>
+    <label 
+      for="nav-menu__toggle"
+      class="nav-menu__label"
+      id="nav-menu__label"
+      aria-label="menu"></label>
+    <ul 
+      class="nav-menu__entries"
+      id="nav-menu__entries"
+      aria-labelledby="nav-menu__label">
+      <li><a href="/speakers">Speakers</a></li>
+      <li><a href="/schedule">Schedule</a></li>
+      <li><a href="/location">Location</a></li>
+      <li><a href="/sponsors">Sponsors</a></li>
+    </ul>
   </div>
 </nav>

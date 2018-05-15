@@ -1,0 +1,59 @@
+.nav-menu {
+  &__label[for] {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include breakpoint(medium) {
+      display: none;
+    }
+
+    &::after {
+      content: 'menu';
+    }
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__entries {
+    display: none;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      display: block;
+
+      > * { // stylelint-disable max-nesting-depth
+        display: inline-block;
+        padding: 0.4em 0.8em;
+      }
+    }
+  }
+
+  &__toggle:checked ~ &__label {
+    position: absolute;
+  }
+
+  &__toggle:checked ~ &__label::after {
+    content: '×';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  &__toggle:checked ~ &__entries {
+    display: block;
+  }
+
+  &__button {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+}

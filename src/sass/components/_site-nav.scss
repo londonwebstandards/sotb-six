@@ -11,7 +11,7 @@
       background: scale-color($light-gray, $lightness: -10%);
     }
 
-    &.disabled {
+    &.disabled { // stylelint-disable selector-no-qualifying-type
       background: $light-gray;
       color: $dark-gray;
       cursor: default;
