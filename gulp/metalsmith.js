@@ -20,6 +20,7 @@ const sitemap = require("metalsmith-mapsite");
 const debug = require("metalsmith-debug");
 const discoverPartials = require("metalsmith-discover-partials");
 const collections = require("metalsmith-collections");
+const slugify = require("./metalsmith/slugify");
 
 const options = require("./options");
 
@@ -96,13 +97,14 @@ function metalsmith() {
         )
         .use(pageTitles())
         .use(markdown())
+        .use(slugify())
         .use(
           permalinks({
-            pattern: ":title",
+            pattern: ":title_slugged",
             linksets: [
               {
                 match: { collection: "speakers" },
-                pattern: "speakers/:title"
+                pattern: "speakers/:title_slugged"
               }
             ]
           })
