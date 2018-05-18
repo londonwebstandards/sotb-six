@@ -10,6 +10,7 @@ lastmod: 2017-08-16
 private: false
 layout: speaker.hbs
 order: 10
+video: https://player.vimeo.com/video/255238965
 ---
 
 ## Growing Up, Getting Serious
