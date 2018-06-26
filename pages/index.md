@@ -7,9 +7,9 @@ broughtBy: true
 permalink: false
 ---
 
-## 16 September 2017
+## Thank you!
 
-### Thank you!
+### 16 September 2017
 
 <p class="text-center"><em>The event is now over, thank you for participating!</em></p>
 
