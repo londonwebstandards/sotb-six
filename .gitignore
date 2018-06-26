@@ -22,7 +22,4 @@ coverage.xml
 # node stuff
 node_modules
 
-# bower stuff
-bower_components
-
 dist
