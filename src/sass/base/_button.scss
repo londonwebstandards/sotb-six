@@ -1,0 +1,92 @@
+////
+/// Button
+/// @group base
+/// @link https://chrisburnell.com/styleguide/#buttons
+////
+
+button,
+.button {
+    @extend %button-elements !optional;
+    @include font-family(title);
+    @include non-selectable;
+    @include transition(background-color, color, box-shadow, transform);
+    @include will-change(background-color, color, box-shadow, transform);
+    background-color: transparent;
+    @include v(color, black);
+    min-width: 8rem;
+    width: 12rem;
+    max-width: 100%;
+    display: inline-block;
+    padding: $measure-small;
+    border-width: 0;
+    margin-top: $border-width-default;
+    margin-top: var(--border-width-default);
+    overflow: visible;
+    position: relative;
+    @include v(font-size, gamma);
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    appearance: none;
+
+    &:focus {
+        outline: $border-width-default $border-style-default $color-orange;
+        outline: var(--border-width-default) var(--border-style-default) var(--color-orange);
+        outline-offset: $border-width-default;
+        outline-offset: var(--border-width-default);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include v(background-color, red);
+        @include v(color, contrasting-color($color-red));
+        text-decoration: none;
+    }
+
+    &:hover:not(:active),
+    &:focus:not(:active) {
+        box-shadow: -0.5rem -0.5rem 0 0 $color-red-darkened;
+    }
+
+    &:active {
+        transform: translateY($border-width-default);
+        transform: translateY(var(--border-width-default));
+    }
+
+    &::before,
+    &::after {
+        @include absolute(top-full);
+        content: "";
+        height: $border-width-default;
+        height: var(--border-width-default);
+    }
+    &:active {
+        &::before,
+        &::after {
+            top: -($border-width-default);
+            top: -(var(--border-width-default));
+        }
+    }
+
+    &[disabled] {
+        @include v(opacity, beta);
+        pointer-events: none;
+    }
+}
+
+// Apply moz fixes to `button` element only
+button {
+    -webkit-font-smoothing: inherit;
+
+    &::-moz-focus-inner {
+        padding: 0;
+        margin: 0;
+    }
+
+    &::-moz-focusring {
+        outline: $border-width-hairline $border-style-alternate ButtonText;
+        outline: var(--border-width-hairline) var(--border-style-alternate) ButtonText;
+    }
+}

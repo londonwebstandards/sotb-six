@@ -1,0 +1,50 @@
+////
+/// Table
+/// @group base
+////
+
+table {
+    @include tabular-lining-numerals;
+    flex: 1 0 auto;
+    align-self: flex-start;
+    border-width: 0;
+    border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-variant-numeric: lining-nums tabular-nums;
+
+    &.zebra {
+        tbody tr:nth-child(even) td {
+            @include v(background-color, black--delta);
+        }
+    }
+}
+
+// Cells
+th,
+td {
+    @include transition(background-color);
+    @include will-change(background-color);
+    @include v(padding, small);
+    text-align: left;
+    vertical-align: top;
+    user-select: text;
+
+    &.numeral {
+        text-align: right;
+    }
+}
+
+// Heading Cells
+th {
+    @include v(font-weight, bold);
+    white-space: nowrap;
+
+    &:not(:empty) {
+        @include v(background-color, black--delta);
+    }
+
+    tbody & {
+        width: 1px;
+    }
+}

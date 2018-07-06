@@ -1,0 +1,510 @@
+////
+/// Mixins
+/// @group abstracts
+////
+
+///
+/// Add a border-radius.
+///
+/// @author Chris Burnell
+///
+/// @param {String} $thickness - Thickness of Border Radius
+/// @param {String} $border-radius - Type of Border Radius
+///
+/// @example scss - Zero parameters
+///   @include radius;
+///   // border-radius: 0.375rem;
+///
+/// @example scss - One parameter
+///   @include radius(1em);
+///   // border-radius: 1em;
+///
+@mixin border-radius($thickness: default, $border-radius: null) {
+    @if not is-length($thickness) {
+        @if map-has-key($border-radii, $thickness) {
+            $thickness: map-get($border-radii, $thickness);
+        } @else if is-edge($thickness) {
+            $border-radius: $thickness;
+            $thickness: $border-radius-default;
+        } @else {
+            @error "There is no `thickness` named `#{$thickness}` in `$border-radii`. `thickness` should be one of `#{map-keys($border-radii)}`.";
+        }
+    }
+
+    @if $border-radius and is-edge($border-radius) {
+        $top-left: if($border-radius == "top" or $border-radius == "left" or $border-radius == "top-left", $thickness, 0);
+        $top-right: if($border-radius == "top" or $border-radius == "right" or $border-radius == "top-right", $thickness, 0);
+        $bottom-right: if($border-radius == "bottom" or $border-radius == "right" or $border-radius == "bottom-right", $thickness, 0);
+        $bottom-left: if($border-radius == "bottom" or $border-radius == "left" or $border-radius == "bottom-left", $thickness, 0);
+
+        $border-radius: $top-left $top-right $bottom-right $bottom-left;
+    } @else {
+        $border-radius: $thickness;
+    }
+
+    background-clip: padding-box;
+    border-radius: $border-radius;
+}
+
+///
+/// Change the case of text and apply appropriate letter-spacing.
+///
+/// @param {String} $case - Case of Text
+/// @param {String} $letter-spacing [null] - Letter-spacing of Text
+///
+/// @example scss
+///   @include case(uppercase);
+///   // text-transform: uppercase;
+///   // letter-spacing: 1px;
+///
+@mixin case($case, $letter-spacing: null) {
+    @if not $case {
+        @error "case() expects at least one parameter.";
+    }
+
+    text-transform: $case;
+
+    @if $letter-spacing != null {
+        letter-spacing: $letter-spacing;
+    } @else if $case == "uppercase" {
+        letter-spacing: $letter-spacing-large;
+    }
+}
+
+///
+/// Clear an element of floats.
+///
+@mixin clear() {
+    clear: both;
+    zoom: 1;
+
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+///
+/// Specify a font-family.
+///
+/// @author Chris Burnell
+///
+/// @param {String} $family - Font-family value
+///
+/// @example scss - One family
+///   @include font-family(default);
+///   // font-family: "Proxima Nova", sans-serif;
+///
+/// @example scss - One family, one display
+///   @include font-family(serif, auto);
+///   // font-family: Georgia, serif;
+///
+/// @throw Error if no parameters are passed.
+/// @throw Error if parameter passed does not match a key in $font-families.
+///
+@mixin font-family($family) {
+    @if not $family {
+        @error "font-family() expects at least one parameter.";
+    }
+
+    @if not map-has-key($font-families, $family) {
+        @error "There is no `font-family` named `#{$family}` in `$font-families`. `font-family` should be one of `#{map-keys($font-families)}`.";
+    }
+
+    @include v(font-family, $family);
+
+    @if $family == "monospace" {
+        font-variant-ligatures: none;
+    }
+}
+
+///
+/// Hyphenate text.
+///
+/// @example scss
+///   @include hyphenate;
+///   // overflow-wrap: break-word;
+///   // hyphens: auto;
+///
+@mixin hyphenate() {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+///
+/// Make text non-selectable.
+///
+/// @example scss
+///   @include non-selectable;
+///   // user-select: none;
+///   // -webkit-touch-callout: default;
+///   // -webkit-touch-callout: none;
+///
+@mixin non-selectable() {
+    user-select: none;
+    -webkit-touch-callout: default;
+    -webkit-touch-callout: none;
+}
+
+///
+/// Absolutely position an element.
+///
+/// @author Chris Burnell
+///
+/// @param {String} $position - Position of the element
+/// @param {String} $offset [0] - How much to offset from the position
+///
+/// @example scss
+///   @include absolute(bottom-left);
+///   // position: absolute;
+///   // bottom: 0;
+///   // left: 0;
+///
+/// @example scss
+///   @include absolute(right, 1em);
+///   // position: absolute;
+///   // right: 1em;
+///   // top: 50%;
+///   // transform: translateY(-50%);
+///
+/// @example scss
+///   @include absolute(top-full);
+///   // position: absolute;
+///   // top: 0;
+///   // right: 0;
+///   // left: 0;
+///
+/// @example scss
+///   @include absolute(top-full, 1em);
+///   // position: absolute;
+///   // top: 1em;
+///   // right: 0;
+///   // left: 0;
+///
+/// @example scss
+///   @include absolute(top-full-offset, 1em);
+///   // position: absolute;
+///   // top: 1em;
+///   // right: 1em;
+///   // left: 1em;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin absolute($position, $offset: 0) {
+    @if not $position {
+        @error "absolute() expects one parameter.";
+    } @else if $position == none {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+    } @else if $position == center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    } @else if str-index(#{$position}, "full") {
+        position: absolute;
+
+        @if str-index(#{$position}, "top") {
+            top: $offset;
+
+            @if str-index(#{$position}, "offset") {
+                right: $offset;
+                left: $offset;
+            } @else {
+                right: 0;
+                left: 0;
+            }
+        } @else if str-index(#{$position}, "right") {
+            right: $offset;
+
+            @if str-index(#{$position}, "offset") {
+                top: $offset;
+                bottom: $offset;
+            } @else {
+                top: 0;
+                bottom: 0;
+            }
+        } @else if str-index(#{$position}, "bottom") {
+            bottom: $offset;
+
+            @if str-index(#{$position}, "offset") {
+                right: $offset;
+                left: $offset;
+            } @else {
+                right: 0;
+                left: 0;
+            }
+        } @else if str-index(#{$position}, "left") {
+            left: $offset;
+
+            @if str-index(#{$position}, "offset") {
+                top: $offset;
+                bottom: $offset;
+            } @else {
+                top: 0;
+                bottom: 0;
+            }
+        } @else {
+            top: $offset;
+            right: $offset;
+            bottom: $offset;
+            left: $offset;
+        }
+    } @else if is-edge($position) {
+        position: absolute;
+
+        @if str-index(#{$position}, "top") {
+            top: $offset;
+            @if not str-index(#{$position}, "-") {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @if str-index(#{$position}, "right") {
+            right: $offset;
+            @if not str-index(#{$position}, "-") {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        @if str-index(#{$position}, "bottom") {
+            bottom: $offset;
+            @if not str-index(#{$position}, "-") {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @if str-index(#{$position}, "left") {
+            left: $offset;
+            @if not str-index(#{$position}, "-") {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+///
+/// Define characters for quotes
+///
+/// @author Chris Burnell
+///
+/// @example scss
+///   @include quotes;
+///   // quotes: "“" "”" "‘" "’";
+///
+@mixin quotes() {
+    hanging-punctuation: first;
+
+    &,
+    :lang(en) & {
+        quotes: "“" "”" "‘" "’";
+    }
+
+    :lang(de) &,
+    :lang(pl) & {
+        quotes: "„" "“" "‚" "‘";
+    }
+
+    :lang(fr) & {
+        quotes: "« " " »" "‹ " " ›";
+    }
+}
+
+///
+/// Reset Font Size
+///
+/// @author Chris Burnell
+///
+/// @example scss
+///   ul {
+///       @include reset-font-size(li);
+///   }
+///   // ul {
+///   //     font-size: 0;
+///   // }
+///   // ul > li {
+///   //     font-size: 1rem;
+///   // }
+///
+@mixin reset-font-size($child: null, $font-size: default) {
+    font-size: 0;
+
+    @if ($child) {
+        #{$child} {
+            @include v(font-size, $font-size);
+        }
+    } @else {
+        & > * {
+            @include v(font-size, $font-size);
+        }
+    }
+}
+
+///
+/// Tabular Lining Numerals
+///
+/// @author Chris Burnell
+///
+@mixin tabular-lining-numerals() {
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: "lnum", "tnum";
+}
+
+///
+/// Generate transitions based on flexible input parameters.
+/// Pass zero or more properties and zero to two further parameters.
+/// If passing two or more properties, quotation marks must be used.
+///
+/// @author Chris Burnell
+///
+/// @param {String} $transitions - Transitions
+///
+/// @example scss - Zero parameters
+///   @include transition;
+///   // transition: all 0.2s ease;
+///
+/// @example scss - One property
+///   @include transition(color);
+///   // transition: color 0.2s ease;
+///
+/// @example scss - Two properties
+///   @include transition(color, border);
+///   // transition: color 0.2s ease, border 0.2s ease;
+///
+/// @example scss - One property, one duration
+///   @include transition(color 0.5s);
+///   // transition: color 0.5s ease;
+///
+/// @example scss - One property, one duration, one timing function
+///   @include transition(color 1s linear);
+///   // transition: color 1s linear;
+///
+/// @example scss - Two properties, two durations, two timing functions
+///   @include transition(color 2s ease-in-out, border 1s linear);
+///   // transition: color 2s ease-in-out, border 1s linear;
+///
+@mixin transition($transitions...) {
+    $transition: ();
+
+    // if no parameter, transition all with default duration and function
+    @if length($transitions) == 0 {
+        $transition: all #{$transition-duration-default} #{$transition-function};
+    }
+    // if parameter just set to `none` then just transition nothing
+    @else if $transitions == none {
+        $transition: none;
+    }
+    // if the parameter contains a comma then operating on multiple properties
+    @else if str-index(#{$transitions}, ",") {
+        @each $transition-segment in $transitions {
+            $transition: append($transition, unpack-transition($transition-segment), comma);
+        }
+    } @else {
+        $transition: unpack-transition($transitions...);
+    }
+
+    transition: $transition;
+}
+
+///
+/// Describes CSS changes to the browser; to be coupled with any transitions.
+///
+/// @author Chris Burnell
+///
+/// @param {String} $changes - Changes
+///
+/// @example scss - One parameter
+///   @include will-change(color);
+///   // will-change: color;
+///
+/// @example scss - Multiple parameters
+///   @include will-change(color, border);
+///   // will-change: color, border;
+///
+/// @throw Error if no parameters are passed.
+///
+@mixin will-change($changes...) {
+    @if length($changes) == 0 {
+        @error "will-change() expects at least one parameter.";
+    }
+
+    will-change: $changes;
+}
+
+///
+/// Select a CSS variable and provide a fallback
+///
+@mixin v($property, $variable, $negative: false, $important: false, $show-fallback: true) {
+    $map-name: map-get($property-map, $property);
+    $nest-name: null;
+    $nest-map-name: null;
+    $map: null;
+    $variable-fallback: null;
+    $variable-output: null;
+
+    // if a Nested List, we need to go deeper
+    @if type-of($map-name) == "list" {
+        $nest-name: nth($map-name, 1);
+        $nest-map-name: nth($map-name, 2);
+    }
+
+    // if it is a Nested List
+    @if $nest-name {
+        // get the map from nested map-name
+        $map: map-get($variable-map, $nest-name);
+        // get the nested map
+        $nest-map: map-get($map, $nest-map-name);
+        // fallback value, get the var value from the nested map
+        $variable-fallback: map-get($nest-map, $variable);
+        // our CSS Variable output
+        $variable-output: var(--#{$nest-name}-#{$nest-map-name}-#{$variable});
+    } @else {
+        // get the map from map name
+        $map: map-get($variable-map, $map-name);
+        // fallback value, grab the variable's value from the map
+        $variable-fallback: map-get($map, $variable);
+        // our CSS Variable output
+        $variable-output: var(--#{$map-name}-#{$variable});
+    }
+
+    // if show fallback is not overridden to be null
+    @if $show-fallback {
+        @if $important {
+            #{$property}: $variable-fallback !important;
+        } @else {
+            #{$property}: $variable-fallback;
+        }
+    }
+
+    // CSS Variable
+    @if $important {
+        #{$property}: $variable-output !important;
+    } @else {
+        #{$property}: $variable-output;
+    }
+}
+
+///
+/// Visually hide an element properly.
+///
+@mixin hidden() {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(100%) !important;
+}

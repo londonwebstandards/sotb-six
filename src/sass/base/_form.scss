@@ -1,0 +1,102 @@
+////
+/// Form
+/// @group base
+/// @link https://chrisburnell.com/styleguide/#forms
+////
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    &:not([class]) {
+        %form-elements {
+            @include v(margin-bottom, medium);
+        }
+    }
+}
+
+input[type="checkbox"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="week"],
+input[type="url"],
+optgroup,
+select,
+textarea {
+    @extend %form-elements !optional;
+    margin: 0;
+    @include v(font-size, default);
+}
+
+input,
+textarea {
+    @include transition(border-color);
+    @include will-change(border-color);
+    box-sizing: inherit !important;
+    padding: 0.4em;
+    border-width: $border-width-default;
+    border-style: $border-style-default;
+    @include v(border-color, black);
+    outline-width: 0;
+
+    &:hover {
+        @include v(border-color, red);
+    }
+
+    &:focus {
+        @include v(border-color, orange);
+    }
+
+    &[disabled] {
+        @include v(opacity, beta);
+        pointer-events: none;
+    }
+
+    &::-moz-focus-inner {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+input {
+    overflow: visible;
+
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    &[type="search"] {
+        // correct odd appearance in Chrome and Safari
+        -webkit-appearance: textfield;
+        // correct the outline style in Safari
+        outline-offset: -2px;
+
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+    }
+
+    &::-webkit-file-upload-button {
+        // correct inability to style clickable types in iOS and Safari
+        -webkit-appearance: button;
+    }
+}
+
+textarea {
+    overflow: auto;
+}

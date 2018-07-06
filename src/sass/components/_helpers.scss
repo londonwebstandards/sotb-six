@@ -1,0 +1,38 @@
+////
+/// Helpers
+/// @group components
+////
+
+// We're goin' up around the bend
+.border-radius,
+.round,
+.rounded {
+  @include border-radius;
+}
+
+// Hide elements visually
+[hidden],
+.hidden {
+  &:not([href]),
+  &[href]:not(:focus):not(:active) {
+    @include hidden;
+  }
+}
+
+// Hyphenate any looooooooooooooooooooo-
+// oooooong text
+.hyphen,
+.hyphenate {
+  @include hyphenate;
+}
+
+// Make things non-selectable
+.non-selectable {
+  @include non-selectable;
+}
+
+// Make things non-interactive
+.non-interactive {
+  cursor: not-allowed; // kind of redundant
+  pointer-events: none;
+}

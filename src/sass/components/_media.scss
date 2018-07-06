@@ -1,0 +1,40 @@
+////
+/// Media
+/// @group components
+/// @link https://chrisburnell.com/styleguide/#figure
+////
+
+// Contains embedded media properly and allows them to be dynamically resized
+// inside a set aspect ratio container.
+.media {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+
+  %media-elements {
+    @include absolute(full);
+    // necessary for `iframe`
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@each $aspect-ratio, $percentage in $aspect-ratios {
+  .media--#{$aspect-ratio} {
+    padding-top: $percentage;
+  }
+}
+
+.media--vimeo,
+.media--youtube {
+  @extend .media--16-by-9 !optional;
+}
+
+.media--speakerdeck {
+  @extend .media--4-by-3 !optional;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}

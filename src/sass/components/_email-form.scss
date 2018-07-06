@@ -1,0 +1,34 @@
+.email-form {
+  margin-bottom: $measure-large;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > div {
+    position: relative;
+    margin-top: $measure-small;
+    min-height: 3em;
+
+    @include media('screen', '<=small') {
+      flex: 0 1 100%;
+    }
+
+    @include media('screen', '>small', '<=medium') {
+      flex: 0 1 calc(50% - #{2 * $measure-small});
+    }
+
+    @include media('screen', '>medium') {
+      flex: 0 1 calc(25% - #{3 * $measure-small});
+    }
+  }
+
+  label {
+    display: block;
+  }
+
+  [type='submit'] {
+    @include v(color, white);
+    @include absolute(full);
+  }
+}

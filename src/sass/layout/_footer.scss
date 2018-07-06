@@ -1,0 +1,79 @@
+.footer {
+    background-color: $color-black;
+    color: $color-white;
+    margin-top: $measure-large-proportional;
+    padding: $measure-large-proportional 0;
+}
+
+.footer__content {
+    display: grid;
+
+    @include media("screen", "<=small") {
+        grid-gap: $gutter-width;
+        grid-template-rows: repeat(3, max-content);
+        grid-template-areas: "lws"
+                             "information"
+                             "links";
+    }
+
+    @include media("screen", ">small", "<=medium") {
+        grid-gap: $gutter-width;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, max-content);
+        grid-template-areas: "lws links"
+                             "information information";
+    }
+
+    @include media("screen", ">medium") {
+        grid-gap: $gap-width;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "lws information links";
+    }
+
+    & > div,
+    & > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer__copyright {
+    @include v(font-size, gamma);
+}
+
+.footer__lws {
+    grid-area: lws;
+
+    @include media("screen", "<=small") {
+        text-align: center;
+    }
+}
+
+.footer__links {
+    grid-area: links;
+
+    @include media("screen", ">small", "<=medium") {
+        text-align: right;
+    }
+
+    @include media("screen", ">medium") {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li {
+        display: inline-block;
+        flex: 0 1 auto;
+    }
+
+    a {
+        // @include font-family(title);
+        color: $color-white;
+    }
+}
+
+.footer__information {
+    grid-area: information;
+}

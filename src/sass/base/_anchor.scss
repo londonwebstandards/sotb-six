@@ -1,0 +1,42 @@
+////
+/// Anchor
+/// @group base
+/// @link https://chrisburnell.com/styleguide/#inline-elements
+////
+
+a {
+    @include transition(background-color, color, text-decoration-color);
+    @include will-change(background-color, color, text-decoration-color);
+    @include v(background-color, transparent);
+    @include v(color, red);
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+
+    &:focus {
+        outline: $border-width-default $border-style-default $color-red;
+        outline: var(--border-width-thin) var(--border-style-default) var(--color-red);
+        outline-offset: $border-width-default;
+        outline-offset: var(--border-width-default);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        // remove when text-decoration-color is supported
+        text-decoration: underline;
+        @include v(text-decoration-color, red);
+    }
+
+    &:active {
+        @include v(background-color, purple);
+        @include v(color, white);
+    }
+
+    // hide extra content, text targetted only to screen readers
+    span:not([class]):not([itemprop]) {
+        @include hidden;
+    }
+}

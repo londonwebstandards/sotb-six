@@ -1,0 +1,232 @@
+.speakers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.speaker {
+    display: inline-block;
+    margin-bottom: $measure-large;
+
+    @include media("screen", "<=small") {
+        flex: 1 0 100%;
+    }
+
+    @include media("screen", ">small") {
+        flex: 0 1 calc(50% - #{$measure-large / 2});
+    }
+
+    a {
+        color: inherit;
+        display: block;
+        text-decoration: none;
+
+        &:active {
+            background-color: transaprent;
+        }
+    }
+}
+
+.speaker__contained {
+    position: relative;
+}
+
+.speaker__image {
+    width: 100%;
+    display: block;
+    transition: filter 0.2s ease;
+
+    @include media("screen", ">medium") {
+        z-index: 1;
+    }
+
+    a:hover & {
+        filter: none !important; // avoid specificity entanglement
+    }
+
+    :nth-child(4n+1) > a & {
+        filter: sepia(1) hue-rotate(0deg) contrast(150%) saturate(150%);
+    }
+
+    :nth-child(4n+2) > a & {
+        filter: sepia(1) hue-rotate(-30deg) contrast(150%) saturate(150%);
+    }
+
+    :nth-child(4n+3) > a & {
+        filter: sepia(1) hue-rotate(-40deg) contrast(150%) saturate(150%);
+    }
+
+    :nth-child(4n+4) > a & {
+        filter: sepia(1) hue-rotate(-90deg) contrast(150%) saturate(150%);
+    }
+}
+
+.speaker__title {
+    @include v(background-color, orange);
+    @include v(color, contrasting-color($color-orange));
+    display: block;
+    @include font-family(title);
+    @include v(font-size, gamma);
+
+    @include media("screen", "<=medium") {
+        padding: $measure-small $measure-medium;
+        position: relative;
+        z-index: 1;
+    }
+
+    @include media("screen", ">medium") {
+        padding: $measure-medium $measure-large;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+    }
+
+    :nth-child(4n+1) > a & {
+        @include v(background-color, yellow);
+        @include v(color, contrasting-color($color-yellow));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-yellow-darkened;
+    }
+
+    :nth-child(4n+2) > a & {
+        @include v(background-color, orange);
+        @include v(color, contrasting-color($color-orange));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-orange-darkened;
+    }
+
+    :nth-child(4n+3) > a & {
+        @include v(background-color, red);
+        @include v(color, contrasting-color($color-red));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-red-darkened;
+    }
+
+    :nth-child(4n+4) > a & {
+        @include v(background-color, purple);
+        @include v(color, contrasting-color($color-purple));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-purple-darkened;
+    }
+}
+
+.speaker__presentation {
+    @extend %gamma;
+    @include font-family(title);
+    padding: $measure-medium;
+
+    @include media("screen", "<=medium") {
+        z-index: 0;
+    }
+
+    @include media("screen", ">medium") {
+        z-index: 1;
+    }
+
+    a:hover &,
+    a:focus &,
+    a:active & {
+        text-decoration: underline;
+    }
+
+    :nth-child(4n+1) > a & {
+        @include v(background-color, yellow);
+        @include v(color, contrasting-color($color-yellow));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-yellow-darkened;
+    }
+
+    :nth-child(4n+2) > a & {
+        @include v(background-color, orange);
+        @include v(color, contrasting-color($color-orange));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-orange-darkened;
+    }
+
+    :nth-child(4n+3) > a & {
+        @include v(background-color, red);
+        @include v(color, contrasting-color($color-red));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-red-darkened;
+    }
+
+    :nth-child(4n+4) > a & {
+        @include v(background-color, purple);
+        @include v(color, contrasting-color($color-purple));
+        box-shadow: -0.5rem -0.5rem 0 0 $color-purple-darkened;
+    }
+}
+
+.featured-speaker {
+    display: flex;
+
+    @include media("screen", "<=medium") {
+        flex-direction: column;
+    }
+
+    @include media("screen", ">medium") {
+        flex-direction: row;
+    }
+
+    .featured-speaker__biography,
+    .featured-speaker__presentation {
+        flex: 0 1 50%;
+    }
+
+    .featured-speaker__biography {
+        @include media("screen", "<=medium") {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: $measure-large;
+        }
+        @include media("screen", "<=small") {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: $measure-large;
+        }
+    }
+
+    .speaker__contained {
+        @include media("screen", "<=medium") {
+            flex: 0 1 40%;
+        }
+    }
+
+    .speaker__title {
+        box-shadow: -0.5rem -0.5rem 0 0 $color-orange-darkened;
+    }
+
+    .speaker__description {
+        @include media("screen", "<=medium") {
+            flex: 0 1 60%;
+        }
+    }
+
+    .speaker__description {
+        @include media("screen", "<=small") {
+            padding: $measure-medium;
+        }
+
+        @include media("screen", ">small", "<=medium") {
+            padding: 0 0 0 $measure-large;
+        }
+
+        @include media("screen", ">medium") {
+            background-color: rgba($color-black, 0.1);
+            padding: $measure-large $measure-medium $measure-medium;
+        }
+    }
+
+    .speaker__presentation {
+        @include v(background-color, red);
+        @include v(color, contrasting-color($color-red));
+        padding-left: $measure-large;
+        margin-bottom: 0;
+        box-shadow: -0.5rem -0.5rem 0 0 $color-red-darkened;
+    }
+
+    .speaker__presentation-description {
+        @include media("screen", "<=medium") {
+            padding: $measure-large $measure-medium $measure-medium;
+        }
+
+        @include media("screen", ">medium") {
+            padding: $measure-large 0 0 $measure-large;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+////
+/// CSS Variables
+/// @group abstracts
+////
+
+:root {
+    --base-font-size: #{$base-font-size};
+
+    --wrapper-width-small: #{$wrapper-width-small};
+    --wrapper-width-medium: #{$wrapper-width-medium};
+    --wrapper-width-large: #{$wrapper-width-large};
+
+    --gutter-width: #{$gutter-width};
+    --aside-width: #{$aside-width};
+    --article-width: #{$article-width};
+    --line-length-minimum: #{$line-length-minimum};
+    --line-length-maximum: #{$line-length-maximum};
+    --line-length-responsive: #{$line-length-responsive};
+
+    --measure-small: #{$measure-small};
+    --measure-small-relative: #{$measure-small-relative};
+    --measure-small-proportional: #{$measure-small-proportional};
+    --measure-medium: #{$measure-medium};
+    --measure-medium-relative: #{$measure-medium-relative};
+    --measure-medium-proportional: #{$measure-medium-proportional};
+    --measure-large: #{$measure-large};
+    --measure-large-relative: #{$measure-large-relative};
+    --measure-large-proportional: #{$measure-large-proportional};
+    --measure-one: #{$measure-one};
+    --measure-one-relative: #{$measure-one-relative};
+
+    --opacity-alpha: #{$opacity-alpha};
+    --opacity-beta: #{$opacity-beta};
+
+    --color-transparent: #{$color-transparent};
+    --color-black: #{$color-black};
+    --color-white: #{$color-white};
+    --color-yellow: #{$color-yellow};
+    --color-orange: #{$color-orange};
+    --color-red: #{$color-red};
+    --color-purple: #{$color-purple};
+
+    --border-width-default: #{$border-width-default};
+    --border-width-hairline: #{$border-width-hairline};
+
+    --border-style-default: #{$border-style-default};
+    --border-style-alternate: #{$border-style-alternate};
+
+    --border-radius-default: #{$border-radius-default};
+    --border-radius-hairline: #{$border-radius-hairline};
+
+    --font-display: #{$font-display};
+
+    --font-weight-default: #{$font-weight-default};
+    --font-weight-bold: #{$font-weight-bold};
+
+    --font-size-default: #{$font-size-default};
+    --font-size-alpha: #{$font-size-alpha};
+    --font-size-beta: #{$font-size-beta};
+    --font-size-gamma: #{$font-size-gamma};
+
+    --font-family-default: #{$font-family-default};
+    --font-family-serif: #{$font-family-serif};
+    --font-family-title: #{$font-family-title};
+    --font-family-monospace: #{$font-family-monospace};
+
+    --line-height-default: #{$line-height-default};
+    --line-height-small: #{$line-height-small};
+    --line-height-medium: #{$line-height-medium};
+
+    --letter-spacing-default: #{$letter-spacing-default};
+    --letter-spacing-large: #{$letter-spacing-large};
+
+    --animation-duration: #{$animation-duration};
+    --animation-function: #{$animation-function};
+    --animation-fill-mode: #{$animation-fill-mode};
+
+    --rotation-default: #{$rotation-default};
+
+    --transition-duration-default: #{$transition-duration-default};
+    --transition-duration-long: #{$transition-duration-long};
+    --transition-function: #{$transition-function};
+
+    --z-index-below: #{$z-index-below};
+    --z-index-root: #{$z-index-root};
+    --z-index-default: #{$z-index-default};
+    --z-index-above: #{$z-index-above};
+    --z-index-modal: #{$z-index-modal};
+    --z-index-dialog: #{$z-index-dialog};
+    --z-index-notification: #{$z-index-notification};
+
+    --icon-size: #{$icon-size};
+
+    --max-columns: #{$max-columns};
+}

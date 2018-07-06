@@ -1,0 +1,54 @@
+////
+/// Page
+/// @group base
+////
+
+html {
+    @include font-family(default);
+    background-color: white;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    // prevent horizontal jump when navigating short page <--> tall page
+    overflow-y: scroll;
+    // set the box model for the entire document
+    box-sizing: border-box;
+    font-size: $base-font-size;
+    font-style: normal;
+    @include v(font-weight, default);
+    @include v(line-height, default);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: oldstyle-nums;
+    // prevent adjustments of font-size after orientation changes in IE on
+    // Windows Phone and in iOS
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+// Box model set to `inherit` by default so children of `content-box` elements
+// inherit from the parent properly
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 0;
+}
+
+// Content Elements
+blockquote,
+details,
+table,
+dl,
+ol,
+ul,
+figure:not([class]),
+p {
+    @extend %content-elements !optional;
+}
