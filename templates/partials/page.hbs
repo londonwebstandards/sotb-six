@@ -18,12 +18,10 @@
     {{>page-nav}}
   </header>
 
-  <main class="wrap" role="main">
-    <section class="content" id="content" role="document" itemscope itemtype="https://schema.org/WebPage">
-      {{#block "body"}}
-        {{{content}}}
-      {{/block}}
-    </section>
+  <main class="wrap" role="main" class="content" id="content" role="document" itemscope itemtype="https://schema.org/WebPage">
+    {{#block "main"}}
+      {{{content}}}
+    {{/block}}
   </main>
 
   {{>page-footer}}
