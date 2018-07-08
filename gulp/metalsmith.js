@@ -13,6 +13,7 @@ const handlebars = require("handlebars");
 const htmlMinifier = require("metalsmith-html-minifier");
 const markdown = require("metalsmith-markdown");
 const dataLoader = require("metalsmith-data-loader");
+const drafts = require("metalsmith-drafts");
 const layouts = require("metalsmith-layouts");
 const pageTitles = require("metalsmith-page-titles");
 const permalinks = require("metalsmith-permalinks");
@@ -87,6 +88,7 @@ function metalsmith() {
           }
         })
         .use(dataLoader())
+        .use(drafts())
         .use(
           collections({
             speakers: {

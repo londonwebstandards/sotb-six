@@ -87,6 +87,7 @@
   },
   "private": true,
   "dependencies": {
-    "eyeglass": "^1.5.0"
+    "eyeglass": "^1.5.0",
+    "metalsmith-drafts": "0.0.1"
   }
 }
