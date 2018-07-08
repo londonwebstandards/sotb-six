@@ -4,7 +4,6 @@ description: List of sponsors supporting SOTB6
 draft: true
 layout: default.hbs
 lastmod: 2018-07-08
-page_class: page--sponsors
 ---
 
 ## Help us make State of the Browser even better.

@@ -1,51 +1,47 @@
-.header {
-    background-color: black;
-    height: 430px;
-    height: 60vh;
-    min-height: 430px;
-    overflow: hidden;
-    position: relative;
+body > header {
+  position: relative;
+  overflow: hidden;
 }
 
 .header__center {
-    @include v(color, white);
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-30%);
-    letter-spacing: $letter-spacing-large;
-    text-align: center;
-    text-shadow: 0 0 $measure-small black;
+  @include v(color, white);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  letter-spacing: $letter-spacing-large;
+  text-align: center;
+  text-shadow: 0 0 $measure-small black;
+  transform: translateY(-30%);
 
-    h1 {
-        @include non-selectable;
+  h1 {
+    @include non-selectable;
 
-        a {
-            @include transition;
-            display: inline-block;
-            padding: $measure-small;
-            text-decoration: none;
+    a {
+      @include transition;
+      display: inline-block;
+      padding: $measure-small;
+      text-decoration: none;
 
-            &:hover,
-            &:focus,
-            &:active {
-                @include v(background-color, white);
-                @include v(color, black);
-                text-shadow: none;
-            }
+      &:hover,
+      &:focus,
+      &:active {
+        @include v(background-color, white);
+        @include v(color, black);
+        text-shadow: none;
+      }
 
-            &:hover,
-            &:focus {
-                transform: rotateZ(-1.5deg);
-            }
+      &:hover,
+      &:focus {
+        transform: rotateZ(-1.5deg);
+      }
 
-            &:active {
-                transform: rotateZ(1.5deg);
-            }
-        }
+      &:active {
+        transform: rotateZ(1.5deg);
+      }
     }
+  }
 
-    h2 {
-        padding-bottom: 0;
-    }
+  h2 {
+    padding-bottom: 0;
+  }
 }

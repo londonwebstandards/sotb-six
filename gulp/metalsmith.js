@@ -84,7 +84,7 @@ function metalsmith() {
         .metadata({
           site: {
             title: config.title,
-            URL: `https://${config.URL}`
+            URL: `https://${config.domain}`
           }
         })
         .use(dataLoader())
