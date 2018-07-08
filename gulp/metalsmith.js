@@ -37,6 +37,7 @@ function registerHandlebarsHelpers() {
   // register Handlebars helpers
   handlebars.registerHelper("moment", require("helper-moment"));
   require("swag").registerHelpers(handlebars);
+  require("handlebars-layouts").register(handlebars);
   handlebars.registerHelper("ext2Png", str => changeExtension(str, "png"));
   handlebars.registerHelper("ext2Jpg", str => changeExtension(str, "jpg"));
   handlebars.registerHelper("different", function(lvalue, rvalue, options) {
@@ -116,7 +117,7 @@ function metalsmith() {
         )
         .use(
           layouts({
-            directory: `${paths.templates.src}`
+            directory: `${paths.templates.src}${paths.templates.layouts}`
           })
         )
         .use(

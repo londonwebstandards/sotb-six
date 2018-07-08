@@ -25,6 +25,7 @@
     },
     "templates": {
       "src": "templates/",
+      "layouts": "layouts/",
       "partials": "partials/"
     },
     "assets": {

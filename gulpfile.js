@@ -54,20 +54,6 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest));
 }
 
-/**
- * Generate a style guide from the Markdown content and HTML template in styleguide/
- */
-function styleGuide(done) {
-  sherpa(
-    "src/styleguide/index.md",
-    {
-      output: `${paths.pages.dest}styleguide.html`,
-      template: `${paths.templates.src}styleguide.hbs`
-    },
-    done
-  );
-}
-
 // Task: grab static assets (fonts, etc.) and move them to the build folder
 function assets() {
   return gulp
@@ -114,8 +100,7 @@ gulp.task(
   gulp.series(
     gulp.parallel(assets, scripts.bundle, styles),
     metalsmith.build,
-    images.build,
-    styleGuide
+    images.build
   )
 );
 
