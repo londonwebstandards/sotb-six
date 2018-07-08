@@ -62,7 +62,7 @@ function registerHandlebarsHelpers() {
 
 function metalsmith() {
   // filter out files with front matter
-  const fmFilter = filter("**/*.{html,md}", { restore: true });
+  const fmFilter = filter("**/*.{html,md,txt}", { restore: true });
 
   registerHandlebarsHelpers();
 

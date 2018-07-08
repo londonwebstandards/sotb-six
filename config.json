@@ -21,7 +21,7 @@
     },
     "pages": {
       "models": "src/models/*",
-      "src": "pages/**/*.md",
+      "src": "pages/**/*",
       "dest": "dist/"
     },
     "templates": {
