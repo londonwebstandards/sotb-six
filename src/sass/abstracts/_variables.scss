@@ -16,9 +16,9 @@ $wrapper-width-large: 1000px !default;
 /// @prop {String} Breakpoint name
 /// @prop {Length} Breakpoint value
 $breakpoints: (
-    small: $wrapper-width-small,
-    medium: $wrapper-width-medium,
-    large: $wrapper-width-large
+  small: $wrapper-width-small,
+  medium: $wrapper-width-medium,
+  large: $wrapper-width-large
 ) !default;
 
 /// @type Length
@@ -119,7 +119,7 @@ $shades: (
     'red-light': #f2266f,
     'red-secondary': #df3080,
     'red-dark': #9f1833,
-    'purple-light': #af3a8e, 
+    'purple-light': #af3a8e,
     'purple-dark': #51163d
 );
 // @include add-colors($primary, $shades);

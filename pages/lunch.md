@@ -1,7 +1,7 @@
 ---
 title: Lunch
 description: See where to eat during lunch time
-draft: false
+draft: true
 private: true
 layout: lunch.hbs
 data: models/lunch-locations.yaml

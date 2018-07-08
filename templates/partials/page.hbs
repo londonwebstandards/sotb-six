@@ -1,5 +1,42 @@
-<div class="row">
-  <div class="large-12 columns">
-    {{{contents}}}
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>page-head}}
+</head>
+
+<body{{#page_class}} class="{{ page_class }}"{{/page_class}} itemscope itemtype="https://schema.org/WebPage">
+  {{>async-css}}
+
+  <a class="hidden" href="/home">Go to the homepage</a>
+  <a class="hidden" href="#content">Skip to main content</a>
+
+  <header class="header">
+    <div class="header__center">
+      <div class="rectangle  rectangle--yellow" aria-hidden="true"></div>
+      <div class="rectangle  rectangle--orange" aria-hidden="true"></div>
+      <div class="rectangle  rectangle--red" aria-hidden="true"></div>
+      <div class="rectangle  rectangle--purple" aria-hidden="true"></div>
+      <h1>
+        <a href="/">{{ site.title }}</a>
+      </h1>
+      <h2>Conway Hall, London</h2>
+      <h2>
+        <time datetime="">Saturday, 8 September 2018</time>
+      </h2>
+    </div>
+    {{>page-nav}}
+  </header>
+
+  <main class="wrap" role="main">
+    <section class="content" id="content" role="document" itemscope itemtype="https://schema.org/WebPage">
+      {{#block "body"}}
+        {{{content}}}
+      {{/block}}
+    </section>
+  </main>
+
+  {{>page-footer}}
+  </body>
+
+</html>
