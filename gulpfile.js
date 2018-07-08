@@ -13,7 +13,6 @@ const size = require("gulp-size");
 const del = require("del");
 const argv = require("yargs").argv;
 const eyeglass = require("eyeglass");
-const sherpa = require("style-sherpa");
 
 // internal modules
 const browserSync = require("./gulp/browsersync");
