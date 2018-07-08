@@ -1,8 +1,9 @@
 
 {
-  "title": "State of the Browser 6",
+  "title": "State of the Browser",
   "description": "State of the Browser is a one-day, single-track conference with widely varying talks about the modern web",
-  "URL": "//www.stateofthebrowser.com",
+  "domain": "stateofthebrowser.com",
+  "date": "2018-09-08",
   "paths": {
     "styles": {
       "src": [ "src/sass/**/*.scss" ],
