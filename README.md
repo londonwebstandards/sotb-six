@@ -56,3 +56,40 @@ The following command will build the project for development
 It will automatically open it on a new window in your default browser. It will also trigger automatic refresh of the browser window every time any source file is being modified.
 
 The project can be accessed at <http://localhost:3000>.
+
+## Pages and Templates
+
+[Handlebar.js](http://handlebarsjs.com/) is in use, together with a set of helpers:
+
+- [Handlebar Layouts](https://github.com/shannonmoeller/handlebars-layouts), more about this later.
+- [Helper Moment](https://github.com/helpers/helper-moment), which allows the use of [moment](https://momentjs.com) in templates.
+- [Swag](https://github.com/elving/swag), provides a series of block-level helpers (`if`, `gt`, etc...)
+- Some custom written helpers that can be found in the file [`/gulp/metalsmith.js`](/gulp/metalsmith.js), like `ext2Png`, `ext2Jpg`, and `different` which can be used to compare dates.
+
+### How are pages created via Metalsmith
+
+The layouts decoration is handled via the Metalsmith plugin [`metalsmith-layouts`](https://github.com/ismay/metalsmith-layouts#readme). This uses Handlebarjs and all the configured helpers.
+
+The basic configuration of where files are, is taken from the [config.json](config.json) file.
+
+The basic idea is that Metalsmith will:
+
+1. read all the pages in `/pages/` (can be `.md`, `.txt`, or even `.html` files),
+2. see if there any Frontmatter data (the initial portion that sits between `---`),
+3. extract those variables,
+4. pass the information to `metalsmith-layouts`, which in turn will send it down to Handlebar.
+5. Handlebar will look for the variable `layout`, search for the respective named layout, and inject all the Frontmatter variables into it.
+6. Once this is done, the compiled HTML markup will be passed down to further Metalsmith plugins and then outputted as actual files.
+
+This, pretty much sums up how everything works.
+
+### Structure
+
+The most important files are found:
+
+- `/templates/layouts/`: all the main layouts that extend some _"partials"_, one of the partials that is mostly used is `page.hbs`.
+- `/templates/partials/`: this is where all the partials live, both the full pages that can be extended, and the snippets of markup that can be called _components_.
+
+Please read the documentation of [Handlebar Layouts](https://github.com/shannonmoeller/handlebars-layouts) for information on the use of `extend`, `block`, and `content`, which are widely used.
+
+**NOTE**: try to use prefixes to organise files in a way that it's clear if there's any dependency/inheritance.
