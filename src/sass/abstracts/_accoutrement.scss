@@ -1,0 +1,26 @@
+@import 'accoutrement-init';
+@import 'accoutrement-color';
+
+$brand: (
+  'yellow': #dda700,
+  'orange': #c83f18,
+  'red': #c61440,
+  'purple': #711f56
+);
+
+$greys: (
+  'background': #f7f5f5,
+  'light': #e5dede
+);
+
+$shades: (
+  'yellow-light': #fae100,
+  'yellow-mid': #ecb256,
+  'orange-light': #f36e2e,
+  'orange-mid': #e05666,
+  'red-light': #f22670,
+  'red-mid': #df3180,
+  'purple-light': #b03a8f
+);
+
+@include add-colors($brand, $greys, $shades);
