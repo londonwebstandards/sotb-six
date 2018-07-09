@@ -16,6 +16,10 @@
   ],
   "license": "AGPLv3",
   "devDependencies": {
+    "accoutrement-color": "^2.3.1",
+    "accoutrement-init": "^1.1.2",
+    "accoutrement-layout": "^3.0.3",
+    "accoutrement-type": "^4.0.2",
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
@@ -57,6 +61,7 @@
     "metalsmith-data-loader": "^1.1.2",
     "metalsmith-debug": "^1.2.0",
     "metalsmith-discover-partials": "^0.1.0",
+    "metalsmith-drafts": "0.0.1",
     "metalsmith-html-minifier": "^3.0.0",
     "metalsmith-layouts": "^2.1.0",
     "metalsmith-mapsite": "^1.0.4",
@@ -65,6 +70,8 @@
     "metalsmith-permalinks": "^0.5.0",
     "prettier": "^1.13.7",
     "rollup-plugin-babel": "^3.0.7",
+    "sassdoc": "^2.5.0",
+    "sassdoc-theme-herman": "^3.0.0",
     "slug": "^0.9.1",
     "stylelint": "^9.3.0",
     "stylelint-config-sass-guidelines": "^5.0.0",
@@ -87,7 +94,6 @@
   },
   "private": true,
   "dependencies": {
-    "eyeglass": "^1.5.0",
-    "metalsmith-drafts": "0.0.1"
+    "eyeglass": "^1.5.0"
   }
 }
