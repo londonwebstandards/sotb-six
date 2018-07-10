@@ -1,0 +1,9 @@
+body > header {
+  display: grid;
+  background-color: color('purple');
+  color: contrasted('background');
+
+  @include above('medium') {
+    background-color: transparent;
+  }
+}

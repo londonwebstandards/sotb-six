@@ -12,16 +12,16 @@
 @import 'abstracts/accoutrement-type';
 @import 'abstracts/accoutrement-layout';
 // @import 'abstracts/variables';
-// @import 'abstracts/functions';
+@import 'abstracts/functions';
 // @import 'abstracts/mathematics';
 // @import 'abstracts/mixins';
 // @import 'abstracts/css-variables';
 
 /// BASE
-// @import 'accoutrement-init';
-// @import 'base/fonts';
 @import 'base/page';
 @import 'base/headings';
+// @import 'accoutrement-init';
+// @import 'base/fonts';
 // @import 'base/anchor';
 // @import 'base/button';
 // @import 'base/paragraph';
@@ -34,15 +34,18 @@
 // @import 'base/miscellaneous';
 
 /// COMPONENTS
+@import 'components/header';
+@import 'components/footer';
+@import 'components/section';
+@import 'components/site-nav';
+@import 'components/nav-menu';
+@import 'components/helpers';
 // @import 'components/primary-navigation';
 // @import 'components/rectangles';
 // @import 'components/speakers';
 // @import 'components/media';
 // @import 'components/button-navigation';
 // @import 'components/email-form';
-@import 'components/site-nav';
-@import 'components/nav-menu';
-@import 'components/helpers';
 
 /// LAYOUT
 // @import 'layout/wrap';

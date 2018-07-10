@@ -21,10 +21,10 @@ $neutral-colors: (
 
 $theme-colors: (
   'background': 'white-ish',
-  'text': 'brand-purple',
-  'headings': 'brand-red',
-  'highlight': 'brand-orange',
-  'link-active': 'brand-red',
+  'text': 'purple',
+  'headings': 'red',
+  'highlight': 'orange',
+  'link-active': 'red',
   'link-hover': #f22670,
   'link-visited': 'red-screen',
   // 'yellow-light': #fae100,
@@ -32,8 +32,8 @@ $theme-colors: (
 );
 
 $system-colors: (
-  'contrast-light': 'background',
-  'contrast-dark': 'brand-purple',
+  'contrast-light': 'text',
+  'contrast-dark': 'background',
 );
 
 @include add-colors($brand-colors, $neutral-colors, $theme-colors, $system-colors);
