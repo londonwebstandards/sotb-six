@@ -1,26 +1,38 @@
 @import 'accoutrement-init';
 @import 'accoutrement-color';
 
-$brand: (
+// Colors
+// @see http://oddbird.net/accoutrement-color/docs/
+// @see http://oddbird.net/herman/docs/config-colors.html
+$brand-colors: (
+  'yellow-screen': #ecb256,
   'yellow': #dda700,
+  'orange-screen': #e05666,
   'orange': #c83f18,
+  'red-screen': #df3180,
   'red': #c61440,
+  'purple-screen': #b03a8f
   'purple': #711f56
 );
 
-$greys: (
-  'background': #f7f5f5,
-  'light': #e5dede
+$neutral-colors: (
+  'white-ish': #f7f5f5,
+  'light-grey': #e5dede
 );
 
-$shades: (
-  'yellow-light': #fae100,
-  'yellow-mid': #ecb256,
-  'orange-light': #f36e2e,
-  'orange-mid': #e05666,
-  'red-light': #f22670,
-  'red-mid': #df3180,
-  'purple-light': #b03a8f
+$theme-colors: (
+  'background': 'white-ish',
+  'text': 'brand-purple',
+  'headings': 'brand-red',
+  'highlight': 'brand-orange'
+  // 'yellow-light': #fae100,
+  // 'orange-light': #f36e2e,
+  // 'red-light': #f22670,
 );
 
-@include add-colors($brand, $greys, $shades);
+$system-colors: (
+  'contrast-light': 'background',
+  'contrast-dark': 'brand-purple'
+);
+
+@include add-colors($brand-colors, $neutral-colors, $theme-colors, $system-colors);
