@@ -11,12 +11,7 @@
   <a class="is-focusable" href="#content">Skip to main content</a>
   <a class="is-focusable" href="/home">Go to the homepage</a>
 
-  <header class="header">
-    <h1>
-      <a href="/">{{ site.title }}</a>
-    </h1>
-    {{>page-nav}}
-  </header>
+  {{>organism-header}}
 
   <main class="wrap" role="main" class="content" id="content" role="document" itemscope itemtype="https://schema.org/WebPage">
     {{#block "main"}}

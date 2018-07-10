@@ -9,11 +9,13 @@
   $red: color('red-screen');
   $purple: color('purple-screen');
   $bg: color('purple');
-  $tilt: to bottom;
+  $angle: to top;
+  $dist: 0px;
 
-  @if ($tilt == true) {
+  @if $tilt == true {
+    $dist: 10px;
     $angle: 179deg;
   }
 
-  @return linear-gradient($tilt, $yellow, $yellow 15px, $orange 15px, $orange 20px, $red 20px, $red 25px, $purple 25px, $purple 30px, $bg 30px, $bg);
+  @return linear-gradient($angle, $yellow, $yellow 5px + $dist, $orange 5px + $dist, $orange 10px + $dist, $red 10px + $dist, $red 15px + $dist, $purple 15px + $dist, $purple 20px + $dist, $bg 20px + $dist, $bg);
 }

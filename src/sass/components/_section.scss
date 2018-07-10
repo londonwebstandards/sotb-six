@@ -1,4 +1,12 @@
 section > h2 {
+  padding: 0 1em;
+  padding-bottom: 20px;
+  background-image: rainbow-gradient();
   background-color: color('purple');
   color: contrast('purple');
+
+  @include above('medium') {
+    background-color: color('white-ish');
+    color: contrast('white-ish');
+  }
 }

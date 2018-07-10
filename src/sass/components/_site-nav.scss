@@ -1,11 +1,9 @@
-/// Site navigation style
+/// Site navigation
 .site-nav {
-  // font-family: $header-font-family;
   // font-size: rem-calc(20);
+  text-align: center;
 
   a {
-    // color: $black;
-
     &:hover {
       // background: scale-color($light-gray, $lightness: -10%);
     }

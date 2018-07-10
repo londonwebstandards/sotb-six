@@ -36,8 +36,8 @@
   }
 
   &__toggle {
-    margin-left: 0.5em;
     text-transform: uppercase;
+    text-decoration: none;
 
     @include above('medium') {
       display: none;

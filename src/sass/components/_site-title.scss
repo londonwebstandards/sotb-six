@@ -1,0 +1,59 @@
+.site-title {
+  padding: 1em;
+  background-color: color('purple');
+  color: contrast('background');
+  text-align: center;
+  font-size: calc( 1.25rem + 1.25 * (100vw - 20rem) / (60 - 20) );
+
+  &::before {
+    content: "";
+    background-image: url('/images/SOTB-monitors.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3em;
+    width: 100%;
+    display: block;
+
+    @include above('small') {
+      display: none;
+    }
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  span:first-child {
+    display: block;
+    color: color('yellow-screen');
+
+    @include above('small') {
+      color: color('yellow');
+    }
+  }
+
+  span:nth-child(2) {
+    color: color('orange-screen');
+
+    @include above('small') {
+      color: color('orange');
+    }
+  }
+
+  span:nth-child(3) {
+    color: color('red-screen');
+
+    @include above('small') {
+      color: color('red');
+    }
+  }
+
+  span:nth-child(4) {
+    display: block;
+    color: color('purple-screen');
+
+    @include above('small') {
+      color: color('purple');
+    }
+  }
+}

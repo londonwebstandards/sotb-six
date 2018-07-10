@@ -20,9 +20,9 @@
 /// BASE
 @import 'base/page';
 @import 'base/headings';
+@import 'base/anchor';
 // @import 'accoutrement-init';
 // @import 'base/fonts';
-// @import 'base/anchor';
 // @import 'base/button';
 // @import 'base/paragraph';
 // @import 'base/list';
@@ -38,6 +38,7 @@
 @import 'components/footer';
 @import 'components/section';
 @import 'components/site-nav';
+@import 'components/site-title';
 @import 'components/nav-menu';
 @import 'components/helpers';
 // @import 'components/primary-navigation';
