@@ -1,0 +1,10 @@
+@import 'accoutrement-type';
+
+// Fonts
+$dosis: (
+  'name': 'Dosis',
+  'source': 'https://fonts.googleapis.com/css?family=Dosis:300,600',
+  'stack': ('Helvetica Neue', 'sans-serif')
+);
+
+@include add-font('text', $dosis);

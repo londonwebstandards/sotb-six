@@ -1,7 +1,7 @@
 /// Site navigation style
 .site-nav {
   // font-family: $header-font-family;
-  font-size: rem-calc(20);
+  // font-size: rem-calc(20);
 
   a {
     // color: $black;
@@ -20,8 +20,8 @@
   li + li {
     // border-left: 1px solid $white;
 
-    @include media('screen', '<small') {
-      border-left: 0;
+    @include below('small') {
+      // border-left: 0;
       // border-top: 1px solid $white;
     }
   }

@@ -1,0 +1,11 @@
+@import 'accoutrement-layout';
+
+$breakpoints: (
+  'small': 36em,
+  'medium': 45em
+);
+
+$z-index: (
+  'main',
+  'menu'
+);

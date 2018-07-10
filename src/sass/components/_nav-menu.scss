@@ -1,10 +1,10 @@
-/// nav-menu configuration
+/// nav-menu
 /// @see https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 /// and https://codepen.io/markcaron/pen/pPZVWO?editors=1100
 .nav-menu {
   display: none;
 
-  @include media('screen', '>medium') {
+  @include above('medium') {
     display: block;
   }
 
@@ -23,7 +23,7 @@
   }
 
   li {
-    @include media('screen', '>medium') {
+    @include above('medium') {
       display: inline-block;
       padding: 0.4em 0.8em;
     }
@@ -39,7 +39,7 @@
     margin-left: 0.5em;
     text-transform: uppercase;
 
-    @include media('screen', '>medium') {
+    @include above('medium') {
       display: none;
     }
   }
@@ -49,7 +49,7 @@
     position: absolute;
     padding: 0 0.5em;
 
-    @include media('screen', '>medium') {
+    @include above('medium') {
       display: none;
     }
   }
