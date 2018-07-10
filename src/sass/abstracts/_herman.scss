@@ -1,0 +1,8 @@
+// Herman configuration in order to visualise design tokens
+// @see http://oddbird.net/herman/docs/api_json-export.html and following pages
+
+/// @colors lws
+@include herman-add('colors', 'lws', $colors);
+
+/// @font dosis (300, 600)
+/// <link href="https://fonts.googleapis.com/css?family=Dosis:300,600" rel="stylesheet">

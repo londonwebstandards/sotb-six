@@ -1,4 +1,4 @@
-@import 'accoutrement-color';
+@import 'node_modules/accoutrement-color/sass/color';
 
 // Colors
 // @see http://oddbird.net/accoutrement-color/docs/
@@ -10,28 +10,30 @@ $brand-colors: (
   'orange': #c83f18,
   'red-screen': #df3180,
   'red': #c61440,
-  'purple-screen': #b03a8f
-  'purple': #711f56
+  'purple-screen': #b03a8f,
+  'purple': #711f56,
 );
 
 $neutral-colors: (
   'white-ish': #f7f5f5,
-  'light-grey': #e5dede
+  'light-grey': #e5dede,
 );
 
 $theme-colors: (
   'background': 'white-ish',
   'text': 'brand-purple',
   'headings': 'brand-red',
-  'highlight': 'brand-orange'
+  'highlight': 'brand-orange',
+  'link-active': 'brand-red',
+  'link-hover': #f22670,
+  'link-visited': 'red-screen',
   // 'yellow-light': #fae100,
   // 'orange-light': #f36e2e,
-  // 'red-light': #f22670,
 );
 
 $system-colors: (
   'contrast-light': 'background',
-  'contrast-dark': 'brand-purple'
+  'contrast-dark': 'brand-purple',
 );
 
 @include add-colors($brand-colors, $neutral-colors, $theme-colors, $system-colors);

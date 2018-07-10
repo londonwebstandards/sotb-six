@@ -1,0 +1,40 @@
+////
+/// Heading
+/// @group base
+////
+
+// Heading Elements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: color('red');
+  font-family: font-family(text);
+  font-weight: 600;
+
+  // TODO rework to be a bit more accessible
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}

@@ -3,36 +3,34 @@
 /// @group components
 ////
 
-// We're goin' up around the bend
-.border-radius,
-.round,
-.rounded {
-  @include border-radius;
-}
-
 // Hide elements visually
 [hidden],
-.hidden {
+.is-hidden {
+  @include is-hidden;
+}
+
+// hidden element but focusable
+.is-focusable {
   &:not([href]),
   &[href]:not(:focus):not(:active) {
-    @include hidden;
+    @include is-hidden;
   }
 }
 
-// Hyphenate any looooooooooooooooooooo-
-// oooooong text
-.hyphen,
-.hyphenate {
-  @include hyphenate;
-}
+// // Hyphenate any looooooooooooooooooooo-
+// // oooooong text
+// .hyphen,
+// .hyphenate {
+//   @include hyphenate;
+// }
 
-// Make things non-selectable
-.non-selectable {
-  @include non-selectable;
-}
+// // Make things non-selectable
+// .non-selectable {
+//   @include non-selectable;
+// }
 
-// Make things non-interactive
-.non-interactive {
-  cursor: not-allowed; // kind of redundant
-  pointer-events: none;
-}
+// // Make things non-interactive
+// .non-interactive {
+//   cursor: not-allowed; // kind of redundant
+//   pointer-events: none;
+// }

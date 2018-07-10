@@ -41,7 +41,7 @@ function styles() {
   return gulp
     .src(paths.styles.src)
     .pipe(gulpIf(!PRODUCTION, sourcemaps.init()))
-    .pipe(sass(eyeglass(sassOpts)))
+    .pipe(sass(sassOpts))
     .pipe(
       autoprefixer({
         cascade: false
