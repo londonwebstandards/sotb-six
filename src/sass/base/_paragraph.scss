@@ -5,7 +5,7 @@
 
 p {
   max-width: $max-paragraph-width;
-  padding: 0 1em;
+  padding: 0 1rem;
 
   @include above('small') {
     padding: 0;

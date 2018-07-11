@@ -1,5 +1,5 @@
 section > h2 {
-  padding: 0 1em;
+  padding: 0 1rem;
   padding-bottom: 20px;
   background-image: rainbow-gradient();
   background-color: color('purple');
@@ -15,5 +15,6 @@ section > h2 {
     background-image: none;
     background-color: color('white-ish');
     color: color('red');
+    padding-bottom: 0;
   }
 }
