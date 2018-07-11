@@ -11,7 +11,7 @@ permalink: false
   <h2 class="no-bg">Saturday, 8 September 2018 <br>Conway Hall, London</h2>
 
   <p>
-    <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow" class="link--external link--map">Map</a>
+    <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow"  class="is-external">Map</a>
   </p>
 
   <p>
@@ -42,7 +42,7 @@ permalink: false
 
   <p>Those that choose a **Diversity** or **Helper** ticket will get a mention here, on the website, if you wish.</p>
 
-  <p><a href="https://getinvited.to/webstandards/state-of-the-browser-2018/">Buy tickets on GetInvited</a></p>
+  <p><a href="https://getinvited.to/webstandards/state-of-the-browser-2018/" class="is-external">Buy tickets on GetInvited</a></p>
 
   <!-- <div id="get-tickets">
     <script src="https://embed.getinvited.to/webstandards/state-of-the-browser-2018.js" id="giscript-webstandards-state-of-the-browser-2018" async></script>

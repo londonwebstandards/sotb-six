@@ -3,6 +3,10 @@
 /// @group abstracts
 ////
 
+///
+/// outputs a linear-gradient with some rainbow like colours based on the brand palette.
+///
+/// @param [$tilt] {Boolean} allows the gradient to be displayed to top or at a slight angle with wider spacing.
 @function rainbow-gradient($tilt: false) {
   $yellow: color('yellow-screen');
   $orange: color('orange-screen');
@@ -10,12 +14,25 @@
   $purple: color('purple-screen');
   $bg: color('purple');
   $angle: to top;
-  $dist: 0px;
+  $offset: 0;
+  $dist: 5px;
 
   @if $tilt == true {
+    $offset: 10px;
     $dist: 10px;
     $angle: 179deg;
   }
 
-  @return linear-gradient($angle, $yellow, $yellow 5px + $dist, $orange 5px + $dist, $orange 10px + $dist, $red 10px + $dist, $red 15px + $dist, $purple 15px + $dist, $purple 20px + $dist, $bg 20px + $dist, $bg);
+  @return linear-gradient(
+    $angle,
+    $yellow,
+    $yellow $dist + $offset,
+    $orange $dist + $offset,
+    $orange $dist*2 + $offset,
+    $red $dist*2 + $offset,
+    $red $dist*3 + $offset,
+    $purple $dist*3 + $offset,
+    $purple $dist*4 + $offset,
+    $bg $dist*4 + $offset,
+    $bg);
 }

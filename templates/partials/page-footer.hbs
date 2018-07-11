@@ -1,53 +1,15 @@
 <footer>
-
-  <div class="wrap">
-    <h3>Sign up for our email newsletter:</h3>
-    <form action="https://londonwebstandards.us2.list-manage.com/subscribe/post?u=c450c49f183aa866b73ae2844&id=a1ae2069fd" method="post"
-      id="mailchimp-signup-form" class="email-form" name="mailchimp-signup-form" target="_blank" novalidate="">
-      <div>
-        <label for="mailchimp-signup-form__field__email">Email Address
-          <small style="color: red;">(required)</small>
-        </label>
-        <input id="mailchimp-signup-form__field__email" name="EMAIL" type="email" value="" autocomplete="off" required>
-      </div>
-      <div>
-        <label for="mailchimp-signup-form__field__firstname">First Name</label>
-        <input id="mailchimp-signup-form__field__firstname" name="FNAME" type="text" value="" autocomplete="off">
-      </div>
-      <div>
-        <label for="mailchimp-signup-form__field__lastname">Last Name</label>
-        <input id="mailchimp-signup-form__field__lastname" name="LNAME" type="text" value="" autocomplete="off">
-      </div>
-      <div class="hidden" aria-hidden="true">
-        <input type="text" name="b_c450c49f183aa866b73ae2844_a1ae2069fd" tabindex="-1" value="">
-      </div>
-      <div>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </div>
-    </form>
-  </div>
-
-  <div class="wrap  footer__content">
-    
-    <div class="footer__lws">
-      <em>Brought to you by</em>
-      <a href="{{ site.author_url }}" class="footer__lws" title="{{ site.author }}">
-        {{>logo-LWS}}
-      </a>
-    </div>
-    
-    <div class="footer__information">
-      <div class="footer__copyright">{{ moment format="YYYY" }} &copy; {{ site.author }}</div>
-      <p>This event is brought to you by the time and effort graciously given by our organisers and talented speakers. We all
-        take inspiration from the great mix of people who come to our events.</p>
+    <div class="footer_information">
+      <p class="copyright">{{ moment format="YYYY" }} &copy; <a href="https://londonwebstandards.org">London Web Standards</a></p>
+      <p>This event is brought to you by the time and effort graciously given by our organisers and talented speakers. We all take inspiration from the great mix of people who come to our events.</p>
     </div>
 
-    <ul class="footer__links">
+    <ul class="footer-links">
       <li>
-        <a href="/code-of-conduct">Code of Conduct</a>
+        <a href="/code-of-conduct" class="is-external">Code of Conduct</a>
       </li>
       <li>
-        <a href="/privacy">Privacy</a>
+        <a href="/privacy" class="is-external">Privacy Policy</a>
       </li>
     </ul>
 

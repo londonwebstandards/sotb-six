@@ -1,5 +1,13 @@
 body > footer {
-  padding-top: 2em;
+  padding: 2rem 1rem;
   background-image: rainbow-gradient(true);
   color: contrast('purple');
+
+  p {
+    padding: 0;
+  }
+
+  a {
+    color: color('white-ish');
+  }
 }

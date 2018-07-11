@@ -5,9 +5,9 @@
 ////
 
 a {
+  position: relative;
   color: color('link-active');
   font-weight: 600;
-  position: relative;
   text-decoration: underline;
   text-decoration-color: currentColor;
   text-decoration-skip: ink;
@@ -22,17 +22,16 @@ a {
     color: color('link-visited');
   }
 
-  &.is-external,
-  &:not([href^="#"]):not([href^="/"]) {
+  &.is-external { // stylelint-disable selector-no-qualifying-type
+    padding: 0.2rem 0.4rem;
     background-color: color('red');
+    border-radius: 3px;
     color: contrast('red');
     text-decoration: none;
-    padding: .2rem .4rem;
-    border-radius: 3px;
   }
 
   // hide extra content, text targetted only to screen readers
   span:not([class]):not([itemprop]) {
-      @include is-hidden;
+    @include is-hidden;
   }
 }
