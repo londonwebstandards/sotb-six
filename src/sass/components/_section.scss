@@ -1,20 +1,21 @@
 section > h2 {
   padding: 0 1rem;
   padding-bottom: 20px;
-  background-image: rainbow-gradient();
   background-color: color('purple');
+  background-image: rainbow-gradient();
   color: contrast('purple');
 
   @include above('medium') {
-    background-image: none;
+    padding-bottom: 0;
     background-color: color('white-ish');
+    background-image: none;
     color: color('red');
   }
 
-  &.no-bg {
-    background-image: none;
-    background-color: color('white-ish');
-    color: color('red');
+  &.no-bg { // stylelint-disable selector-no-qualifying-type
     padding-bottom: 0;
+    background-color: color('white-ish');
+    background-image: none;
+    color: color('red');
   }
 }
