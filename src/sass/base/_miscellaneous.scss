@@ -3,80 +3,53 @@
 /// @group base
 ////
 
-time {
-    display: inline-block;
-}
-
 hr {
-    @include v(background-color, black--gamma);
-    width: 100%;
-    height: $border-width-thin;
-    display: block;
-    margin: $measure-large 0;
-    border: 0;
-    // show the overflow in Edge and IE
-    overflow: visible;
-
-    %content-elements + & {
-        @include media("screen", "<=medium") {
-            @include v(margin-top, medium);
-        }
-    }
+  width: 100%;
+  display: block;
+  border: 0;
+  // show the overflow in Edge and IE
+  overflow: visible;
 }
 
 abbr[title],
 dfn[title] {
-    @include v(color, dove);
-    font-style: italic;
+  color: color('text');
+  font-style: italic;
 }
+
 abbr[title],
 dfn[title] {
-    @include v(border-bottom-width, hairline);
-    @include v(border-bottom-style, alternate);
-    @include v(border-bottom-color, dove);
-    cursor: help;
+  border-bottom-width: hairline;
+  border-bottom-style: alternate;
+  border-bottom-color: color('text');
+  cursor: help;
 }
+
 abbr[title],
 dfn[title],
 ins {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-ins {
-    background-color: mix($color-white, $color-liquid, 80%);
-    color: contrasting-color(mix($color-white, $color-liquid, 80%));
-}
-
-del {
-    background-color: mix($color-white, $color-lastfm, 80%);
-    color: contrasting-color(mix($color-white, $color-lastfm, 80%));
-    text-decoration-color: mix($color-white, $color-lastfm, 80%);
-}
-
-small {
-    @include v(font-size, small);
-}
-
-strong,
-.strong {
-    @extend %strong !optional;
-    @include v(font-weight, bold);
+strong {
+  font-weight: 600;
 }
 
 sub,
 sup {
-    @include v(font-size, small);
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
+
 sub {
-    bottom: -0.4em;
-    font-variant-position: sub;
+  bottom: -0.4em;
+  font-variant-position: sub;
 }
+
 sup {
-    top: -0.4em;
-    font-variant-position: super;
+  top: -0.4em;
+  font-variant-position: super;
 }
 
 // Touch Action
@@ -87,16 +60,11 @@ label,
 select,
 summary,
 textarea {
-    touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 // Mouse Selection
 ::selection {
-    @include v(background-color, raven);
-    @include v(color, white);
-}
-.canada {
-    &::selection {
-        @include v(background-color, canada);
-    }
+  background-color: color('yellow');
+  color: color('purple');
 }
