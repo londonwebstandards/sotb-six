@@ -7,7 +7,7 @@ section > h2 {
 
   @include above('medium') {
     padding-bottom: 0;
-    background-color: color('white-ish');
+    background-color: transparent;
     background-image: none;
     color: color('red');
   }
