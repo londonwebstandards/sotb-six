@@ -5,33 +5,34 @@
 ////
 
 a {
-    color: color('link-active');
-    font-weight: 600;
-    position: relative;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    text-decoration-skip: ink;
-    text-decoration-skip-ink: auto;
+  color: color('link-active');
+  font-weight: 600;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
 
-    &:hover,
-    &:focus {
-      color: color('link-hover');
-    }
+  &:hover,
+  &:focus {
+    color: color('link-hover');
+  }
 
-    &:visited {
-      color: color('link-visited');
-    }
+  &:visited {
+    color: color('link-visited');
+  }
 
-    // hide extra content, text targetted only to screen readers
-    span:not([class]):not([itemprop]) {
-        @include is-hidden;
-    }
-}
+  &.is-external,
+  &:not([href^="#"]):not([href^="/"]) {
+    background-color: color('red');
+    color: contrast('red');
+    text-decoration: none;
+    padding: .2em .4em;
+    border-radius: 3px;
+  }
 
-a:not([href^="#"]):not([href^="/"]) {
-  background-color: color('red');
-  color: contrast('red');
-  text-decoration: none;
-  padding: .2em .4em;
-  border-radius: 3px;
+  // hide extra content, text targetted only to screen readers
+  span:not([class]):not([itemprop]) {
+      @include is-hidden;
+  }
 }

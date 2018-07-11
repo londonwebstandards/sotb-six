@@ -8,7 +8,7 @@ permalink: false
 
 <!-- using plain HTML due to our need to orgnise the page in <section>s which are not available in markdown -->
 <section>
-  <h2>Saturday, 8 September 2018 <br>Conway Hall, London</h2>
+  <h2 class="no-bg">Saturday, 8 September 2018 <br>Conway Hall, London</h2>
 
   <p>
     <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow" class="link--external link--map">Map</a>
@@ -19,7 +19,7 @@ permalink: false
   </p>
 
   <p>
-    Save the date: [Download ICAL](stateofthebrowser.ical)
+    Save the date: <a href="/downloads/stateofthebrowser2018.ics" class="is-external">Download ICAL</a>
   </p>
 </section>
 
@@ -41,6 +41,8 @@ permalink: false
   <p>All of the tickets get you exactly the same on the day.</p>
 
   <p>Those that choose a **Diversity** or **Helper** ticket will get a mention here, on the website, if you wish.</p>
+
+  <p><a href="https://getinvited.to/webstandards/state-of-the-browser-2018/">Buy tickets on GetInvited</a></p>
 
   <!-- <div id="get-tickets">
     <script src="https://embed.getinvited.to/webstandards/state-of-the-browser-2018.js" id="giscript-webstandards-state-of-the-browser-2018" async></script>
