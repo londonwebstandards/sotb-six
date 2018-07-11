@@ -4,28 +4,10 @@
 ////
 
 p {
-    margin-top: 0;
-    @include v(margin-bottom, medium);
+  max-width: $max-paragraph-width;
+  padding: 0 1em;
 
-    &:last-child,
-    &.ciu_embed {
-        margin-bottom: 0;
-    }
-
-    &:empty {
-        display: none;
-        visibility: hidden;
-    }
-
-    &.columns {
-        @include media("screen", ">small", "<=medium") {
-            column-count: $max-columns;
-            column-gap: $measure-medium;
-        }
-
-        @include media("screen", ">large") {
-            column-count: $max-columns;
-            column-gap: $measure-medium;
-        }
-    }
+  @include above('small') {
+    padding: 0;
+  }
 }

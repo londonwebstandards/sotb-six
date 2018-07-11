@@ -11,7 +11,7 @@
 @import 'abstracts/accoutrement-color';
 @import 'abstracts/accoutrement-type';
 @import 'abstracts/accoutrement-layout';
-// @import 'abstracts/variables';
+@import 'abstracts/variables';
 @import 'abstracts/functions';
 // @import 'abstracts/mathematics';
 // @import 'abstracts/mixins';
@@ -21,10 +21,10 @@
 @import 'base/page';
 @import 'base/headings';
 @import 'base/anchor';
+@import 'base/paragraph';
 // @import 'accoutrement-init';
 // @import 'base/fonts';
 // @import 'base/button';
-// @import 'base/paragraph';
 // @import 'base/list';
 // @import 'base/quote';
 // @import 'base/media';
