@@ -5,9 +5,6 @@
 ////
 
 a {
-    // @include transition(background-color, color, text-decoration-color);
-    // @include will-change(background-color, color, text-decoration-color);
-    // @include v(background-color, transparent);
     color: color('link-active');
     font-weight: 600;
     position: relative;
@@ -19,20 +16,22 @@ a {
     &:hover,
     &:focus {
       color: color('link-hover');
-      // outline: $border-width-default $border-style-default $color-red;
-      // outline: var(--border-width-thin) var(--border-style-default) var(--color-red);
-      // outline-offset: $border-width-default;
-      // outline-offset: var(--border-width-default);
     }
 
     &:visited {
       color: color('link-visited');
-        // remove when text-decoration-color is supported
-        // @include v(text-decoration-color, red);
     }
 
     // hide extra content, text targetted only to screen readers
     span:not([class]):not([itemprop]) {
         @include is-hidden;
     }
+}
+
+a:not([href^="#"]):not([href^="/"]) {
+  background-color: color('red');
+  color: contrast('red');
+  text-decoration: none;
+  padding: .2em .4em;
+  border-radius: 3px;
 }

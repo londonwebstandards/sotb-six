@@ -1,26 +1,11 @@
 /// Site navigation
 .site-nav {
-  // font-size: rem-calc(20);
   text-align: center;
+  padding-top: .5em;
 
   a {
-    &:hover {
-      // background: scale-color($light-gray, $lightness: -10%);
-    }
-
     &.disabled { // stylelint-disable selector-no-qualifying-type
-      // background: $light-gray;
-      // color: $dark-gray;
       cursor: default;
-    }
-  }
-
-  li + li {
-    // border-left: 1px solid $white;
-
-    @include below('small') {
-      // border-left: 0;
-      // border-top: 1px solid $white;
     }
   }
 }

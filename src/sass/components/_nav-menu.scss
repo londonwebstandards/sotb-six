@@ -30,14 +30,32 @@
   }
 
   &__entries {
-    margin: 0;
+    margin: .5em 0 0;
+    padding-left: 0;
     list-style: none;
     text-align: center;
+
+    > * + * {
+      margin-top: .3em;
+    }
+  }
+
+  &__toggle,
+  &__close {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 27px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 20px;
+
+    &:visited {
+      color: color('red');
+    }
   }
 
   &__toggle {
-    text-transform: uppercase;
-    text-decoration: none;
+    background-image: url('/images/icon-menu.svg');
 
     @include above('medium') {
       display: none;
@@ -45,9 +63,8 @@
   }
 
   &__close {
+    background-image: url('/images/icon-menu-close.svg');
     height: 1em;
-    position: absolute;
-    padding: 0 0.5em;
 
     @include above('medium') {
       display: none;
