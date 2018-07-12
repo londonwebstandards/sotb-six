@@ -1,21 +1,29 @@
-section > h2 {
-  padding: 0 1rem;
-  padding-bottom: 20px;
-  background-color: color('purple');
-  background-image: rainbow-gradient();
-  color: contrast('purple');
+section {
+  margin-bottom: 4rem;
 
   @include above('medium') {
-    padding-bottom: 0;
-    background-color: transparent;
-    background-image: none;
-    color: color('red');
+    padding: 0 1em;
   }
 
-  &.no-bg { // stylelint-disable selector-no-qualifying-type
-    padding-bottom: 0;
-    background-color: transparent;
-    background-image: none;
-    color: color('red');
+  > h2 {
+    padding: 0 1rem;
+    padding-bottom: 20px;
+    background-color: color('purple');
+    background-image: rainbow-gradient();
+    color: contrast('purple');
+
+    @include above('medium') {
+      padding-bottom: 0;
+      background-color: transparent;
+      background-image: none;
+      color: color('red');
+    }
+
+    &.no-bg { // stylelint-disable selector-no-qualifying-type
+      padding-bottom: 0;
+      background-color: transparent;
+      background-image: none;
+      color: color('red');
+    }
   }
 }

@@ -24,9 +24,18 @@ a {
 
   &[rel~='external'] { // stylelint-disable selector-no-qualifying-type
     padding: 0.2rem 0.4rem;
-    background-color: color('red');
+    background-color: color('link-active');
     border-radius: 3px;
-    color: contrast('red');
+    color: contrast('link-active');
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: color('link-hover');
+    }
+
+    &:visited {
+      background-color: color('link-visited');
+    }
   }
 }
