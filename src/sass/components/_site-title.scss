@@ -5,7 +5,10 @@
   color: contrast('background');
 
   @include above('small') {
+    display: grid;
     background-color: transparent;
+    grid-template-areas: 'title image';
+    grid-template-columns: 1fr 60%;
   }
 
   &::before {
@@ -17,16 +20,29 @@
     background-size: contain;
 
     @include above('small') {
-      display: none;
+      // display: none;
+      height: 15vw;
+      grid-area: image;
     }
   }
 
   a {
     display: block;
-    position: relative;
-    text-align: center;
-    font-size: calc( 3rem + 1.25 * (100vw - 20rem) / (60 - 20) );
     height: 2.5em;
+    position: relative;
+    background-image: url('/images/halftone-pattern-circle.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: calc(3rem + 1.25 * (100vw - 20rem) / (60 - 20));
+    font-weight: 800;
+    grid-area: title;
+    text-align: center;
+
+    @include above('small') {
+      height: 4em;
+      padding-top: 0.5em;
+    }
   }
 
   span {
@@ -41,9 +57,9 @@
 
   span:nth-child(2),
   span:nth-child(3) {
+    height: 1em;
     position: relative;
     top: -1.55em;
-    height: 1em;
     font-size: 0.5em;
   }
 

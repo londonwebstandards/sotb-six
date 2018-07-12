@@ -6,14 +6,13 @@
 
 html {
   @include font-family(text);
-  // @include v(line-height, default);
-  // @include v(font-weight, default);
   position: relative;
-  font-size: 100%;
+  font-size: 100%; /* this means 16px */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-variant-numeric: oldstyle-nums;
   font-weight: 300;
+  line-height: 1.4;
   min-height: 100%;
   overflow-x: hidden;
   // prevent horizontal jump when navigating short page <--> tall page
@@ -24,6 +23,14 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   // stylelint-enable
+
+  @include above('small') {
+    font-size: 112.5%; /* this means 18px */
+  }
+
+  @include above('medium') {
+    font-size: 125%; /* this means 20px */
+  }
 }
 
 body {

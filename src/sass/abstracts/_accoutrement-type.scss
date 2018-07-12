@@ -3,8 +3,11 @@
 // Fonts
 $dosis: (
   'name': 'Dosis',
-  'source': 'https://fonts.googleapis.com/css?family=Dosis:300,600',
   'stack': ('Helvetica Neue', 'sans-serif'),
+  '800': '/fonts/Dosis-ExtraBold.ttf',
+  'formats': 'ttf'
 );
 
+
 @include add-font('text', $dosis);
+@include font-face('text');
