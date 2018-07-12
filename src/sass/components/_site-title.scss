@@ -28,12 +28,8 @@
 
   a {
     display: block;
-    height: 2.5em;
+    height: 3em;
     position: relative;
-    background-image: url('/images/halftone-pattern-circle.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
     font-size: calc(3rem + 1.25 * (100vw - 20rem) / (60 - 20));
     font-weight: 800;
     grid-area: title;
@@ -41,6 +37,10 @@
 
     @include above('small') {
       height: 4em;
+      background-image: url('/images/halftone-pattern-circle.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
       padding-top: 0.5em;
     }
   }
