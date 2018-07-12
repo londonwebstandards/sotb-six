@@ -10,18 +10,20 @@ html {
   // @include v(font-weight, default);
   position: relative;
   font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: oldstyle-nums;
   font-weight: 300;
   min-height: 100%;
   overflow-x: hidden;
   // prevent horizontal jump when navigating short page <--> tall page
   overflow-y: scroll;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-variant-numeric: oldstyle-nums;
   // prevent adjustments of font-size after orientation changes in IE on
   // Windows Phone and in iOS
+  // stylelint-disable property-no-vendor-prefix
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  // stylelint-enable
 }
 
 body {
