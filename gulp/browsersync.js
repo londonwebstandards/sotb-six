@@ -32,10 +32,6 @@ function initTask(done) {
       server: {
         baseDir: paths.pages.dest
       },
-      snippetOptions: {
-        // Ignore all HTML files within the templates folder
-        blacklist: ["/index.html", "/", "/?*"]
-      },
       notify: {
         styles: [
           "display: none",
