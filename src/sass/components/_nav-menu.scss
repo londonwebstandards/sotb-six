@@ -30,7 +30,7 @@
   }
 
   &__entries {
-    margin: .5em 0 0;
+    margin: 0.5em 0 0;
     padding-left: 0;
     list-style: none;
     text-align: center;
@@ -40,18 +40,18 @@
     }
 
     > * + * {
-      margin-top: .3em;
+      margin-top: 0.3em;
     }
   }
 
   &__toggle,
   &__close {
-    text-transform: uppercase;
-    text-decoration: none;
     padding-left: 27px;
-    background-repeat: no-repeat;
     background-position: 0 center;
+    background-repeat: no-repeat;
     background-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 
     &:visited {
       color: color('red');
@@ -67,8 +67,8 @@
   }
 
   &__close {
-    background-image: url('/images/icon-menu-close.svg');
     height: 1em;
+    background-image: url('/images/icon-menu-close.svg');
 
     @include above('medium') {
       display: none;
