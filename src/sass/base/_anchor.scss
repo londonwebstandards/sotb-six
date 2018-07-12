@@ -29,9 +29,4 @@ a {
     color: contrast('red');
     text-decoration: none;
   }
-
-  // hide extra content, text targetted only to screen readers
-  span:not([class]):not([itemprop]) {
-    @include is-hidden;
-  }
 }

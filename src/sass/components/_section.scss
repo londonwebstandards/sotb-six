@@ -14,7 +14,7 @@ section > h2 {
 
   &.no-bg { // stylelint-disable selector-no-qualifying-type
     padding-bottom: 0;
-    background-color: color('white-ish');
+    background-color: transparent;
     background-image: none;
     color: color('red');
   }
