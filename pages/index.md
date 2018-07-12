@@ -11,7 +11,7 @@ permalink: false
   <h2 class="no-bg">Saturday, 8 September 2018 <br>Conway Hall, London</h2>
 
   <p>
-    <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow"  class="is-external">Map</a>
+    <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow external">Map</a>
   </p>
 
   <p>
@@ -19,7 +19,7 @@ permalink: false
   </p>
 
   <p>
-    Save the date: <a href="/downloads/stateofthebrowser2018.ics" class="is-external">Download ICAL</a>
+    Save the date: <a href="/downloads/stateofthebrowser2018.ics" rel="external">Download ICAL</a>
   </p>
 </section>
 
@@ -42,7 +42,7 @@ permalink: false
 
   <p>Those that choose a **Diversity** or **Helper** ticket will get a mention here, on the website, if you wish.</p>
 
-  <p><a href="https://getinvited.to/webstandards/state-of-the-browser-2018/" class="is-external">Buy tickets on GetInvited</a></p>
+  <p><a href="https://getinvited.to/webstandards/state-of-the-browser-2018/" rel="external">Buy tickets on GetInvited</a></p>
 
   <!-- <div id="get-tickets">
     <script src="https://embed.getinvited.to/webstandards/state-of-the-browser-2018.js" id="giscript-webstandards-state-of-the-browser-2018" async></script>
@@ -51,7 +51,7 @@ permalink: false
 
 <section>
   <h2>Speakers</h2>
-  <p>We will be announcing <a href="/speakers" rel="internal">Speakers</a> soon, but you don’t need to wait to grab a ticket.</p>
+  <p>We will be announcing [Speakers](/speakers) soon, but you don’t need to wait to grab a ticket.</p>
 </section>
 
 <section>

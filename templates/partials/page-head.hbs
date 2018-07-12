@@ -12,16 +12,17 @@
 <meta name="application-name" content="{{ site.title }}">
 <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
 <meta name="msapplication-starturl" content="{{ site.baseurl }}">
-<meta name="description" content="{{ meta_lede }}">
 <meta name="theme-color" content="#{{ site.color }}">
 <meta name="msapplication-navbutton-color" content="#{{ site.color }}">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--[if (IEMobile)]>
 <meta http-equiv="cleartype" content="on">
+<![endif]-->
 
 {{>page-favicons}}
 
 <!-- The URL -->
-<link rel="canonical" href="{{ page.url }}">
+<link rel="canonical" href="/{{ path }}">
 
 {{>social-twitter}}
 

@@ -22,7 +22,7 @@ a {
     color: color('link-visited');
   }
 
-  &.is-external { // stylelint-disable selector-no-qualifying-type
+  &[rel="external"] { // stylelint-disable selector-no-qualifying-type
     padding: 0.2rem 0.4rem;
     background-color: color('red');
     border-radius: 3px;
