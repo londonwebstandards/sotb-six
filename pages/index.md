@@ -57,7 +57,7 @@ permalink: false
 <section>
   <h2 id="london-web-standards">London Web Standards</h2>
 
-  <p>London Web Standards brings together web professionals who are working for a better web. Our [monthly meetups](https://londonwebstandards.org) provide them with an opportunity to teach, inspire, learn, network and debate.</p>
+  <p><img src="/images/LWS-icon.svg" class="image-shape--round" alt="London Web Standards Logo" /> London Web Standards brings together web professionals who are working for a better web. Our [monthly meetups](https://londonwebstandards.org) provide them with an opportunity to teach, inspire, learn, network and debate.</p>
 
   <p>Each meetup features a speaker drawn from our membership or the wider standards community. The talks cover a range of topics including HTML5, JavaScript, CSS, accessibility, web fonts, UX and front-end performance.</p>
 </section>

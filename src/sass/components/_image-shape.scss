@@ -1,0 +1,5 @@
+.image-shape {
+  &--round {
+    shape-outside: circle(50%);
+  }
+}
