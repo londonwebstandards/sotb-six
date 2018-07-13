@@ -53,6 +53,7 @@ page_class: homepage
 <section>
   <h2>Speakers</h2>
   <p>We will be announcing [Speakers](/speakers) soon, but you don’t need to wait to grab a ticket.</p>
+  <p><a href="/speakers" class="is-button">See all speakers</a></p>
 </section>
 
 <section>

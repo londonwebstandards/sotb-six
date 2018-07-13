@@ -22,7 +22,8 @@ a {
     color: color('link-visited');
   }
 
-  &[rel~='external'] { // stylelint-disable-line selector-no-qualifying-type
+  &.is-button, // stylelint-disable-line selector-no-qualifying-type
+  &[rel~='external'] {
     padding: 0.2rem 0.4rem;
     background-color: color('link-active');
     border-radius: 3px;
