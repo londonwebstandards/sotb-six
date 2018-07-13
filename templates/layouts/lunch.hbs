@@ -1,0 +1,24 @@
+{{#extend "page"}}
+
+{{#content "main"}}
+  <article>
+    <h1>{{title}}</h1>
+    {{{contents}}}
+    {{#if data}}
+      <ul>
+        {{#data}}
+          <li>
+            <h3 class="place__title">{{name}}</h3>
+            {{#if website}}
+              <p>Website: <a href="{{website}}" title="{{name}} website">{{website}}</a></p>
+            {{/if}}
+            <p><a href="{{googlemaps}}" title="See {{name}} on Google Maps">{{address}}</a></p>
+            <p>{{type}} - {{distance}} walk</p>
+          </li>
+        {{/data}}
+      </ul>
+    {{/if}}
+  </article>
+{{/content}}
+
+{{/extend}}

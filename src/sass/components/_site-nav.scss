@@ -2,10 +2,4 @@
 .site-nav {
   margin: 0.5em 0;
   text-align: center;
-
-  a {
-    &.disabled { // stylelint-disable selector-no-qualifying-type
-      cursor: default;
-    }
-  }
 }
