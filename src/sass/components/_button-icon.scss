@@ -1,0 +1,16 @@
+.button-icon {
+  $icon-space: 1.5em;
+  padding-left: $icon-space;
+
+  &[rel~=external] {
+    padding-left: $icon-space;
+  }
+
+  &--pin {
+    background-image: url('/images/icon-map.svg');
+    background-repeat: no-repeat;
+    background-position: 0.5em center;
+    background-size: 0.7em;
+  }
+}
+

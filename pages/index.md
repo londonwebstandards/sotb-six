@@ -11,7 +11,7 @@ permalink: false
   <h2 class="no-bg">Saturday, 8 September 2018 <br>Conway Hall, London</h2>
 
   <p>
-    <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow external">Map</a>
+    <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow external" class="button-icon button-icon--pin">Map</a>
   </p>
 
   <p>
