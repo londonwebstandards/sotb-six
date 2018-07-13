@@ -4,6 +4,7 @@ draft: false
 layout: default.hbs
 lastmod: 2018-07-08
 permalink: false
+page_class: homepage
 ---
 
 <!-- using plain HTML due to our need to orgnise the page in <section>s which are not available in markdown -->

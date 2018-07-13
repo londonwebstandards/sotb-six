@@ -1,0 +1,30 @@
+.footer-content {
+  margin: 0 auto;
+  max-width: $max-container-width;
+
+  @include above('small') {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'info links';
+    grid-template-columns: 60% 1fr;
+  }
+
+  &__information {
+    grid-area: info;
+  }
+
+  &__links {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    grid-area: links;
+
+    > li {
+      margin-top: 1rem;
+      margin-right: 1rem;
+      flex-basis: auto;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+}

@@ -4,7 +4,7 @@
 .nav-menu {
   display: none;
 
-  @include above('medium') {
+  @include above('small') {
     display: block;
   }
 
@@ -23,7 +23,7 @@
   }
 
   li {
-    @include above('medium') {
+    @include above('small') {
       display: inline-block;
       padding: 0.4em 0.8em;
     }
@@ -61,7 +61,7 @@
   &__toggle {
     background-image: url('/images/icon-menu.svg');
 
-    @include above('medium') {
+    @include above('small') {
       display: none;
     }
   }
@@ -70,7 +70,7 @@
     height: 1em;
     background-image: url('/images/icon-menu-close.svg');
 
-    @include above('medium') {
+    @include above('small') {
       display: none;
     }
   }

@@ -5,7 +5,7 @@
   {{>page-head}}
 </head>
 
-<body{{#page_class}} class="{{ page_class }}"{{/page_class}} itemscope itemtype="https://schema.org/WebPage">
+<body{{#if page_class}} class="{{ page_class }}"{{/if}} itemscope itemtype="https://schema.org/WebPage">
   {{>async-css}}
 
   <a class="is-focusable" href="#content">Skip to main content</a>
@@ -19,7 +19,7 @@
     {{/block}}
   </main>
 
-  {{>page-footer}}
+  {{>organism-footer}}
   </body>
 
 </html>

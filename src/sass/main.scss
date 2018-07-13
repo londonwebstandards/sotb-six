@@ -22,11 +22,11 @@
 @import 'base/headings';
 @import 'base/anchor';
 @import 'base/paragraph';
+@import 'base/list';
 @import 'base/miscellaneous';
 // @import 'accoutrement-init';
 // @import 'base/fonts';
 // @import 'base/button';
-// @import 'base/list';
 // @import 'base/quote';
 // @import 'base/media';
 // @import 'base/figure';
@@ -44,6 +44,7 @@
 @import 'components/footer-links';
 @import 'components/button-icon';
 @import 'components/image-shape';
+@import 'components/footer-content';
 // @import 'components/primary-navigation';
 // @import 'components/rectangles';
 // @import 'components/speakers';
@@ -58,6 +59,7 @@
 // @import 'layout/footer';
 
 /// PAGES
+@import 'pages/homepage';
 
 /// THEMES
 

@@ -1,0 +1,47 @@
+.homepage {
+  main {
+    $vertical-space: 4rem;
+
+    @include above('medium') {
+      padding: 0 1rem;
+    }
+
+    @include above('large') {
+      display: grid;
+      position: relative;
+      top: -$vertical-space;
+      margin: 0 auto;
+      grid-column-gap: 1rem;
+      // stylelint-disable indentation
+      grid-template-areas: '------- venue'
+                          'tickets venue'
+                          'tickets speakers'
+                          'lws     speakers'
+                          'lws     ------';
+      // stylelint-enable
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: $vertical-space repeat(2, auto $vertical-space);
+      max-width: $max-paragraph-width * 1.5;
+    }
+
+    > section {
+      padding: 0;
+    }
+
+    > section:nth-child(1) {
+      grid-area: venue;
+    }
+
+    > section:nth-child(2) {
+      grid-area: tickets;
+    }
+
+    > section:nth-child(3) {
+      grid-area: speakers;
+    }
+
+    > section:nth-child(4) {
+      grid-area: lws;
+    }
+  }
+}

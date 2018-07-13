@@ -38,7 +38,7 @@ body {
   background-color: color('background');
   color: color('text');
 
-  @include above('medium') {
+  @include above('small') {
     background-image: url('/images/bg-tile.svg');
     background-repeat: repeat;
   }

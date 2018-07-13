@@ -1,25 +1,7 @@
 body > footer {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   background-image: rainbow-gradient(true);
   color: contrast('purple');
-
-  @include above('small') {
-    display: grid;
-    grid-template-areas: 'info links';
-    grid-template-columns: 60% 1fr;
-  }
-
-  > .footer-information {
-    grid-area: info;
-  }
-
-  > .footer-links {
-    grid-area: links;
-  }
-
-  p {
-    padding: 0;
-  }
 
   a {
     color: color('white-ish');
