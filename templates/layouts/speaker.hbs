@@ -4,29 +4,27 @@
   <div class="featured-speaker">
       <div class="featured-speaker__biography">
           <div class="speaker__contained">
-              <img class="speaker__image" src="/images/speakers/{{ page.image }}" alt="">
-              <div class="speaker__title">{{ page.title }}</div>
+              <img class="speaker__image" src="/images/speakers/{{ image }}" alt="{{title}}">
+              <div class="speaker__title">{{ title }}</div>
           </div>
           <div class="speaker__description">
-              {{ page.description }}
-              {{#if page.twitter }}
-                  <div><a href="https://twitter.com/{{ page.twitter }}" title="{{ page.title }} on Twitter">@{{ page.twitter }}</a></div>
+              {{ speaker.bio }}
+              {{#if speaker.twitter }}
+                  <div><a href="https://twitter.com/{{ speaker.twitter }}" title="{{ title }} on Twitter">@{{ speaker.twitter }}</a></div>
               {{/if}}
-              {{#if page.website }}
-                  <div><a href="{{ page.website }}" title="{{ page.title }}’s Website">{{ page.website }}</a></div>
+              {{#if speaker.website }}
+                  <div><a href="{{ speaker.website }}" title="{{ title }}’s Website">{{ speaker.website }}</a></div>
               {{/if}}
           </div>
       </div>
       <div class="featured-speaker__presentation">
-          <h3 class="speaker__presentation  beta"><q>{{ page.presentation_title }}</q></h3>
-          <div class="speaker__presentation-description">{{ page.presentation_description }}</div>
+        {{{content}}}
       </div>
   </div>
 
   <nav role="navigation" class="button-navigation  button-navigation--centered">
       <a class="button" href="/speakers">View all Speakers</a>
-      <!-- <a class="button" href="/schedule">View the Schedule</a> -->
-  </nav>
+§  </nav>
   {{/content}}
 
 {{/extend}}

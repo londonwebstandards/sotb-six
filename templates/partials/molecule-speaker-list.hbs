@@ -1,0 +1,10 @@
+<ul class="speaker-list">
+  {{#collections.speakers}}
+  <li class="speaker-list__card speaker-list__card--small">
+    <h3>{{title}}</h3>
+    <div class="image-wrap">
+      <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+    </div>
+  </li>
+  {{/collections.speakers}}
+</ul>

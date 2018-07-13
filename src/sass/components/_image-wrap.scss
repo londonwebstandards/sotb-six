@@ -1,0 +1,24 @@
+.image-wrap {
+  position: relative;
+  border-color: color('purple');
+  border-style: solid;
+  border-width: 7px 30px 7px 10px;
+  line-height: 0;
+
+  @supports(mix-blend-mode: screen) {
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: color('red');
+      mix-blend-mode: screen;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

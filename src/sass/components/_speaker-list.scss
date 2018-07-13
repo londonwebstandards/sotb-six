@@ -1,0 +1,42 @@
+.speaker-list {
+  padding: 1rem;
+  max-width: $max-paragraph-width;
+
+  @include above('medium') {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__card {
+    display: grid;
+    margin-bottom: 1rem;
+
+    div {
+      grid-area: image;
+    }
+
+    h3 {
+      margin: 0 0.5rem;
+      color: color('purple');
+      grid-area: title;
+    }
+  }
+
+  &__card:nth-child(odd) {
+    grid-template-areas: 'image title';
+    grid-template-columns: 60% 1fr;
+
+    h3 {
+      writing-mode: vertical-lr;
+    }
+  }
+
+  &__card:nth-child(even) {
+    grid-template-areas: 'title image';
+    grid-template-columns: 1fr 60%;
+
+    h3 {
+      writing-mode: vertical-rl;
+    }
+  }
+}
