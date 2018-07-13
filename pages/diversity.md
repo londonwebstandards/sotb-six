@@ -7,9 +7,6 @@ lastmod: 2018-07-06
 page_class: page--diversity
 ---
 
-
-<h2 class="title">{{ page.title }}</h2>
-
 ### A way for you to enable more people to attend State of the Browser.
 
 <dl>

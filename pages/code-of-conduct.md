@@ -7,9 +7,6 @@ lastmod: 2018-07-06
 page_class: page--code-of-conduct
 ---
 
-
-<h2 class="title">{{ page.title }}</h2>
-
 All attendees, speakers, sponsors and volunteers at _State of the Browser_ are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
 ### Need Help?

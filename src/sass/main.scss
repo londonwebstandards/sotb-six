@@ -24,6 +24,8 @@
 @import 'base/paragraph';
 @import 'base/list';
 @import 'base/miscellaneous';
+@import 'base/section';
+@import 'base/article';
 // @import 'accoutrement-init';
 // @import 'base/fonts';
 // @import 'base/button';
@@ -36,7 +38,6 @@
 /// COMPONENTS
 @import 'components/header';
 @import 'components/footer';
-@import 'components/section';
 @import 'components/site-nav';
 @import 'components/site-title';
 @import 'components/nav-menu';
