@@ -1,7 +1,6 @@
 body > header {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(max-content, minmax(400px, 1fr));
 
   @include above('medium') {
     background-color: transparent;

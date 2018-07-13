@@ -6,6 +6,7 @@
 
   @include above('small') {
     display: grid;
+    padding: 0;
     background-color: transparent;
     grid-template-areas: 'title image';
     grid-template-columns: 1fr 60%;
@@ -22,6 +23,7 @@
     @include above('small') {
       // display: none;
       height: 15vw;
+      margin: 1rem 1rem 0 0;
       grid-area: image;
     }
   }
@@ -29,7 +31,6 @@
   a {
     display: block;
     height: 3em;
-    position: relative;
     font-size: calc(3rem + 1.25 * (100vw - 20rem) / (60 - 20));
     font-weight: 800;
     grid-area: title;
@@ -37,18 +38,17 @@
 
     @include above('small') {
       height: 4em;
+      margin: 0.5em 0 0 1rem;
       background-image: url('/images/halftone-pattern-circle.png');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: contain;
-      padding-top: 0.5em;
     }
   }
 
   span {
     text-transform: uppercase;
   }
-
 
   span:first-child,
   span:nth-child(4) {
