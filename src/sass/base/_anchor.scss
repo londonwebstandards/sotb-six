@@ -40,7 +40,7 @@ a {
   }
 
   &.is-disabled { // stylelint-disable-line selector-no-qualifying-type
-    cursor: pointer;
+    cursor: not-allowed;
     text-decoration: line-through;
 
     &:hover {
