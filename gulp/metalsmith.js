@@ -59,6 +59,10 @@ function registerHandlebarsHelpers() {
     }
   });
 }
+// limit an array to a maximum of elements (from the start)
+handlebars.registerHelper("limit", function(arr, limit) {
+  return arr.slice(0, limit);
+});
 
 function metalsmith() {
   // filter out files with front matter
