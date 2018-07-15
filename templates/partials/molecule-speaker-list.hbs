@@ -1,10 +1,13 @@
 <ul class="speaker-list">
   {{#collections.speakers}}
-  <li class="speaker-list__card speaker-list__card--small">
-    <h3>{{title}}</h3>
+  <li class="speaker-list__card{{^../title}} speaker-list__card--small{{/../title}}">
+    <h3><a href="/{{path}}">{{title}}</a></h3>
     <div class="image-wrap">
-      <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+      <a href="/{{path}}">
+        <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+      </a>
     </div>
+    <h4><a href="/{{path}}">{{description}}</a></h4>
   </li>
   {{/collections.speakers}}
 </ul>

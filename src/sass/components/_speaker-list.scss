@@ -1,5 +1,4 @@
 .speaker-list {
-  padding: 1rem;
   max-width: $max-paragraph-width;
 
   @include above('medium') {
@@ -16,27 +15,45 @@
     }
 
     h3 {
-      margin: 0 0.5rem;
+      margin: 0;
       color: color('purple');
+      grid-area: name;
+      writing-mode: vertical-lr;
+
+      > a:visited { // stylelint-disable-line max-nesting-depth
+        color: color('purple');
+      }
+    }
+
+    h4 {
+      margin: 0;
       grid-area: title;
     }
   }
 
   &__card:nth-child(odd) {
-    grid-template-areas: 'image title';
+    grid-template-areas: 'image name'
+      'title title';
     grid-template-columns: 60% 1fr;
-
-    h3 {
-      writing-mode: vertical-lr;
-    }
   }
 
   &__card:nth-child(even) {
-    grid-template-areas: 'title image';
+    grid-template-areas: 'name image'
+      'title title';
     grid-template-columns: 1fr 60%;
 
     h3 {
-      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+
+    h4 {
+      text-align: right;
+    }
+  }
+
+  &__card--small {
+    h4 {
+      display: none;
     }
   }
 }

@@ -1,6 +1,6 @@
 <header class="header">
-  <h1 class="site-title">
+  <h{{#if title}}2{{else}}1{{/if}} class="site-title">
     <a href="/"><span>State</span> <span>of</span> <span>the</span> <span>Browser</span></a>
-  </h1>
+  </h{{#if title}}2{{else}}1{{/if}}>
   {{>molecule-nav}}
 </header>
