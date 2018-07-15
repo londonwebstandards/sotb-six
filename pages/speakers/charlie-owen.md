@@ -1,6 +1,6 @@
 ---
 title: Charlie Owen
-description: One of the hardest lessons to embrace in web development is that not everyone is like you.
+description: Dear Developer
 speaker:
   twitter: sonniesedge
   website: https://sonniesedge.co.uk

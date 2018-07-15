@@ -1,6 +1,6 @@
 ---
 title: Sara Vieira
-description: Frameworks are awesome, right? JSX and templates are the best thing since sliced bread!
+description: 'Stop the #divFest!'
 speaker:
   website: https://iamsaravieira.com/
   twitter: NikkitaFTW
