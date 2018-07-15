@@ -6,14 +6,12 @@ speaker:
   twitter: NikkitaFTW
   image: sara-vieira.jpg
   bio: |
-    Front-End Developer at <em>YLD</em>, open sorcerer, drummer and horror movie fangirl. The internet is Amazing
+    <p>Front-End Developer at <em>YLD</em>, open sorcerer, drummer and horror movie fangirl. The internet is Amazing.</p>
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
 order: 3
 ---
-
-## Stop the #divFest!
 
 Frameworks are awesome, right? JSX and templates are the best thing since sliced bread!
 

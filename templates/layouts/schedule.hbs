@@ -1,0 +1,36 @@
+{{#extend 'page'}}
+
+{{#content 'main'}}
+<article>
+  <h1>{{title}}</h1>
+  
+  {{{contents}}}
+
+  {{#if data}}
+    <h3>{{data.date}}</h3>
+    <table class="schedule">
+      {{#data.schedule}}
+      <tr class="schedule__row">
+        <td class="schedule__time"><time>{{time}}</time></td>
+        <td{{#if name }} class="schedule__talk"{{/if}}>
+          {{#if link }}
+            <a href="/speakers/{{link}}">
+          {{else}}
+            <em>
+          {{/if}}
+          {{{title}}}
+          {{#if link }}
+            </a> 
+          {{else}}
+            </em>
+          {{/if}}
+          {{#if name }}&mdash; {{name}}{{/if}}
+        </td>
+      </tr>
+      {{/data.schedule}}
+    </table>
+  {{/if}}
+</article>
+{{/content}}
+
+{{/extend}}

@@ -12,19 +12,4 @@
   &__information {
     grid-area: info;
   }
-
-  &__links {
-    display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    grid-area: links;
-
-    > li {
-      margin-top: 1rem;
-      margin-right: 1rem;
-      flex-basis: auto;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
-  }
 }

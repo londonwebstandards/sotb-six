@@ -6,14 +6,12 @@ speaker:
   twitter: mbarker_84
   image: michelle-barker.jpg
   bio: |
-    Michelle is a Creative Front-end Developer at <em>Mud</em>, a leading digital agency in Bath, UK, where she is known unofficially as the Queen of Grids. She is a regular blogger on all things CSS on her personal site <em>CSS { In Real Life }</em>, and has written articles for <em>Smashing Magazine</em>, <em>the Pastry Box</em> and <em>Vandelay Design</em>.
+    <p>Michelle is a Creative Front-end Developer at <em>Mud</em>, a leading digital agency in Bath, UK, where she is known unofficially as the Queen of Grids. She is a regular blogger on all things CSS on her personal site <em>CSS { In Real Life }</em>, and has written articles for <em>Smashing Magazine</em>, <em>the Pastry Box</em> and <em>Vandelay Design</em>.</p>
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
 order: 2
 ---
-
-## Super-powered Layouts with CSS Grid and CSS Variables
 
 CSS Grid Layout has the ability to transform the way we build layouts on the web and has made things possible that were never possible before. I’ll provide an overview of the various methods for building layouts with CSS Grid and demonstrate how it can help us construct complex components.
 

@@ -6,18 +6,14 @@ speaker:
   website: https://sonniesedge.co.uk
   image: charlie-owen.jpg
   bio: |
-    After contracting as a front-end developer in London and writing code for the front page of BBC News, Charlie Owen is now happily working as the lead FED for Springer Nature in Berlin.
-
-    There she helps make the world of scientific publishing a lovelier place by helping other devs become better, banging on about inclusive design, and utilising those wonderful web standards.
-
-    She rides bikes, drinks beer, and quite often says the wrong thing at the wrong time.
+    <p>After contracting as a front-end developer in London and writing code for the front page of BBC News, Charlie Owen is now happily working as the lead FED for Springer Nature in Berlin.</p>
+    <p>There she helps make the world of scientific publishing a lovelier place by helping other devs become better, banging on about inclusive design, and utilising those wonderful web standards.</p>
+    <p>She rides bikes, drinks beer, and quite often says the wrong thing at the wrong time.</p>
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
 order: 1
 ---
-
-## Dear Developer
 
 One of the hardest lessons to embrace in web development is that not everyone is like you. It can come as a shock to learn that for the average web dev - young, male, surrounded by the cutting edge of tech, and with a high disposable income. But the truth is that many people are poor, have old devices, have slow data connections. Many people simply can’t use computers the way you do.
 

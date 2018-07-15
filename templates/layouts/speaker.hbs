@@ -1,30 +1,45 @@
 {{#extend "page"}}
 
   {{#content "main"}}
-  <div class="featured-speaker">
-      <div class="featured-speaker__biography">
-          <div class="speaker__contained">
-              <img class="speaker__image" src="/images/speakers/{{ image }}" alt="{{title}}">
-              <div class="speaker__title">{{ title }}</div>
-          </div>
-          <div class="speaker__description">
-              {{ speaker.bio }}
-              {{#if speaker.twitter }}
-                  <div><a href="https://twitter.com/{{ speaker.twitter }}" title="{{ title }} on Twitter">@{{ speaker.twitter }}</a></div>
-              {{/if}}
-              {{#if speaker.website }}
-                  <div><a href="{{ speaker.website }}" title="{{ title }}’s Website">{{ speaker.website }}</a></div>
-              {{/if}}
-          </div>
-      </div>
-      <div class="featured-speaker__presentation">
-        {{{content}}}
-      </div>
-  </div>
+  <article class="speaker">
+    <div class="speaker__talk">
+      <h1>{{ description }}</h1>
+      {{{contents}}}
 
-  <nav role="navigation" class="button-navigation  button-navigation--centered">
-      <a class="button" href="/speakers">View all Speakers</a>
-§  </nav>
+      <footer>
+        <nav>
+          <ul class="list-inline">
+            <li>
+              <a class="is-button" href="/speakers">View all Speakers</a>
+            </li>
+            <li>
+              <a class="is-button is-disabled">See full schedule</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+
+    <aside class="speaker__info">
+      <h2>About {{title}}</h2>
+      <div class="image-wrap image-wrap--portrait">
+        <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+      </div>
+      {{{ speaker.bio }}}
+      <ul class="list-inline">
+        <li>
+          {{#if speaker.twitter }}
+            <a href="https://twitter.com/{{ speaker.twitter }}" title="{{ title }} on Twitter" rel="external">@{{ speaker.twitter }}</a>
+          {{/if}}
+        </li>
+        <li>
+          {{#if speaker.website }}
+            <a href="{{ speaker.website }}" title="{{ title }}’s Website" rel="external">{{ speaker.website }}</a>
+          {{/if}}
+        </li>
+      </ul>
+    </aside>
+  </article>
   {{/content}}
 
 {{/extend}}

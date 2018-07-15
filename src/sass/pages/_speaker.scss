@@ -1,0 +1,33 @@
+.speaker {
+
+  @include above('medium') {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'speaker talk'
+      'nav -----';
+    grid-template-columns: 1fr 60%;
+  }
+
+  &__talk {
+    position: relative;
+    grid-area: talk;
+
+    @include above('medium') {
+      top: -4rem;
+    }
+  }
+
+  &__info {
+    grid-area: speaker;
+  }
+
+  > footer {
+    grid-area: nav;
+  }
+
+  .image-wrap {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+  }
+}
