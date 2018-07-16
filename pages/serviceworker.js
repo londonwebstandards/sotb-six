@@ -5,7 +5,7 @@
 "use strict";
 
 // Increment this whenever you want to ensure the Network updates your Users' caches
-const VERSION = "001";
+const VERSION = "002";
 // Set up the caches
 const STATIC_CACHE = VERSION + "::static";
 const ASSETS_CACHE = "assets";
@@ -16,7 +16,7 @@ const CACHES = [STATIC_CACHE, ASSETS_CACHE, IMAGES_CACHE, PAGES_CACHE];
 const CACHE_SIZE = 20;
 
 // Files that *must* be cached
-const CRITICAL_FILES = ["/css/main.css", "/offline/"];
+const CRITICAL_FILES = ["/styles/main.css", "/offline/"];
 
 // Files that are cached but non-blocking
 const OPTIONAL_FILES = [];
@@ -26,8 +26,9 @@ const OFFLINE_PAGES = [
   "/",
   "/speakers/",
   "/schedule/",
-  "/location/",
-  "/sponsors/"
+  "/venue/",
+  "/sponsors/",
+  "/tickets"
 ];
 
 function updateStaticCache() {
