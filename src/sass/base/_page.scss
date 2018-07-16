@@ -41,5 +41,6 @@ body {
   @include above('small') {
     background-image: url('/images/bg-tile.svg');
     background-repeat: repeat;
+    background-size: 50px;
   }
 }
