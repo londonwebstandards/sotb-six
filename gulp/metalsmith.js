@@ -89,7 +89,8 @@ function metalsmith() {
           site: {
             title: config.title,
             URL: `https://${config.domain}`
-          }
+          },
+          ogImage: config.sharingImg
         })
         .use(dataLoader())
         .use(drafts())
