@@ -33,15 +33,16 @@
     {
         "@context": "http://schema.org",
         "type": "WebSite",
-        "url": "{{ page.url }}",
-        "headline": "{{ meta_title }}",
-        "description": "{{ meta_lede }}",
+        "url": "{{site.URL}}{{#isnt path 'index.md'}}/{{path}}{{/isnt}}",
+        "headline": "{{#if title}}{{title}} | {{/if}}{{site.title}}",
+        "description": "{{ description }}",
         "author": {
             "@type": "Organisation",
-            "name": "{{ site.author }}"
+            "name": "London Web Standards"
         },
         "sameAs": [
-            "https://twitter.com/{{ site.author_twitter }}"
+            "https://twitter.com/webstandards",
+            "https://www.facebook.com/londonwebstandards"
         ]
     }
 </script>
