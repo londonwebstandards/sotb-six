@@ -35,5 +35,5 @@ Those that choose a **Diversity** or **Helper** ticket will get a mention here, 
   <dt>How do Diversity Tickets work?</dt>
   <dd>With your purchase of a £50 Diversity Ticket, you will receive a ticket to _State of the Browser_, **and** you will also enable another person to come and enjoy the conference as well.</dd>
   <dt>Who receives the extra ticket?</dt>
-  <dd>Anyone from an under-represented group or in a financial situation which makes buying a ticket normally difficult is encouraged to <a href="https://docs.google.com/forms/d/e/1FAIpQLScV6H9cOih_eDDWbZUzOfB82SSV-uXw1QLwsigSgKMxsprlWA/viewform" title="Apply for a Diversity Ticket">apply for a diversity ticket</a>.
+  <dd>Anyone from an under-represented group or in a financial situation which makes buying a ticket normally difficult is encouraged to <a href="https://docs.google.com/forms/d/e/1FAIpQLScV6H9cOih_eDDWbZUzOfB82SSV-uXw1QLwsigSgKMxsprlWA/viewform" title="Apply for a Diversity Ticket" rel="nofollow external">apply for a diversity ticket</a>.
 </dl>
