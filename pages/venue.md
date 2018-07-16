@@ -10,7 +10,7 @@ lastmod: 2017-09-14
 
 > Conway Hall is and always will be the place for those who dare to dream of a better world.
 
-Conway Hall is owned by Conway Hall Ethical Society and was first opened in 1929. The name was chosen in honour of Moncure Daniel Conway (1832 – 1907), anti-slavery advocate, out-spoken supporter of free thought and biographer of Thomas Paine.
+<a href="https://conwayhall.org.uk/">Conway Hall</a> is owned by Conway Hall Ethical Society and was first opened in 1929. The name was chosen in honour of Moncure Daniel Conway (1832 – 1907), anti-slavery advocate, out-spoken supporter of free thought and biographer of Thomas Paine.
 
 The Hall now hosts a wide variety of lectures, classes, performances, community and social events. It is renowned as a hub for free speech and independent thought.
 
