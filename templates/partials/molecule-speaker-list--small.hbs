@@ -2,11 +2,7 @@
   {{#each (limit collections.speakers 2)}}
   <li class="speaker-list__card speaker-list__card--small">
     <h3>{{title}}</h3>
-    <div class="image-wrap">
-      <a href="/{{path}}" title="{{title}}" style="background-image: url('/images/speakers/{{ speaker.image }}');">
-        <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
-      </a>
-    </div>
+    {{>molecule-speaker-image}}
     <h4><a href="/{{path}}">{{description}}</a></h4>
   </li>
   {{/each}}
