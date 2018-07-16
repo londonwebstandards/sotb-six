@@ -77,7 +77,10 @@ function watch(done) {
     gulp.series(scripts.bundle, browserSync.reload)
   );
   gulp.watch(paths.styles.src, gulp.series(styles, browserSync.reloadCSS));
-  gulp.watch(paths.images.src, gulp.series(images.build, browserSync.reload));
+  gulp.watch(
+    paths.images.src,
+    gulp.series(images.compress, images.responsive, browserSync.reload)
+  );
   gulp.watch(paths.assets.src, gulp.series(assets, browserSync.reload));
   gulp.watch(
     [paths.pages.src, paths.templates.src, paths.pages.models],
@@ -99,7 +102,8 @@ gulp.task(
   gulp.series(
     gulp.parallel(assets, scripts.bundle, styles),
     metalsmith.build,
-    images.build
+    images.compress,
+    images.responsive
   )
 );
 
