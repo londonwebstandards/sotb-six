@@ -4,56 +4,33 @@
 ////
 
 blockquote {
-    @include border-radius;
-    @include font-family(serif);
-    @include quotes;
-    @include v(background-color, raven--gamma);
-    width: 100%;
-    max-width: $line-length-responsive;
-    @include v(padding, medium);
-    margin: 0 auto $measure-medium;
+  color: color('orange');
+  font-weight: 600;
+  max-width: $max-paragraph-width;
 
-    %monospace-elements,
-    cite,
-    em {
-        font-style: normal;
+  cite,
+  em {
+    font-style: normal;
+  }
+
+  p {
+    &::before {
+      content: open-quote;
     }
 
-    p {
-        &::before {
-            content: open-quote;
-        }
-
-        &::after {
-            content: close-quote;
-        }
-
-        &:not(:last-of-type) {
-            &::after {
-                @include hidden;
-            }
-        }
+    &::after {
+      content: close-quote;
     }
+  }
 
-    cite {
-        @include v(color, dove);
-        display: block;
-        @include v(margin-top, medium);
-        font-style: normal;
-        text-align: right;
+  cite {
+    display: block;
+    font-style: normal;
+    text-align: right;
 
-        &::before {
-            // EN DASH, NO-BREAK SPACE
-            content: "– ";
-        }
+    &::before {
+      // EN DASH, NO-BREAK SPACE
+      content: '– ';
     }
-}
-
-.twitter-tweet {
-    margin: 0 auto $measure-medium !important;
-    contain: strict;
-}
-
-q {
-    @include quotes;
+  }
 }

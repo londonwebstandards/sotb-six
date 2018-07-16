@@ -60,7 +60,7 @@ dd {
 
   @include above('small') {
     display: table-cell;
-    padding-bottom: 1em;
+    padding: 0 0 1em 1em;
     vertical-align: top;
   }
 }
