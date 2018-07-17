@@ -1,13 +1,9 @@
-<div class="image-wrap">
-  {{#is private true}}
-  <div style="background-image: url('/images/speakers/{{ speaker.image }}');">
-  {{else}}
+<div class="image-wrap{{#is private true}} image-wrap--no-anchor{{/is}}">
+  {{#isnt private true}}
   <a href="/{{path}}" title="{{title}}" style="background-image: url('/images/speakers/{{ speaker.image }}');">
-  {{/is}}
+  {{/isnt}}
     <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
-  {{#is private true}}
-  </div>
-  {{else}}
+  {{#isnt private true}}
   </a>
-  {{/is}}
+  {{/isnt}}
 </div>

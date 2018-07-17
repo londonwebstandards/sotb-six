@@ -9,8 +9,7 @@
     max-width: 100%;
   }
 
-  a,
-  div {
+  a {
     background-size: cover;
     background-color: color('red');
     background-blend-mode: screen;
@@ -23,15 +22,12 @@
     }
   }
 
-  a > img,
-  & > div > img {
+  a > img {
     visibility: hidden;
   }
 
-  &--portrait {
-    width: 200px;
-    border-width: 10px 7px 30px;
-
+  &--portrait,
+  &--no-anchor {
     &::after {
       content: '';
       display: block;
@@ -42,5 +38,10 @@
       top: 0;
       mix-blend-mode: screen;
     }
+  }
+
+  &--portrait {
+    width: 200px;
+    border-width: 10px 7px 30px;
   }
 }
