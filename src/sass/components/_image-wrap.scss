@@ -35,13 +35,23 @@
       height: 100%;
       position: absolute;
       top: 0;
-      background-color: color('red');
-      mix-blend-mode: screen;
     }
   }
 
   &--portrait {
     width: 200px;
     border-width: 10px 7px 30px;
+
+    &::after {
+      background-color: color('red');
+      mix-blend-mode: screen;
+    }
+  }
+
+  &--no-anchor {
+    &::after {
+      background-color: color('dark-grey');
+      mix-blend-mode: lighten;
+    }
   }
 }
