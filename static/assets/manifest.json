@@ -1,5 +1,17 @@
 {
-    "name": "SOTB 6",
+    "manifest_version": 2,
+    "dir": "ltr",
+    "lang": "en",
+    "default_locale": "en",
+    "short_name": "SotB18",
+    "name": "State of the Browser 2018",
+    "description": "State of the Browser is a one-day, single-track conference with widely varying talks about the modern web",
+    "display": "standalone",
+    "orientation": "any",
+    "start_url": "/",
+    "homepage_url": "https://2018.stateofthebrowser.com/",
+    "theme_color": "#f7f5f5",
+    "background_color": "#f7f5f5",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -11,8 +23,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    ]
 }
