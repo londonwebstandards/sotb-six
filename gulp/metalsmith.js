@@ -99,6 +99,7 @@ function metalsmith() {
             speakers: {
               pattern: "speakers/*.md",
               sortBy: "order",
+              reverse: true,
               refer: false
             }
           })
