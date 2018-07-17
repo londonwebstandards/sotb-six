@@ -1,5 +1,13 @@
 <div class="image-wrap">
+  {{#is private true}}
+  <div style="background-image: url('/images/speakers/{{ speaker.image }}');">
+  {{else}}
   <a href="/{{path}}" title="{{title}}" style="background-image: url('/images/speakers/{{ speaker.image }}');">
+  {{/is}}
     <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+  {{#is private true}}
+  </div>
+  {{else}}
   </a>
+  {{/is}}
 </div>
