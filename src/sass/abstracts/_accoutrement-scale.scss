@@ -1,5 +1,13 @@
 @import 'node_modules/accoutrement-scale/sass/scale';
 
-$ratios: (
-  'line-height': 1.4
+$sizes: (
+  'root': 16px,
+  'line-height': 1.4,
+  'line-height-narrow': 1.2,
+  'rhythm': 'root' ('major-third': 3, 'convert-units': 'rem'),
+  'padding-s': 'root' ('major-third': 1, 'convert-units': 'rem'),
+  'padding': 'text-l',
+  'padding-xl': 'text-xl',
+  'text-xl': 'root' ('major-third': 5, 'convert-units': 'rem'),
+  'text-l': 'root' ('major-third': 2, 'convert-units': 'rem'),
 );

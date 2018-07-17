@@ -1,5 +1,5 @@
 body > footer {
-  padding: 4rem 1rem;
+  padding: size('padding-xl') size('padding');
   background-image: rainbow-gradient(true);
   color: contrast('purple');
 

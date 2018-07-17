@@ -2,7 +2,7 @@
   .speaker-list {
     @include above('medium') {
       display: grid;
-      grid-gap: 1rem;
+      grid-gap: size('padding-s');
       grid-template-areas: 'left right';
       grid-template-columns: 1fr 1fr;
       max-width: $max-container-width;

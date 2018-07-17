@@ -5,7 +5,6 @@
 
 ol,
 ul {
-  margin: 0;
   padding: 0;
   list-style: none;
 
@@ -54,13 +53,13 @@ dt {
 
 dd {
   display: block;
-  margin: 0 0 1em;
+  margin: 0 0 size('padding-s');
   max-width: $max-paragraph-width;
   overflow: hidden;
 
   @include above('small') {
     display: table-cell;
-    padding: 0 0 1em 1em;
+    padding: 0 0 size('padding-s') size('padding-s');
     vertical-align: top;
   }
 }

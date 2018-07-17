@@ -8,7 +8,7 @@
 
   &__card {
     display: grid;
-    margin-bottom: 1rem;
+    margin-bottom: size('padding');
 
     div {
       grid-area: image;
