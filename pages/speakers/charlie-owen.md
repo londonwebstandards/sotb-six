@@ -13,6 +13,7 @@ lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
 order: 1
+ogImage: /images/cards/charlie-owen.png
 ---
 
 One of the hardest lessons to embrace in web development is that not everyone is like you. It can come as a shock to learn that for the average web dev - young, male, surrounded by the cutting edge of tech, and with a high disposable income. But the truth is that many people are poor, have old devices, have slow data connections. Many people simply can’t use computers the way you do.
