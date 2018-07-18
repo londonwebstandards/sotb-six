@@ -11,6 +11,7 @@ lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
 order: 3
+ogImage: /images/cards/sara-vieira.png
 ---
 
 Frameworks are awesome, right? JSX and templates are the best thing since sliced bread!

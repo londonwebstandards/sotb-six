@@ -11,6 +11,7 @@ lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
 order: 2
+ogImage: /images/cards/michelle-barker.png
 ---
 
 CSS Grid Layout has the ability to transform the way we build layouts on the web and has made things possible that were never possible before. I’ll provide an overview of the various methods for building layouts with CSS Grid and demonstrate how it can help us construct complex components.
