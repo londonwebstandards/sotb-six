@@ -32,8 +32,10 @@
 
     > section:nth-child(1) {
       grid-area: venue;
+    }
 
-      > h2:first-of-type {
+    > section:nth-child(1) > h2:first-of-type { // stylelint-disable-line selector-max-compound-selectors
+      @include above('small') { // stylelint-disable-line max-nesting-depth
         margin-top: 0;
       }
     }
