@@ -16,11 +16,13 @@
       grid-template-areas: '------- venue'
                           'tickets venue'
                           'tickets speakers'
+                          'tickets speakers'
+                          'lws     speakers'
                           'lws     speakers'
                           'lws     ------';
       // stylelint-enable
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: $vertical-space repeat(2, auto $vertical-space);
+      grid-template-rows: $vertical-space repeat(2, auto auto $vertical-space);
       max-width: $max-paragraph-width * 1.5;
     }
 
