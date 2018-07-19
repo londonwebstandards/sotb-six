@@ -3,6 +3,6 @@
   list-style-type: none;
 
   > li + li {
-    margin-top: 1rem;
+    margin-top: size('padding-s');
   }
 }

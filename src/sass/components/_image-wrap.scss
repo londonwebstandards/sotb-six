@@ -10,12 +10,12 @@
   }
 
   a {
-    background-size: cover;
-    background-color: color('red');
-    background-blend-mode: screen;
     display: block;
     width: 100%;
     height: 100%;
+    background-blend-mode: screen;
+    background-color: color('red');
+    background-size: cover;
 
     &:link:hover {
       background-color: color('orange');
