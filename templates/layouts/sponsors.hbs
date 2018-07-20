@@ -1,0 +1,23 @@
+{{#extend "page"}}
+
+{{#content "main"}}
+<section>
+  <h1 class="no-bg">{{title}}</h1>
+  {{#if data}}
+    <ul class="sponsor-list">
+      {{#data}}
+        {{#is size 'medium'}}
+        <li class="sponsor-card sponsor-card--{{size}}">
+          <a href="{{website}}" title="{{name}}"><img src="{{logo}}" alt="{{name}}"></a>
+        </li>
+        {{/is}}
+      {{/data}}
+    </ul>
+  {{/if}}
+</section>
+<section>
+  {{{contents}}}
+</section>
+{{/content}}
+
+{{/extend}}

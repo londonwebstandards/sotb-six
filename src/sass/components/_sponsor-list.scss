@@ -1,0 +1,14 @@
+.sponsor-list {
+  max-width: $max-container-width;
+
+  > li {
+
+    @include above('small') {
+      width: 50%;
+    }
+
+    @include above('medium') {
+      width: 20%;
+    }
+  }
+}
