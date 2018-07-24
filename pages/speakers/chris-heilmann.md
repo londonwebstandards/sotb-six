@@ -1,5 +1,5 @@
 ---
-title: Christian Heilmann
+title: Heilmann, Christian
 description: Hinting at a better web
 speaker:
   website: https://christianheilmann.com

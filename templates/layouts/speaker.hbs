@@ -21,20 +21,20 @@
     </div>
 
     <aside class="speaker__info">
-      <h2>About {{title}}</h2>
+      <h2>About {{fullname title}}</h2>
       <div class="image-wrap image-wrap--portrait">
-        <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+        <img src="/images/speakers/{{ speaker.image }}" alt="{{fullname title}}">
       </div>
       {{{ speaker.bio }}}
       <ul class="list-inline">
         <li>
           {{#if speaker.twitter }}
-            <a href="https://twitter.com/{{ speaker.twitter }}" title="{{ title }} on Twitter" rel="external">@{{ speaker.twitter }}</a>
+            <a href="https://twitter.com/{{ speaker.twitter }}" title="{{fullname title}} on Twitter" rel="external">@{{ speaker.twitter }}</a>
           {{/if}}
         </li>
         <li>
           {{#if speaker.website }}
-            <a href="{{ speaker.website }}" title="{{ title }}’s Website" rel="external">{{ speaker.website }}</a>
+            <a href="{{ speaker.website }}" title="{{fullname title}}’s Website" rel="external">{{ speaker.website }}</a>
           {{/if}}
         </li>
       </ul>

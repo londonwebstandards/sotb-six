@@ -1,5 +1,5 @@
 ---
-title: Dr Ben Livshits
+title: Livshits, Dr. Ben
 description: Moving toward Web 3.0 in Brave
 speaker:
   twitter: convoluted_code

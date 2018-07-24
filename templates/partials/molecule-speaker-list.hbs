@@ -1,7 +1,7 @@
 <ul class="speaker-list">
   {{#collections.speakers}}
   <li class="speaker-list__card">
-    <h3>{{#is private true}}{{title}}{{else}}<a href="/{{path}}">{{title}}</a>{{/is}}</h3>
+    <h3>{{#is private true}}{{fullname title}}{{else}}<a href="/{{path}}">{{fullname title}}</a>{{/is}}</h3>
     {{>molecule-speaker-image}}
     <h4>{{#is private true}}To Be Announced{{else}}<a href="/{{path}}">{{description}}</a>{{/is}}</h4>
   </li>

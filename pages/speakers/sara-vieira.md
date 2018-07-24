@@ -1,5 +1,5 @@
 ---
-title: Sara Vieira
+title: Vieira, Sara
 description: 'Stop the #divFest!'
 speaker:
   website: https://iamsaravieira.com/
