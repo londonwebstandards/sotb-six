@@ -1,5 +1,5 @@
 ---
-title: Vieira, Sara
+title: Sara Vieira
 description: 'Stop the #divFest!'
 speaker:
   website: https://iamsaravieira.com/
@@ -10,7 +10,7 @@ speaker:
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
-order: 3
+order: 6
 ogImage: /images/cards/sara-vieira.png
 ---
 

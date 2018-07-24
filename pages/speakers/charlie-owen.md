@@ -1,5 +1,5 @@
 ---
-title: Owen, Charlie
+title: Charlie Owen
 description: Dear Developer
 speaker:
   twitter: sonniesedge
@@ -12,7 +12,7 @@ speaker:
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
-order: 1
+order: 5
 ogImage: /images/cards/charlie-owen.png
 ---
 

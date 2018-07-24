@@ -64,16 +64,6 @@ handlebars.registerHelper("limit", function(arr, limit) {
   return arr.slice(0, limit);
 });
 
-// convert a machine-readable name to a human-readable
-handlebars.registerHelper("fullname", function(name) {
-  if (name.split(', ').length > 1) {
-    return `${name.split(', ')[1]} ${name.split(', ')[0]}`;
-  }
-  else {
-    return name;
-  }
-});
-
 function metalsmith() {
   // filter out files with front matter
   const fmFilter = filter("**/*.{html,md,txt}", { restore: true });
@@ -108,12 +98,12 @@ function metalsmith() {
           collections({
             speakers: {
               pattern: "speakers/*.md",
-              sortBy: "title",
+              sortBy: "order",
               refer: false
             },
             lastSpeakers: {
               pattern: "speakers/*.md",
-              sortBy: "order",
+              sortBy: "lastmod",
               reverse: true,
               limit: 2,
               refer: false
