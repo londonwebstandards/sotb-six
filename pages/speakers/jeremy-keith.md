@@ -1,5 +1,5 @@
 ---
-title: Keith, Jeremy
+title: Jeremy Keith
 description: 'TBA'
 speaker:
   website: https://adactio.com/
@@ -10,5 +10,5 @@ speaker:
 lastmod: 2018-07-17
 private: true
 layout: speaker.hbs
-order: 4
+order: 3
 ---
