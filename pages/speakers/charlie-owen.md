@@ -1,5 +1,5 @@
 ---
-title: Charlie Owen
+title: Owen, Charlie
 description: Dear Developer
 speaker:
   twitter: sonniesedge

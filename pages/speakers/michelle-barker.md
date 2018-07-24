@@ -1,5 +1,5 @@
 ---
-title: Michelle Barker
+title: Barker, Michelle
 description: Super-powered Layouts with CSS Grid and CSS Variables
 speaker:
   website: https://css-irl.info

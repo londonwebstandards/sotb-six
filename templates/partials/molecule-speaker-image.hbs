@@ -1,8 +1,8 @@
 <div class="image-wrap{{#is private true}} image-wrap--no-anchor{{/is}}">
   {{#isnt private true}}
-  <a href="/{{path}}" title="{{title}}" style="background-image: url('/images/speakers/{{ speaker.image }}');">
+  <a href="/{{path}}" title="{{fullname title}}" style="background-image: url('/images/speakers/{{ speaker.image }}');">
   {{/isnt}}
-    <img src="/images/speakers/{{ speaker.image }}" alt="{{title}}">
+    <img src="/images/speakers/{{ speaker.image }}" alt="{{fullname title}}">
   {{#isnt private true}}
   </a>
   {{/isnt}}

@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>{{#if title}}{{title}} | {{/if}}{{site.title}}</title>
+<title>{{#if title}}{{fullname title}} | {{/if}}{{site.title}}</title>
 <meta name="description" content="{{ description }}">
 
 <link rel="author" href="/humans.txt">
@@ -34,7 +34,7 @@
         "@context": "http://schema.org",
         "type": "WebSite",
         "url": "{{site.URL}}{{#isnt path 'index.md'}}/{{path}}{{/isnt}}",
-        "headline": "{{#if title}}{{title}} | {{/if}}{{site.title}}",
+        "headline": "{{#if title}}{{fullname title}} | {{/if}}{{site.title}}",
         "description": "{{ description }}",
         "author": {
             "@type": "Organisation",
