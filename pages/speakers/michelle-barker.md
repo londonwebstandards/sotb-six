@@ -10,7 +10,7 @@ speaker:
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
-order: 2
+order: 1
 ogImage: /images/cards/michelle-barker.png
 ---
 
