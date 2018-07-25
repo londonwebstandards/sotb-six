@@ -10,7 +10,7 @@ speaker:
 lastmod: 2018-07-18
 private: false
 layout: speaker.hbs
-order: 5
+order: 2
 ogImage: /images/cards/christian-heilmann.png
 ---
 Something isn't working out. We drown in excellent tools and information about how to build great content for the web. And yet what is out there is in dire need of optimisation. Making it easier for developers to create more quicker isn't the solution. Neither is offering a _"web alternative"_. Coming up with fixed rules and quotas doesn't work either. People try to fulfil them rather than building great user-centric products. Let's offer our years of knowledge as a guide instead, maybe that will do the trick?

@@ -10,5 +10,5 @@ speaker:
 lastmod: 2018-07-17
 private: true
 layout: speaker.hbs
-order: 4
+order: 3
 ---

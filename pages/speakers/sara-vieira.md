@@ -10,7 +10,7 @@ speaker:
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
-order: 3
+order: 6
 ogImage: /images/cards/sara-vieira.png
 ---
 
