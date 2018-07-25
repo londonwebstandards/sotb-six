@@ -1,9 +1,9 @@
 .homepage {
   main {
-    $vertical-space: 4rem;
+    $vertical-space: size('padding-xl');
 
     @include above('medium') {
-      padding: 0 1rem;
+      padding: 0 size('padding');
     }
 
     @include above('large') {
@@ -11,16 +11,18 @@
       position: relative;
       top: -$vertical-space;
       margin: 0 auto;
-      grid-column-gap: 1rem;
+      grid-column-gap: size('padding');
       // stylelint-disable indentation
       grid-template-areas: '------- venue'
                           'tickets venue'
                           'tickets speakers'
+                          'tickets speakers'
+                          'lws     speakers'
                           'lws     speakers'
                           'lws     ------';
       // stylelint-enable
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: $vertical-space repeat(2, auto $vertical-space);
+      grid-template-rows: $vertical-space repeat(2, auto auto $vertical-space);
       max-width: $max-paragraph-width * 1.5;
     }
 
@@ -30,6 +32,12 @@
 
     > section:nth-child(1) {
       grid-area: venue;
+    }
+
+    > section:nth-child(1) > h2:first-of-type { // stylelint-disable-line selector-max-compound-selectors
+      @include above('small') { // stylelint-disable-line max-nesting-depth
+        margin-top: 0;
+      }
     }
 
     > section:nth-child(2) {

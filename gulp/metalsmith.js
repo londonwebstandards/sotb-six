@@ -99,7 +99,13 @@ function metalsmith() {
             speakers: {
               pattern: "speakers/*.md",
               sortBy: "order",
+              refer: false
+            },
+            lastSpeakers: {
+              pattern: "speakers/*.md",
+              sortBy: "lastmod",
               reverse: true,
+              limit: 2,
               refer: false
             }
           })

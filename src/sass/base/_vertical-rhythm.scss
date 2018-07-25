@@ -1,0 +1,17 @@
+ul,
+dl,
+ol,
+p {
+  margin-top: size('rhythm');
+}
+
+
+h1,
+h2,
+h3 {
+  margin-top: size('rhythm') * 2;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -4,8 +4,8 @@
 ////
 
 hr {
-  width: 100%;
   display: block;
+  width: 100%;
   border: 0;
   // show the overflow in Edge and IE
   overflow: visible;
@@ -19,9 +19,9 @@ dfn[title] {
 
 abbr[title],
 dfn[title] {
-  border-bottom-width: hairline;
-  border-bottom-style: alternate;
   border-bottom-color: color('text');
+  border-bottom-style: alternate;
+  border-bottom-width: hairline;
   cursor: help;
 }
 
@@ -37,8 +37,8 @@ strong {
 
 sub,
 sup {
-  line-height: 0;
   position: relative;
+  line-height: 0;
   vertical-align: baseline;
 }
 

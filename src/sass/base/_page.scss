@@ -12,7 +12,7 @@ html {
   -webkit-font-smoothing: antialiased;
   font-variant-numeric: oldstyle-nums;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: size('line-height');
   min-height: 100%;
   overflow-x: hidden;
   // prevent horizontal jump when navigating short page <--> tall page

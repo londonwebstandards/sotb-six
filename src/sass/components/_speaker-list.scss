@@ -8,10 +8,15 @@
 
   &__card {
     display: grid;
-    margin-bottom: 1rem;
+    margin-bottom: size('padding');
 
     div {
       grid-area: image;
+    }
+
+    h3,
+    h4 {
+      font-size: size('text-m');
     }
 
     h3 {
