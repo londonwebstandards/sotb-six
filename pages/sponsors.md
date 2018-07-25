@@ -14,4 +14,4 @@ Sponsoring SOTB 2018 will give you access to up to 400 web professionals at the 
 
 If you are interested into helping us:
 
-Download the <a href="/downloads/Sponsors-Pack-SOTB18.pdf" class="is-button">Sponsors Pack</a> [PDF - 217K].
+Download the <a href="/downloads/Sponsors-Pack-SOTB18.pdf" class="is-button">Sponsors Pack</a> [PDF - 211K].
