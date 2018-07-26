@@ -4,10 +4,13 @@
 // @see http://oddbird.net/accoutrement-color/docs/
 // @see http://oddbird.net/herman/docs/config-colors.html
 $brand-colors: (
+  'yellow-light': #fae100,
   'yellow-screen': #ecb256,
   'yellow': #dda700,
+  'orange-light': #f36e2e,
   'orange-screen': #e05666,
   'orange': #c83f18,
+  'red-light': #f22670,
   'red-screen': #df3180,
   'red': #c61440,
   'purple-screen': #b03a8f,
@@ -28,8 +31,8 @@ $theme-colors: (
   'link-active': 'red',
   'link-hover': #f22670,
   'link-visited': 'red-screen',
-  // 'yellow-light': #fae100,
-  // 'orange-light': #f36e2e,
+  'selection': 'purple',
+  'selection-bg': 'yellow-light'
 );
 
 $system-colors: (
