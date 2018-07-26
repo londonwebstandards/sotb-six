@@ -6,11 +6,7 @@
   <section>
     <ul class="sponsor-list sponsor-list--headline">
     {{#data.headline}}
-      <li class="logo">
-        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
-          <img src="{{logo}}" alt="{{name}}">
-        {{#if website}}</a>{{/if}}
-      </li>
+      {{>molecule-sponsor}}
     {{/data.headline}}
     </ul>
   </section>
@@ -20,11 +16,7 @@
     <h2>Major sponsors</h2>
     <ul class="sponsor-list sponsor-list--major">
     {{#data.major}}
-      <li class="logo">
-        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
-          <img src="{{logo}}" alt="{{name}}">
-        {{#if website}}</a>{{/if}}
-      </li>
+      {{>molecule-sponsor}}
     {{/data.major}}
     </ul>
   </section>
@@ -34,11 +26,7 @@
     <h2>Medium sponsors</h2>
     <ul class="sponsor-list sponsor-list--medium">
     {{#data.medium}}
-      <li class="logo">
-        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
-          <img src="{{logo}}" alt="{{name}}">
-        {{#if website}}</a>{{/if}}
-      </li>
+      {{>molecule-sponsor}}
     {{/data.medium}}
     </ul>
   </section>
@@ -48,11 +36,7 @@
     <h2>Small sponsors</h2>
     <ul class="sponsor-list sponsor-list--small">
     {{#data.small}}
-      <li class="logo">
-        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
-          <img src="{{logo}}" alt="{{name}}">
-        {{#if website}}</a>{{/if}}
-      </li>
+      {{>molecule-sponsor}}
     {{/data.small}}
     </ul>
   </section>

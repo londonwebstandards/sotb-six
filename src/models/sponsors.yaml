@@ -1,29 +1,4 @@
-headline:
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-major:
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
 medium:
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
   - name: Responsive Design.is
     website: https://responsivedesign.is
     logo: /images/logos/responsivedesign.svg
-small:
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png
-  - name: Your Logo Here
-    logo: /images/logos/sample.png

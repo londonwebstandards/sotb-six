@@ -17,42 +17,26 @@
 
   &--headline {
     .logo {
-      max-width: 400px;
-    }
-
-    img {
-      background-color: color('purple');
+      flex-basis: 400px;
     }
   }
 
   &--major {
     .logo {
-      max-width: 300px;
-    }
-
-    img {
-      background-color: color('red');
+      flex-basis: 300px;
     }
   }
 
   &--medium {
     .logo {
-      max-width: 250px;
-    }
-
-    img {
-      background-color: color('orange');
+      flex-basis: 250px;
     }
   }
 
   &--small {
     .logo {
+      flex-basis: 200px;
       justify-self: center;
-      max-width: 200px;
-    }
-
-    img {
-      background-color: color('yellow');
     }
   }
 
