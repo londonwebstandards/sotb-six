@@ -11,7 +11,7 @@ lastmod: 2018-07-26
 private: false
 layout: speaker.hbs
 order: 2
-ogImage: /images/cards/ada-rose-cannon.jpg
+ogImage: /images/cards/ada-rose-cannon.png
 ---
 
 This is an introduction to the state of VR and AR on the web and a look to where it could go in the future.
