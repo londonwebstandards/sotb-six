@@ -1,20 +1,62 @@
 {{#extend "page"}}
 
 {{#content "main"}}
-<section>
-  <h1 class="no-bg">{{title}}</h1>
-  {{#if data}}
-    <ul class="sponsor-list">
-      {{#data}}
-        <li class="logo logo--{{size}}">
-          {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
-            <img src="{{logo}}" alt="{{name}}">
-          {{#if website}}</a>{{/if}}
-        </li>
-      {{/data}}
+<h1 class="no-bg">Proudly sponsored by</h1>
+{{#if data.headline}}
+  <section>
+    <ul class="sponsor-list sponsor-list--headline">
+    {{#data.headline}}
+      <li class="logo">
+        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
+          <img src="{{logo}}" alt="{{name}}">
+        {{#if website}}</a>{{/if}}
+      </li>
+    {{/data.headline}}
     </ul>
-  {{/if}}
-</section>
+  </section>
+{{/if}}
+{{#if data.major}}
+  <section>
+    <h2>Major sponsors</h2>
+    <ul class="sponsor-list sponsor-list--major">
+    {{#data.major}}
+      <li class="logo">
+        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
+          <img src="{{logo}}" alt="{{name}}">
+        {{#if website}}</a>{{/if}}
+      </li>
+    {{/data.major}}
+    </ul>
+  </section>
+{{/if}}
+{{#if data.medium}}
+  <section>
+    <h2>Medium sponsors</h2>
+    <ul class="sponsor-list sponsor-list--medium">
+    {{#data.medium}}
+      <li class="logo">
+        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
+          <img src="{{logo}}" alt="{{name}}">
+        {{#if website}}</a>{{/if}}
+      </li>
+    {{/data.medium}}
+    </ul>
+  </section>
+{{/if}}
+{{#if data.small}}
+  <section>
+    <h2>Small sponsors</h2>
+    <ul class="sponsor-list sponsor-list--small">
+    {{#data.small}}
+      <li class="logo">
+        {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
+          <img src="{{logo}}" alt="{{name}}">
+        {{#if website}}</a>{{/if}}
+      </li>
+    {{/data.small}}
+    </ul>
+  </section>
+{{/if}}
 <section>
   {{{contents}}}
 </section>

@@ -1,54 +1,63 @@
 .sponsor-list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
 
-  @include above('medium') {
-    max-width: $max-paragraph-width /2;
+  .logo {
+    // padding: size('padding-s');
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width: 400px;
+  }
+
+  > * + * {
+    margin-left: size('padding-s');
+  }
+
+  &--headline {
+    .logo {
+      max-width: 400px;
+    }
+
+    img {
+      background-color: color('purple');
+    }
+  }
+
+  &--major {
+    .logo {
+      max-width: 300px;
+    }
+
+    img {
+      background-color: color('red');
+    }
+  }
+
+  &--medium {
+    .logo {
+      max-width: 250px;
+    }
+
+    img {
+      background-color: color('orange');
+    }
+  }
+
+  &--small {
+    .logo {
+      justify-self: center;
+      max-width: 200px;
+    }
+
+    img {
+      background-color: color('yellow');
+    }
   }
 
   img {
     width: 100%;
-  }
-
-  .logo {
-    width: 33.3%;
-    padding: size('padding-s');
-    flex-basis: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
-
-    &--headline {
-      flex-basis: 100%;
-
-      > img {
-        background-color: color('purple');
-      }
-    }
-
-    &--major {
-      flex-basis: 50%;
-
-      > img {
-        background-color: color('red');
-      }
-    }
-
-    &--medium {
-      flex-basis: 50%;
-
-      > img {
-        background-color: color('orange');
-      }
-    }
-
-    &--small {
-      justify-self: center;
-
-      > img {
-        background-color: color('yellow');
-      }
-    }
   }
 
 }
