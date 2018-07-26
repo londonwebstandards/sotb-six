@@ -9,7 +9,7 @@ speaker:
 lastmod: 2018-07-24
 private: false
 layout: speaker.hbs
-order: 4
+order: 5
 ogImage: /images/cards/dr-ben-livshits.png
 ---
 
