@@ -3,7 +3,7 @@ title: Speakers
 description: List of speakers for the event
 draft: false
 layout: speakers.hbs
-lastmod: 2018-07-24
+lastmod: 2018-07-26
 page_class: speakers
 ---
 
