@@ -1,4 +1,37 @@
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: headline
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: major
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: major
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: major
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: medium
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: medium
 - name: Responsive Design.is
   website: https://responsivedesign.is
   logo: /images/logos/responsivedesign.svg
   size: medium
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: small
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: small
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: small
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: small
+- name: Your Logo Here
+  logo: /images/logos/sample.png
+  size: small

@@ -6,11 +6,11 @@
   {{#if data}}
     <ul class="sponsor-list">
       {{#data}}
-        {{#is size 'medium'}}
-        <li class="sponsor-card sponsor-card--{{size}}">
-          <a href="{{website}}" title="{{name}}"><img src="{{logo}}" alt="{{name}}"></a>
+        <li class="logo logo--{{size}}">
+          {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
+            <img src="{{logo}}" alt="{{name}}">
+          {{#if website}}</a>{{/if}}
         </li>
-        {{/is}}
       {{/data}}
     </ul>
   {{/if}}
