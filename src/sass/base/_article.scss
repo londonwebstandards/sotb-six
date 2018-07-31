@@ -2,4 +2,12 @@ article {
   margin: 0 auto size('padding-xl');
   padding: 0 size('padding');
   max-width: $max-container-width;
+
+  > h1:first-child {
+    margin-top: size('padding');
+
+    @include above('small') {
+      margin-top: 0;
+    }
+  }
 }

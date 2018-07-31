@@ -3,6 +3,8 @@
   padding: 1rem;
   background-color: color('purple');
   color: contrast('background');
+  font-size: size('text-l');
+  line-height: size('line-height-narrow');
 
   @include above('small') {
     display: grid;
