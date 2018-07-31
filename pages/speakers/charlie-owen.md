@@ -2,6 +2,7 @@
 title: Charlie Owen
 description: Dear Developer
 speaker:
+  lastname: Owen
   twitter: sonniesedge
   website: https://sonniesedge.co.uk
   image: charlie-owen.jpg
