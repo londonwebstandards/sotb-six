@@ -7,28 +7,19 @@
   {{{contents}}}
 
   {{#if data}}
-    <h3>{{data.date}}</h3>
-    <table class="schedule">
+    <ul class="schedule">
       {{#data.schedule}}
-      <tr class="schedule__row">
-        <td class="schedule__time"><time>{{time}}</time></td>
-        <td{{#if name }} class="schedule__talk"{{/if}}>
-          {{#if link }}
-            <a href="/speakers/{{link}}">
-          {{else}}
-            <em>
-          {{/if}}
+      <li>
+        <time>{{time}}</time>
+        <h2>
+          {{#if link }}<a href="/speakers/{{link}}">{{else}}<em>{{/if}}
           {{{title}}}
-          {{#if link }}
-            </a> 
-          {{else}}
-            </em>
-          {{/if}}
+          {{#if link }}</a>{{else}}</em>{{/if}}
           {{#if name }}&mdash; {{name}}{{/if}}
-        </td>
-      </tr>
+        </h2>
+      </li>
       {{/data.schedule}}
-    </table>
+    </li>
   {{/if}}
 </article>
 {{/content}}
