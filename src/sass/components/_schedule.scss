@@ -1,0 +1,72 @@
+.schedule {
+  $roundel-size: 40px;
+  font-size: size('text-l');
+
+  &__slot {
+    box-sizing: border-box;
+    position: relative;
+    margin-left: $roundel-size/2;
+    padding-bottom: size('padding-xl');
+    padding-left: $roundel-size;
+    border-color: color('yellow');
+    border-style: solid;
+    border-left-width: size('border');
+
+    @include above('medium') {
+      max-width: 50%;
+      margin-left: 50%;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: $roundel-size;
+      height: $roundel-size;
+      position: absolute;
+      left: -#{calc(#{$roundel-size}/2 + #{size('border')/2})};
+      background-image: url('/images/roundel-yellow.svg');
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(even) {
+      @include above('medium') {
+        max-width: calc(50% + #{size('border')});
+        text-align: right;
+        margin-left: 0;
+        margin-right: calc(50% - #{size('border')});
+        padding-right: $roundel-size;
+        padding-left: 0;
+        border-right-width: size('border');
+        border-left-width: 0;
+
+        &::before {
+          left: auto;
+          right: -#{calc(#{$roundel-size}/2 + #{size('border')})};
+        }
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-left-color: transparent;
+    }
+
+    &--talk::before {
+      background-image: url('/images/roundel-red.svg');
+    }
+
+    time {
+      font-weight: 600;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: color('orange');
+    }
+
+    a {
+      color: color('red');
+      text-decoration: underline;
+    }
+  }
+}

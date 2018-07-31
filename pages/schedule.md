@@ -6,5 +6,3 @@ layout: schedule.hbs
 data: models/schedule.yaml
 lastmod: 2018-07-31
 ---
-
-To be announced.
