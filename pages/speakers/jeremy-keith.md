@@ -2,6 +2,7 @@
 title: Jeremy Keith
 description: 'TBA'
 speaker:
+  lastname: Keith
   website: https://adactio.com/
   twitter: adactio
   image: jeremy-keith.jpg

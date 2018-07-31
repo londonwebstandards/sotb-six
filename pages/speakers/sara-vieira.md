@@ -2,6 +2,7 @@
 title: Sara Vieira
 description: 'Stop the #divFest!'
 speaker:
+  lastname: Vieira
   website: https://iamsaravieira.com/
   twitter: NikkitaFTW
   image: sara-vieira.jpg

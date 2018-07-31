@@ -2,6 +2,7 @@
 title: Ada Rose Cannon
 description: WebXR and the Immersive Web
 speaker:
+  lastname: Cannon
   twitter: lady_ada_king
   website: https://ada.is/
   image: ada-rose-cannon.jpg
