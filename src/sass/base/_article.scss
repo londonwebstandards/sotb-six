@@ -11,4 +11,12 @@ article {
   > section {
     margin-top: size('padding-xl');
   }
+
+  > h1:first-child {
+    margin-top: size('padding');
+
+    @include above('small') {
+      margin-top: 0;
+    }
+  }
 }
