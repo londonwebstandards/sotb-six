@@ -2,6 +2,7 @@
 title: Sara Vieira
 description: 'Stop the #divFest!'
 speaker:
+  lastname: Vieira
   website: https://iamsaravieira.com/
   twitter: NikkitaFTW
   image: sara-vieira.jpg
@@ -10,7 +11,7 @@ speaker:
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
-order: 6
+order: 7
 ogImage: /images/cards/sara-vieira.png
 ---
 

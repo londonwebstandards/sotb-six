@@ -9,6 +9,7 @@ section {
     margin-top: size('padding');
   }
 
+  > h1,
   > h2 {
     padding: 0 size('padding');
     padding-bottom: 20px; // fixed size due to the way the gradient is calculated

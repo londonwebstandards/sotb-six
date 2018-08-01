@@ -2,6 +2,7 @@
 title: Charlie Owen
 description: Dear Developer
 speaker:
+  lastname: Owen
   twitter: sonniesedge
   website: https://sonniesedge.co.uk
   image: charlie-owen.jpg
@@ -12,7 +13,7 @@ speaker:
 lastmod: 2018-07-13
 private: false
 layout: speaker.hbs
-order: 5
+order: 6
 ogImage: /images/cards/charlie-owen.png
 ---
 

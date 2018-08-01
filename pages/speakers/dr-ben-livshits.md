@@ -2,6 +2,7 @@
 title: Dr Ben Livshits
 description: Moving toward Web 3.0 in Brave
 speaker:
+  lastname: Livshits
   twitter: convoluted_code
   image: dr-ben-livshits.jpg
   bio: |
@@ -9,7 +10,7 @@ speaker:
 lastmod: 2018-07-24
 private: false
 layout: speaker.hbs
-order: 4
+order: 5
 ogImage: /images/cards/dr-ben-livshits.png
 ---
 

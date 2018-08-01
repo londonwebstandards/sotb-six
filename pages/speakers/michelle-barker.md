@@ -2,6 +2,7 @@
 title: Michelle Barker
 description: Super-powered Layouts with CSS Grid and CSS Variables
 speaker:
+  lastname: Barker
   website: https://css-irl.info
   twitter: mbarker_84
   image: michelle-barker.jpg

@@ -1,6 +1,8 @@
 body > header {
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 100%;
+  max-width: $max-container-width;
 
   @include above('medium') {
     background-color: transparent;

@@ -13,16 +13,12 @@ hr {
 
 abbr[title],
 dfn[title] {
-  color: color('text');
-  font-style: italic;
-}
-
-abbr[title],
-dfn[title] {
   border-bottom-color: color('text');
   border-bottom-style: alternate;
   border-bottom-width: hairline;
+  color: color('text');
   cursor: help;
+  font-style: italic;
 }
 
 abbr[title],
@@ -65,6 +61,6 @@ textarea {
 
 // Mouse Selection
 ::selection {
-  background-color: color('yellow-screen');
-  color: color('purple');
+  background-color: color('selection-bg');
+  color: color('selection');
 }

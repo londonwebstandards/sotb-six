@@ -1,0 +1,47 @@
+.sponsor-list {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+
+  .logo {
+    // padding: size('padding-s');
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width: 400px;
+  }
+
+  > * + * {
+    margin-left: size('padding-s');
+  }
+
+  &--headline {
+    .logo {
+      flex-basis: 400px;
+    }
+  }
+
+  &--major {
+    .logo {
+      flex-basis: 300px;
+    }
+  }
+
+  &--medium {
+    .logo {
+      flex-basis: 250px;
+    }
+  }
+
+  &--small {
+    .logo {
+      flex-basis: 200px;
+      justify-self: center;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
