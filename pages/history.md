@@ -3,7 +3,7 @@ title: History
 description: A little bit of history about State of the Browser
 draft: false
 layout: default.hbs
-lastmod: 2018-07-19
+lastmod: 2018-08-01
 ---
 
 This will be the 7th State of the Browser and London Web Standards 11th year.
@@ -12,7 +12,7 @@ In 2011 London Web Standards organised a one day conference focusing on the _‘
 
 > Honestly I think that was one of the best conferences I've been part of
 
-The conference was then repeated in 2012 and 2013, with 175 delegates. In 2014 we moved to our new venue, the lovely, historic Conway Hall, in Red Lion Square, Holborn.
+The conference was then repeated in 2012 and 2013, with 175 delegates. In 2014 we moved to our new venue, the lovely, historical Conway Hall, in Red Lion Square, Holborn.
 
 In 2014 and 2015 we had close to 400 attendees.
 
@@ -22,7 +22,7 @@ In 2016 we took a year off and returned in 2017.
 
 > I'm trying really hard to think of what you could do better next time!
 
-State of the Browser, and London Web Standards, is not and never has been about money we are all about the community. Which is why we aim to keep the cost of the conference to a minimum just cover our costs
+State of the Browser and London Web Standards is not and never has been about money, _we are all about the community_. Which is why we aim to keep the cost of the conference to a minimum just cover our costs.
 
 The videos from the 2014 event are available at:
 <http://browser.londonwebstandards.org/category/speakers/>

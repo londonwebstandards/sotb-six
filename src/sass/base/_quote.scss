@@ -4,7 +4,9 @@
 ////
 
 blockquote {
+  padding: size('padding');
   color: color('orange');
+  font-size: size('text-m');
   font-weight: 600;
   max-width: $max-paragraph-width;
 
