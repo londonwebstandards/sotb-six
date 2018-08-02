@@ -1,4 +1,4 @@
-<ul class="speaker-list">
+<ul class="speaker-list{{#spaced-list}} speaker-list--spaced{{/spaced-list}}">
   {{#collections.speakers}}
   <li class="speaker-list__card">
     <h3>{{#is private true}}{{title}}{{else}}<a href="/{{path}}">{{title}}</a>{{/is}}</h3>
