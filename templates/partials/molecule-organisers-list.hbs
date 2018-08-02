@@ -1,0 +1,8 @@
+<ul class="speaker-list{{#spaced-list}} speaker-list--spaced{{/spaced-list}}">
+  {{#data}}
+  <li class="speaker-list__card">
+    <h3>{{#if web}}<a href="/{{web}}">{{/if}}{{name}}{{#if web}}</a>{{/if}}</h3>
+    {{>molecule-organisers-image}}
+  </li>
+  {{/data}}
+</ul>

@@ -2,8 +2,10 @@
 title: History
 description: A little bit of history about State of the Browser
 draft: false
-layout: default.hbs
+layout: history.hbs
 lastmod: 2018-08-01
+spaced-list: true
+data: models/organisers.yaml
 ---
 
 This will be the 7th State of the Browser and London Web Standards 11th year.
@@ -24,14 +26,14 @@ In 2016 we took a year off and returned in 2017.
 
 State of the Browser and London Web Standards is not and never has been about money, _we are all about the community_. Which is why we aim to keep the cost of the conference to a minimum just cover our costs.
 
-The videos from the 2014 event are available at:
-<http://browser.londonwebstandards.org/category/speakers/>
-
-The videos from the 2015 event are available at:
-<https://vimeo.com/search?q=SotB5>
-
 
 ## Previous editions
+
+Check out the [videos from State of the Browser 4](http://browser.londonwebstandards.org/category/speakers/) event.
+
+The [videos from State of the Browser 5](https://vimeo.com/search?q=SotB5) event are available on our Vimeo account.
+
+Check the history of the event:
 
 - [State of the Browser 6](https://2017.stateofthebrowser.com/)
 - [State of the Browser 5](http://sotb2015.wpengine.com/)

@@ -1,0 +1,15 @@
+{{#extend "page"}}
+
+{{#content "main"}}
+  <article>
+    <h1>{{title}}</h1>
+    {{{contents}}}
+
+    {{#if data}}
+      <h2>Meet the organisers</h2>
+      {{>molecule-organisers-list}}
+    {{/if}}
+  </article>
+{{/content}}
+
+{{/extend}}
