@@ -12,4 +12,9 @@
   &__information {
     grid-area: info;
   }
+
+  img {
+    float: none;
+    max-width: 150px;
+  }
 }
