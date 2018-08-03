@@ -17,7 +17,7 @@ function responsiveImages() {
     .pipe(
       responsive(
         {
-          "speakers/*": [
+          "{speakers,organisers}/*": [
             {
               width: 400,
               rename: {
@@ -48,7 +48,10 @@ function responsiveImages() {
 
 function compress() {
   return gulp
-    .src([`${paths.images.src}**/*`, `!${paths.images.src}/speakers/**/*`])
+    .src([
+      `${paths.images.src}**/*`,
+      `!${paths.images.src}/{speakers,organisers}/**/*`
+    ])
     .pipe(cache("images"))
     .pipe(
       imagemin(
