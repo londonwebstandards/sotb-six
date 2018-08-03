@@ -1,50 +1,56 @@
 date: Saturday 16 September 2017
 schedule:
-  - time: '9:30'
-    title: Registration
+  - time: '9:15'
+    title: Registration opens
   - time: '9:50'
-    title: Housekeeping
+    title: Opening Introduction
   - time: '10:00'
-    name: Ashley Gullen
-    title: Porting a large Windows app to the web
-    link: ashley-gullen
+    name: Speaker 1
+    title: Talk 1
+    link: speaker-1
   - time: '10:30'
-    name: Cristiano Rastelli
-    title: Let There Be Peace On CSS
-    link: cristiano-rastelli
+    name: Speaker 2
+    title: Talk 2
+    link: speaker-2
   - time: '11:00'
     title: Coffee break
   - time: '11:30'
-    name: Robert King
-    title: An Introduction to HTTP2
-    link: robert-king
+    name: Speaker 3
+    title: Talk 3
+    link: speaker-3
   - time: '12:00'
-    name: Seren Davies
-    title: Accessibility is more than just supporting screenreaders
-    link: seren-davies
+    name: Speaker 4
+    title: Talk 4
+    link: talk-4
   - time: '12:30'
-    name: Jean-Yves Perrier
-    title: Mark 57 – The future Firefox
-    link: jean-yves-perrier
+    name: Speaker 5
+    title: Talk 5
+    link: speaker-5
   - time: '13:00'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
-  - time: '14:15'
-    name: Léonie Watson
-    title: State of accessibility
-    link: leonie-watson
-  - time: '14:45'
-    name: Peter O'Shaughnessy
-    title: Samsung Internet and the Rise of the "Chromia"
-    link: peter-o-shaughnessy
-  - time: '15:15'
+  - time: '14:00'
+    name: Speaker 6
+    title: Talk 6
+    link: speaker-6
+  - time: '14:30'
+    name: Speaker 7
+    title: Talk 7
+    link: speaker-7
+  - time: '15:00'
+    name: Speaker 8
+    title: Talk 8
+    link: speaker-8
+  - time: '15:30'
     title: Coffee break
-  - time: '15:45'
-    name: James Nash & Marcos Peebles
-    title: Ask not what your Design System can do for you...
-    link: james-nash-marcos-peebles
-  - time: '16:15'
-    name: Peter Gasston
-    title: Growing Up, Getting Serious
-    link: peter-gasston
-  - time: '16:45'
+  - time: '16:00'
+    name: Speaker 9
+    title: Talk 9
+    link: speaker-9
+  - time: '16:30'
+    name: Speaker 10
+    title: Talk 10
+    link: speaker-10
+  - time: '17:00'
+    title: Closing remarks
+  - time: '17:05'
     title: Pub (Craft Beer Co.) - 10 minute walk, please join us!
