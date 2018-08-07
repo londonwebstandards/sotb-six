@@ -1,5 +1,8 @@
 <li class="logo">
-  {{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
+  <p>{{#if website}}<a href="{{website}}" title="{{name}}">{{/if}}
     <img src="{{logo}}" alt="{{name}}">
-  {{#if website}}</a>{{/if}}
+  {{#if website}}</a>{{/if}}</p>
+  {{#if copy}}
+  <p>{{{copy}}}</p>
+  {{/if}}
 </li>

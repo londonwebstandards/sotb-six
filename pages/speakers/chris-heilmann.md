@@ -2,6 +2,7 @@
 title: Christian Heilmann
 description: Hinting at a better web
 speaker:
+  lastname: Heilmann
   website: https://christianheilmann.com
   twitter: codepo8
   image: chris-heilmann.jpg

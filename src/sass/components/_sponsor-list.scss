@@ -23,7 +23,15 @@
 
   &--major {
     .logo {
-      flex-basis: 300px;
+      flex-basis: 400px;
+    }
+
+    img {
+      max-width: 50%;
+    }
+
+    p:first-of-type {
+      text-align: center;
     }
   }
 

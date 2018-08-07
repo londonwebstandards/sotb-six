@@ -98,7 +98,7 @@ function metalsmith() {
           collections({
             speakers: {
               pattern: "speakers/*.md",
-              sortBy: "order",
+              sortBy: "speaker.lastname",
               refer: false
             },
             lastSpeakers: {
