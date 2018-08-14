@@ -9,6 +9,9 @@ major:
     logo: /images/logos/logo_chrome_48dp.svg
     copy: Google Chrome is a fast, easy to use and secure web browser that works seamlessly across devices. Our mission is to increase and improve meaningful engagement on the web by helping developers and businesses build high quality experiences. Through Chrome, we aim to build a better web by maintaining the highest standard of experiences, performance and security for users globally.
 medium:
+  - name: Mozilla
+    website: https://developer.mozilla.org/
+    logo: /images/logos/moz-logo-bw-rgb.svg
   - name: Responsive Design.is
     website: https://responsivedesign.is
     logo: /images/logos/responsivedesign.svg
