@@ -1,0 +1,34 @@
+diversity:
+  - name: Andy
+    surname: Davies
+    twitter: AndyDavies
+    image: AndyDavies.jpg
+  - name: James
+    surname: Milner
+    twitter: JamesLMilner
+    image: JamesLMilner.jpg
+  - name: Mairead
+    surname: Preece
+    twitter: tiny_m
+    image: tiny_m.jpg
+helpers:
+  - name: Paul
+    surname: Duncan
+    twitter: dexterperrin
+    image: dexterperrin.png
+  - name: Nick
+    surname: Fitzsimons
+    twitter: NickFitz
+    image: NickFitz.jpg
+  - name: Trys
+    surname: Mudford
+    twitter: trysmudford
+    image: trysmudford.jpg
+  - name: Ana
+    surname: Rodrigues
+    twitter: ohhelloana
+    image: ohhelloana.jpg
+  - name: Prisca
+    surname: Schmarsow
+    twitter: prisca_eyedea
+    image: prisca_eyedea.jpg
