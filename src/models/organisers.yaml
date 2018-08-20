@@ -1,11 +1,18 @@
-- name: Matteo Pescarin
-  image: matteo-pescarin.jpg
-  web: https://smartart.it
-- name: Chris Burnell
-  image: chris-burnell.jpg
-- name: Dave Letorey
-  image: dave-letorey.jpg
-- name: Ginestra Ferraro
-  image: ginestra-ferraro.jpg
-- name: Rupert Bowater
-  image: rupert-bowater.jpg
+- name: Rupert
+  surname: Bowater
+  image: organisers/rupert-bowater.jpg
+- name: Chris
+  surname: Burnell
+  twitter: iamchrisburnell
+  image: organisers/chris-burnell.jpg
+- name: Ginestra
+  surname: Ferraro
+  image: organisers/ginestra-ferraro.jpg
+- name: Dave
+  surname: Letorey
+  image: organisers/dave-letorey.jpg
+  twitter: dletorey
+- name: Matteo
+  surname: Pescarin
+  image: organisers/matteo-pescarin.jpg
+  url: https://smartart.it

@@ -1,0 +1,13 @@
+<li class="twitter-card">
+  {{#if twitter}}
+  <a href="https://twitter.com/{{twitter}}" title="{{name}} {{surname}}'s Twitter profile">
+  {{/if}}
+  {{#if url}}
+  <a href="{{url}}" title="{{name}} {{surname}}'s website">
+  {{/if}}
+    <img src="/images/{{image}}" alt="{{name}} {{surname}}">
+    {{name}} {{surname}}
+  {{#or twitter url}}
+  </a>
+  {{/or}}
+</li>
