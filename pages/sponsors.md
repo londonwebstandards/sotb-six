@@ -3,7 +3,7 @@ title: Sponsors
 description: List of sponsors supporting State of the Browser
 draft: false
 layout: sponsors.hbs
-lastmod: 2018-08-29
+lastmod: 2018-08-30
 data: models/sponsors.yaml
 page_class: sponsors
 ---
