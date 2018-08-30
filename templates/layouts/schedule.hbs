@@ -3,7 +3,7 @@
 {{#content 'main'}}
 <article>
   <h1>{{title}}</h1>
-  
+
   {{{contents}}}
 
   {{#if data}}
@@ -16,6 +16,7 @@
           {{{title}}}
           {{#if link }}</a>{{else}}</em>{{/if}}
           {{#if name }}&mdash; {{name}}{{/if}}
+          {{!-- {{#if twitter }}<a href="https://twitter.com/{{twitter}}" rel="external noopener">@{{twitter}}</a>{{/if}} --}}
         </h2>
       </li>
       {{/data.schedule}}
