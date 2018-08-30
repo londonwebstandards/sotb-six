@@ -7,7 +7,7 @@ major:
   - name: Binary Vision
     website: https://www.binaryvision.com/
     logo: /images/logos/binary_vision.png
-    copy: Binary Vision started as a video games company back in the Paleolithic. We’ve evolved into a web agency, proud to support open source, open standards and the open web.
+    copy: 'Binary Vision started as a video games company back in the Paleolithic. We’ve evolved into a web agency, proud to support open source, open standards and the open web.<br>Always open to hear from like-minded freelancers: <a href="https://www.binaryvision.com/">binaryvision.com</a> or <a href="https://twitter.com/RupertLB">@RupertLB</a>.'
   - name: Google Chrome
     website: https://developers.google.com/web/
     logo: /images/logos/logo_chrome_48dp.svg
