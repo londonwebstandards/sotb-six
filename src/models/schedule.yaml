@@ -5,51 +5,51 @@ schedule:
   - time: '9:50'
     title: Opening Introduction
   - time: '10:00'
-    name: Speaker 1
-    title: Talk 1
-    link: speaker-1
+    name: Michelle Barker
+    title: Super-powered Layouts with CSS Grid and CSS Variables
+    link: michelle-barker
   - time: '10:30'
-    name: Speaker 2
-    title: Talk 2
-    link: speaker-2
+    name: Dr. Ben Livshits
+    title: Moving toward Web 3.0 in Brave
+    link: dr-ben-livshits
   - time: '11:00'
     title: Coffee break
   - time: '11:30'
-    name: Speaker 3
-    title: Talk 3
-    link: speaker-3
+    name: Sara Vieira
+    title: 'Stop the #divFest!'
+    link: sara-vieira
   - time: '12:00'
-    name: Speaker 4
-    title: Talk 4
-    link: talk-4
+    name: Rowan Merewood
+    title: The web, apps, web apps, and other Venn diagrams
+    link: rowan-merewood
   - time: '12:30'
-    name: Speaker 5
-    title: Talk 5
-    link: speaker-5
+    name: Ada Rose Cannon
+    title: WebXR and the Immersive Web
+    link: ada-rose-cannon
   - time: '13:00'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
   - time: '14:00'
-    name: Speaker 6
-    title: Talk 6
-    link: speaker-6
+    name: Ruth John
+    title: 'How to be a Web A/V Artist Part 2: Picking Up the Threads'
+    link: ruth-john
   - time: '14:30'
-    name: Speaker 7
-    title: Talk 7
-    link: speaker-7
+    name: Chris Mills
+    title: Bring on the design tools
+    link: chris-mills
   - time: '15:00'
-    name: Speaker 8
-    title: Talk 8
-    link: speaker-8
+    name: Christian Heilmann
+    title: Hinting at a better web
+    link: christian-heilmann
   - time: '15:30'
     title: Coffee break
   - time: '16:00'
-    name: Speaker 9
-    title: Talk 9
-    link: speaker-9
+    name: Jeremy Keith
+    title: The Web Is Agreement
+    link: jeremy-keith
   - time: '16:30'
-    name: Speaker 10
-    title: Talk 10
-    link: speaker-10
+    name: Charlie Owen
+    title: Dear Developer
+    link: charlie-owen
   - time: '17:00'
     title: Closing remarks
   - time: '17:05'
