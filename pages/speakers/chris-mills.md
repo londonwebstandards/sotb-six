@@ -8,7 +8,7 @@ speaker:
   image: chris-mills.jpg
   bio: |
     <p>Chris Mills is content lead and team manager for the MDN Web Docs writer’s team at Mozilla. Since about the year 2000 he has enjoyed tinkering with web technologies, moaning about accessibility, and writing great documentation. He has come full circle from raging heavy metal drummer, to grumpy old man and spreadsheet admin.</p>
-lastmod: 2018-08-14
+lastmod: 2018-08-30
 private: false
 layout: speaker.hbs
 order: 2
