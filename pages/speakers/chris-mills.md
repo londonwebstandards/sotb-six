@@ -15,4 +15,4 @@ order: 2
 ogImage: /images/cards/chris-mills.png
 ---
 
-Since the early days of Firebug, browser developer tools have grown to feature-rich behemoths, although a lot of what they offer is centered around faster/better JavaScript debugging, network monitoring, and suchlike. Firefox has switched gears is now leading the charge on design tools — features that provide visual, immediate inspection and tweaking of page design concerns such as layouts and fonts. In this talk, Mozilla’s Chris Mills looks at what is available now, and what’s coming up.
+Since the early days of Firebug, browser developer tools have grown to feature-rich behemoths, although a lot of what they offer is centered around faster/better JavaScript debugging, network monitoring, and suchlike. Firefox has switched gears and is now leading the charge on design tools — features that provide visual, immediate inspection and tweaking of page design concerns such as layouts and fonts. In this talk, Mozilla’s Chris Mills looks at what is available now, and what’s coming up.
