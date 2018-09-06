@@ -2,8 +2,9 @@
 title: Live
 description: Livestream of the event
 draft: false
-layout: default.hbs
+layout: live.hbs
 lastmod: 2018-09-06
+data: models/sponsors.yaml
 page_class: live
 ---
 
