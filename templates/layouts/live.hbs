@@ -1,0 +1,44 @@
+{{#extend "page"}}
+
+{{#content "main"}}
+<article>
+<h1 class="no-bg">Livestream</h1>
+
+<section>
+  {{{contents}}}
+</section>
+
+<section>
+  <ul class="sponsor-list sponsor-list--headline">
+    {{#if data.headline}}
+      {{#data.headline}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.headline}}
+    {{/if}}
+  </ul>
+  <ul class="sponsor-list sponsor-list--major">
+    {{#if data.major}}
+      {{#data.major}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.major}}
+    {{/if}}
+  </ul>
+  <ul class="sponsor-list sponsor-list--medium">
+    {{#if data.medium}}
+      {{#data.medium}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.medium}}
+    {{/if}}
+  </ul>
+  <ul class="sponsor-list sponsor-list--small">
+    {{#if data.small}}
+      {{#data.small}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.small}}
+    {{/if}}
+  </ul>
+</section>
+{{/content}}
+
+</article>
+{{/extend}}
