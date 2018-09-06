@@ -1,0 +1,28 @@
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+
+  > li {
+    margin-top: size('padding-s');
+    margin-right: size('padding-s');
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    &,
+    > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    > a {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+}
