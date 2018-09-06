@@ -8,48 +8,36 @@
   {{{contents}}}
 </section>
 
-<h2>Proudly sponsored by</h2>
-
-{{#if data.headline}}
-  <section>
-    <ul class="sponsor-list sponsor-list--headline">
-    {{#data.headline}}
-      {{>molecule-sponsor--no-text}}
-    {{/data.headline}}
-    </ul>
-  </section>
-{{/if}}
-{{#if data.major}}
-  <section>
-    <h2>Major sponsors</h2>
-    <ul class="sponsor-list sponsor-list--major">
-    {{#data.major}}
-      {{>molecule-sponsor--no-text}}
-    {{/data.major}}
-    </ul>
-  </section>
-{{/if}}
-{{#if data.medium}}
-  <section>
-    <h2>Medium sponsors</h2>
-    <ul class="sponsor-list sponsor-list--medium">
-    {{#data.medium}}
-      {{>molecule-sponsor--no-text}}
-    {{/data.medium}}
-    </ul>
-  </section>
-{{/if}}
-{{#if data.small}}
-  <section>
-    <h2>Small sponsors</h2>
-    <ul class="sponsor-list sponsor-list--small">
-    {{#data.small}}
-      {{>molecule-sponsor--no-text}}
-    {{/data.small}}
-    </ul>
-  </section>
-{{/if}}
-
+<section>
+  <ul class="sponsor-list sponsor-list--headline">
+    {{#if data.headline}}
+      {{#data.headline}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.headline}}
+    {{/if}}
+  </ul>
+  <ul class="sponsor-list sponsor-list--major">
+    {{#if data.major}}
+      {{#data.major}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.major}}
+    {{/if}}
+  </ul>
+  <ul class="sponsor-list sponsor-list--medium">
+    {{#if data.medium}}
+      {{#data.medium}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.medium}}
+    {{/if}}
+  </ul>
+  <ul class="sponsor-list sponsor-list--small">
+    {{#if data.small}}
+      {{#data.small}}
+        {{>molecule-sponsor--no-text}}
+      {{/data.small}}
+    {{/if}}
+  </ul>
+</section>
 {{/content}}
 
 </article>
