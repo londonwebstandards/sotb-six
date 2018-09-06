@@ -19,9 +19,16 @@ diversity:
     surname: Preece
     twitter: tiny_m
     image: tiny_m.jpg
+  - name: Stephen
+    surname: Spencer
+    twitter: stephenspencer
+    image: stephenspencer.png
+  - name: Richard
+    surname: Westenra
+    twitter: RichardWestenra
+    image: RichardWestenra.jpg
   - name: Patrick
     surname: Whitty-Clarke
-    # twitter:
     image: pwc.png
 helpers:
   - name: Paul
