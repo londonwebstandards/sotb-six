@@ -13,5 +13,5 @@ page_class: live
 </figure>
 
 <figure class="media  media--video-chat">
-  <iframe src="https://www.youtube.com/live_chat?v=ByoQOBgyTEc&embed_domain=stateofthebrowser.com" frameborder="0"></iframe>
+  <iframe src="https://www.youtube.com/live_chat?v=ByoQOBgyTEc&embed_domain=2018.stateofthebrowser.com" frameborder="0"></iframe>
 </figure>
