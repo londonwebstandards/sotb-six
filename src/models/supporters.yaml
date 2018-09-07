@@ -29,6 +29,7 @@ diversity:
     image: RichardWestenra.jpg
   - name: Patrick
     surname: Whitty-Clarke
+    twitter: prefacestudios
     image: pwc.png
 helpers:
   - name: Paul
