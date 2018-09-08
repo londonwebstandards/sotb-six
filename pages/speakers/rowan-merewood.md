@@ -15,6 +15,7 @@ order: 6
 ogImage: /images/cards/rowan-merewood.png
 talk:
   links:
+    - link: https://developers.google.com/web/
     - link: https://developers.google.com/web/updates/2018/03/emscripting-a-c-library
     - link: https://medium.com/@anikiki/paper-football-is-instant-7fea124fcd3c
     - link: https://github.com/WICG/badging
