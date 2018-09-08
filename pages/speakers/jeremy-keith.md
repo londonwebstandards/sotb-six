@@ -13,6 +13,9 @@ private: false
 layout: speaker.hbs
 ogImage: /images/cards/jeremy-keith.png
 order: 4
+talk:
+  links:
+    - link: https://principles.adactio.com/
 ---
 
 Let’s take a look at web standards — what they are, where they come from, and where they’re going — taking some detours along the way, from currencies, games, and laws to shipping containers, clocks, and hashtags.
