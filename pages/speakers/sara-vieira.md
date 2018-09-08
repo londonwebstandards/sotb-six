@@ -8,7 +8,7 @@ speaker:
   image: sara-vieira.jpg
   bio: |
     <p>Front-End Developer at <em>YLD</em>, open sorcerer, drummer and horror movie fangirl. The internet is Amazing.</p>
-lastmod: 2018-07-13
+lastmod: 2018-09-08
 private: false
 layout: speaker.hbs
 order: 7
