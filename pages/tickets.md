@@ -3,7 +3,7 @@ title: Tickets
 description: More information and buying options for tickets
 draft: false
 layout: default.hbs
-lastmod: 2018-07-16
+lastmod: 2018-09-06
 ---
 
 
@@ -22,10 +22,6 @@ This year we have a range of tickets:
 All of the tickets get you exactly the same on the day.
 
 Those that choose a **Diversity** or **Helper** ticket will get a mention here, on the website, if you wish.
-
-## Buy tickets
-
-<script src="https://embed.getinvited.to/webstandards/state-of-the-browser-2018.js" id="giscript-webstandards-state-of-the-browser-2018" async></script>
 
 ## Diversity tickets
 
