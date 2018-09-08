@@ -6,6 +6,15 @@
       <h1>{{ description }}</h1>
       {{{contents}}}
 
+      {{#if links}}
+        <h2>Further Reading and Links:</h2>
+        <ul>
+          {{#links}}
+            <li><a href="{{link}}">{{link}}</a></li>
+          {{/links}}
+        </ul>
+      {{/if}}
+
       <footer>
         <nav>
           <ul class="list-inline">
