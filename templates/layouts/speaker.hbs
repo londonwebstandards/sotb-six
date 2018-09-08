@@ -6,12 +6,12 @@
       <h1>{{ description }}</h1>
       {{{contents}}}
 
-      {{#if links}}
+      {{#if talk.links}}
         <h2>Further Reading and Links:</h2>
         <ul>
-          {{#links}}
+          {{#talk.links}}
             <li><a href="{{link}}">{{link}}</a></li>
-          {{/links}}
+          {{/talk.links}}
         </ul>
       {{/if}}
 
