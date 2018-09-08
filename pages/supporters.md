@@ -5,7 +5,7 @@ draft: false
 private: true
 layout: supporters.hbs
 data: models/supporters.yaml
-lastmod: 2018-08-20
+lastmod: 2018-09-06
 ---
 
 London Web Standards has always been about Community and not making money, but organising a conference like State of the Browser is not easy or cheap. So this year, for the first time, we have a number of ticket types available: Normal/Diversity/Helper.

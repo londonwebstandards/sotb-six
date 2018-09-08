@@ -1,4 +1,8 @@
 diversity:
+  - name: Nick
+    surname: Colley
+    twitter: nickcolley
+    image: nickcolley.jpg
   - name: Andy
     surname: Davies
     twitter: AndyDavies
@@ -7,10 +11,26 @@ diversity:
     surname: Milner
     twitter: JamesLMilner
     image: JamesLMilner.jpg
+  - name: Joey
+    surname: Padasian
+    twitter: joe_midi
+    image: joe_midi.jpg
   - name: Mairead
     surname: Preece
     twitter: tiny_m
     image: tiny_m.jpg
+  - name: Stephen
+    surname: Spencer
+    twitter: stephenspencer
+    image: stephenspencer.png
+  - name: Richard
+    surname: Westenra
+    twitter: RichardWestenra
+    image: RichardWestenra.jpg
+  - name: Patrick
+    surname: Whitty-Clarke
+    twitter: prefacestudios
+    image: pwc.png
 helpers:
   - name: Paul
     surname: Duncan
