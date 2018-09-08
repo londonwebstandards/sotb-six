@@ -8,7 +8,7 @@ speaker:
   image: michelle-barker.jpg
   bio: |
     <p>Michelle is a Creative Front-end Developer at <em>Mud</em>, a leading digital agency in Bath, UK, where she is known unofficially as the Queen of Grids. She is a regular blogger on all things CSS on her personal site <em>CSS { In Real Life }</em>, and has written articles for <em>Smashing Magazine</em>, <em>the Pastry Box</em> and <em>Vandelay Design</em>.</p>
-lastmod: 2018-07-13
+lastmod: 2018-09-08
 private: false
 layout: speaker.hbs
 order: 1
