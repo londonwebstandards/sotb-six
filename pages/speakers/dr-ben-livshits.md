@@ -12,6 +12,18 @@ private: false
 layout: speaker.hbs
 order: 5
 ogImage: /images/cards/dr-ben-livshits.png
+talk:
+  links:
+    - link: https://brave.com/
+    - link: http://www.ghostery.com/
+    - link: https://basicattentiontoken.org/
+    - link: https://medium.com/@AttentionToken/announcing-a-new-blockchain-based-digital-advertising-platform-775203933c44
+    - link: https://medium.com/@AttentionToken
+    - link: https://basicattentiontoken.org/timeline
+    - link: https://metamask.io/
+    - link: https://duckduckgo.com/
+    - link: https://basicattentiontoken.org/funding-your-brave-wallet/
+    - link: https://ipfs.io/
 ---
 
 [Brave](https://brave.com) is a browser that aims to disrupt online advertising, while simultaneously protecting the privacy of the user. Brave tends to also be quite a bit faster that the competition.
