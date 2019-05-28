@@ -12,7 +12,7 @@ page_class: sponsors
 
 ## Help us make State of the Browser even better.
 
-Sponsoring SOTB 2018 will give you access to up to 400 web professionals at the event, more via our mailing list and more via our twitter account, event website and talks posted on Vimeo (all talks are filmed).
+Sponsoring SOTB 2019 will give you access to up to 400 web professionals at the event, more via our mailing list and more via our twitter account, event website and talks posted on Vimeo (all talks are filmed).
 
 If you are interested into helping us:
 
