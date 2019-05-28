@@ -22,12 +22,12 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20180711T122544Z
-UID:20180711T122544Z-1405189536@marudot.com
-DTSTART;TZID="Europe/London":20180908T095000
-DTEND;TZID="Europe/London":20180908T170500
+DTSTAMP:20190914T095000Z
+UID:20190914T095000Z-1405189536@marudot.com
+DTSTART;TZID="Europe/London":20190914T095000
+DTEND;TZID="Europe/London":20190914T170500
 SUMMARY:State of the Browser
-DESCRIPTION:for schedule and speakers please visit:\nhttps://2018.stateofthebrowser.com/\n\nfor up-to-date information about the conference\, follow us on Twitter:\nhttps://twitter.com/webstandards
+DESCRIPTION:For speakers and schedule please visit:\nhttps://2019.stateofthebrowser.com/\n\nFor up-to-date information about the conference\, follow us on Twitter:\nhttps://twitter.com/webstandards
 LOCATION:Conway Hall\, 25 Red Lion Square\, London WC1R 4RL\, UK
 TRANSP:OPAQUE
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY

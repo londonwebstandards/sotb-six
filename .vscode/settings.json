@@ -1,4 +1,8 @@
 {
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground" : "#c61440",
+    "titleBar.activeForeground" : "#f7f5f5"
+  },
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
   "eslint.packageManager": "npm"

@@ -1,66 +1,66 @@
-date: Saturday 16 September 2017
+date: Saturday 14 September 2019
 schedule:
   - time: '9:15'
     title: Registration opens
   - time: '9:50'
     title: Opening Introduction
-  - time: '10:00'
-    name: Michelle Barker
-    title: Super-powered Layouts with CSS Grid and CSS Variables
-    link: michelle-barker
-    twitter: mbarker_84
-  - time: '10:30'
-    name: Dr. Ben Livshits
-    title: Moving toward Web 3.0 in Brave
-    link: dr-ben-livshits
-    twitter: convoluted_code
+  # - time: '10:00'
+  #   name: Michelle Barker
+  #   title: Super-powered Layouts with CSS Grid and CSS Variables
+  #   link: michelle-barker
+  #   twitter: mbarker_84
+  # - time: '10:30'
+  #   name: Dr. Ben Livshits
+  #   title: Moving toward Web 3.0 in Brave
+  #   link: dr-ben-livshits
+  #   twitter: convoluted_code
   - time: '11:00'
     title: Coffee break
-  - time: '11:30'
-    name: Sara Vieira
-    title: 'Stop the #divFest!'
-    link: sara-vieira
-    twitter: NikkitaFTW
-  - time: '12:00'
-    name: Rowan Merewood
-    title: The web, apps, web apps, and other Venn diagrams
-    link: rowan-merewood
-    twitter: rowan_m
-  - time: '12:30'
-    name: Ada Rose Cannon
-    title: WebXR and the Immersive Web
-    link: ada-rose-cannon
-    twitter: lady_ada_king
+  # - time: '11:30'
+  #   name: Sara Vieira
+  #   title: 'Stop the #divFest!'
+  #   link: sara-vieira
+  #   twitter: NikkitaFTW
+  # - time: '12:00'
+  #   name: Rowan Merewood
+  #   title: The web, apps, web apps, and other Venn diagrams
+  #   link: rowan-merewood
+  #   twitter: rowan_m
+  # - time: '12:30'
+  #   name: Ada Rose Cannon
+  #   title: WebXR and the Immersive Web
+  #   link: ada-rose-cannon
+  #   twitter: lady_ada_king
   - time: '13:00'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
-  - time: '14:00'
-    name: Ruth John
-    title: 'How to be a Web A/V Artist Part 2: Picking Up the Threads'
-    link: ruth-john
-    twitter: Rumyra
-  - time: '14:30'
-    name: Chris Mills
-    title: Bring on the design tools
-    link: chris-mills
-    twitter: chrisdavidmills
-  - time: '15:00'
-    name: Christian Heilmann
-    title: Hinting at a better web
-    link: christian-heilmann
-    twitter: codepo8
+  # - time: '14:00'
+  #   name: Ruth John
+  #   title: 'How to be a Web A/V Artist Part 2: Picking Up the Threads'
+  #   link: ruth-john
+  #   twitter: Rumyra
+  # - time: '14:30'
+  #   name: Chris Mills
+  #   title: Bring on the design tools
+  #   link: chris-mills
+  #   twitter: chrisdavidmills
+  # - time: '15:00'
+  #   name: Christian Heilmann
+  #   title: Hinting at a better web
+  #   link: christian-heilmann
+  #   twitter: codepo8
   - time: '15:30'
     title: Coffee break
-  - time: '16:00'
-    name: Jeremy Keith
-    title: The Web Is Agreement
-    link: jeremy-keith
-    twitter: adactio
-  - time: '16:30'
-    name: Charlie Owen
-    title: Dear Developer
-    link: charlie-owen
-    twitter: sonniesedge
+  # - time: '16:00'
+  #   name: Jeremy Keith
+  #   title: The Web Is Agreement
+  #   link: jeremy-keith
+  #   twitter: adactio
+  # - time: '16:30'
+  #   name: Charlie Owen
+  #   title: Dear Developer
+  #   link: charlie-owen
+  #   twitter: sonniesedge
   - time: '17:00'
     title: Closing remarks
   - time: '17:05'
-    title: Pub (Craft Beer Co.) - 10 minute walk, please join us!
+    title: Pub
