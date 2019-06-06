@@ -15,6 +15,7 @@ order: 7
 ogImage: /images/cards/ruth-john.png
 talk:
   links:
+    - link: https://codepen.io/Rumyra/debug/PaBXdX
     - link: https://github.com/Rumyra/Talk-Web-Workers/blob/master/README.md
     - link: https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API
     - link: https://codepen.io/Rumyra/pen/PaBXdX

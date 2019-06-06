@@ -17,6 +17,7 @@ order: 6
 ogImage: /images/cards/charlie-owen.png
 talk:
   links:
+    - link: https://www.sonniesedge.net/talks/dear-developer
     - link: http://www.seochat.com/c/a/google-optimization-help/average-page-load-time-of-top-ranking-websites-in-google/
     - link: https://building.calibreapp.com/beyond-the-bubble-real-world-performance-9c991dcd5342
     - link: https://www.alexa.com/topsites

@@ -15,6 +15,7 @@ ogImage: /images/cards/jeremy-keith.png
 order: 4
 talk:
   links:
+    - link: https://adactio.com/articles/14321
     - link: https://principles.adactio.com/
   youtube: F3OpvEX2fhs
 ---
