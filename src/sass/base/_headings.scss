@@ -22,15 +22,23 @@ h6 {
 }
 
 h1 {
+  font-size: size('text-xl');
+  line-height: size('line-height-narrower');
 }
 
 h2 {
+  font-size: size('text-l');
+  line-height: size('line-height-narrow');
 }
 
 h3 {
+  font-size: size('text-l');
+  line-height: size('line-height-narrow');
 }
 
 h4 {
+  font-size: size('text-l');
+  line-height: size('line-height-narrow');
 }
 
 h5 {

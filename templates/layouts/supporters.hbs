@@ -1,0 +1,32 @@
+{{#extend "page"}}
+
+{{#content "main"}}
+  <article>
+    <h1>{{title}}</h1>
+    {{{contents}}}
+    {{#if data}}
+      {{#if data.diversity}}
+        <section>
+          <h2>Diversity</h2>
+          <ul class="list-grid">
+            {{#data.diversity}}
+              {{>twitter-card}}
+            {{/data.diversity}}
+          </ul>
+        </section>
+      {{/if}}
+      {{#if data.helpers}}
+        <section>
+          <h2>Helpers</h2>
+          <ul class="list-grid">
+            {{#data.helpers}}
+              {{>twitter-card}}
+            {{/data.helpers}}
+          </ul>
+        </section>
+      {{/if}}
+    {{/if}}
+  </article>
+{{/content}}
+
+{{/extend}}

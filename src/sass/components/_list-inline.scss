@@ -5,8 +5,8 @@
   grid-area: links;
 
   > li {
-    margin-top: 1rem;
-    margin-right: 1rem;
+    margin-top: size('padding-s');
+    margin-right: size('padding-s');
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;

@@ -90,7 +90,7 @@ function metalsmith() {
             title: config.title,
             URL: `https://${config.domain}`
           },
-          ogImage: config.sharingImg
+          ogImage: `${config.sharingImg}`
         })
         .use(dataLoader())
         .use(drafts())
@@ -98,8 +98,14 @@ function metalsmith() {
           collections({
             speakers: {
               pattern: "speakers/*.md",
-              sortBy: "order",
+              sortBy: "speaker.lastname",
+              refer: false
+            },
+            lastSpeakers: {
+              pattern: "speakers/*.md",
+              sortBy: "lastmod",
               reverse: true,
+              limit: 2,
               refer: false
             }
           })

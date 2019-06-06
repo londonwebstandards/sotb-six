@@ -6,6 +6,15 @@
       <h1>{{ description }}</h1>
       {{{contents}}}
 
+      {{#if talk.links}}
+        <h2>Further Reading and Links:</h2>
+        <ul>
+          {{#talk.links}}
+            <li><a href="{{link}}">{{link}}</a></li>
+          {{/talk.links}}
+        </ul>
+      {{/if}}
+
       <footer>
         <nav>
           <ul class="list-inline">
@@ -13,7 +22,7 @@
               <a class="is-button" href="/speakers">View all Speakers</a>
             </li>
             <li>
-              <a class="is-button is-disabled">See full schedule</a>
+              <a class="is-button" href="/schedule/">See full schedule</a>
             </li>
           </ul>
         </nav>

@@ -1,10 +1,8 @@
 ---
 title: Schedule
 description: See the what's the plan for the day.
-draft: true
+draft: false
 layout: schedule.hbs
 data: models/schedule.yaml
-lastmod: 2018-07-13
+lastmod: 2018-08-30
 ---
-
-To be announced.

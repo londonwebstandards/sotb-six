@@ -2,7 +2,7 @@
 
   @include above('medium') {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: size('padding');
     grid-template-areas: 'speaker talk'
       'nav -----';
     grid-template-columns: 1fr 60%;
@@ -13,12 +13,16 @@
     grid-area: talk;
 
     @include above('medium') {
-      top: -4rem;
+      top: -#{size('padding-xl')*2};
     }
   }
 
   &__info {
     grid-area: speaker;
+
+    .list-inline {
+      clear: left;
+    }
   }
 
   > footer {
@@ -26,8 +30,7 @@
   }
 
   .image-wrap {
-    margin-right: 1em;
-    margin-bottom: 1em;
+    margin: size('padding') size('padding-s') size('padding-s') 0;
     float: left;
   }
 }

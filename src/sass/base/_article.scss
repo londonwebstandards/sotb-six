@@ -1,5 +1,22 @@
 article {
-  margin: 0 auto 4rem;
-  padding: 0 1rem;
+  margin: 0 auto size('padding-xl');
+  padding: 0 size('padding');
   max-width: $max-container-width;
+
+  > section,
+  > section > * {
+    padding: 0;
+  }
+
+  > section {
+    margin-top: size('padding-xl');
+  }
+
+  > h1:first-child {
+    margin-top: size('padding');
+
+    @include above('small') {
+      margin-top: 0;
+    }
+  }
 }

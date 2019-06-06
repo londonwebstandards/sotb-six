@@ -1,0 +1,17 @@
+.twitter-card {
+  font-weight: $font-weight-bold;
+
+  img {
+    height: 4rem;
+    border: 5px solid color('red');
+    border-radius: 50%;
+  }
+
+  a:visited > img {
+    border-color: color('red-screen');
+  }
+
+  a:hover > img {
+    border-color: color('red-light');
+  }
+}

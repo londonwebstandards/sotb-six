@@ -1,13 +1,18 @@
 section {
-  margin-bottom: 4rem;
+  margin-bottom: size('padding-xl');
 
   @include above('medium') {
-    padding: 0 1em;
+    padding: 0 size('padding');
   }
 
+  &:first-child > h2:first-child {
+    margin-top: size('padding');
+  }
+
+  > h1,
   > h2 {
-    padding: 0 1rem;
-    padding-bottom: 20px;
+    padding: 0 size('padding');
+    padding-bottom: 20px; // fixed size due to the way the gradient is calculated
     background-color: color('purple');
     background-image: rainbow-gradient();
     color: contrast('purple');
@@ -30,7 +35,7 @@ section {
   > ul,
   > dl,
   > p {
-    padding: 0 1rem;
+    padding: 0 size('padding');
 
     @include above('medium') {
       padding: 0;

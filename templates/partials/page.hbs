@@ -5,13 +5,13 @@
   {{>page-head}}
 </head>
 
-<body{{#if page_class}} class="{{ page_class }}"{{/if}} itemscope itemtype="https://schema.org/WebPage">
+<body{{#if page_class}} class="{{ page_class }}"{{/if}}>
   <a class="is-focusable" href="#content">Skip to main content</a>
-  <a class="is-focusable" href="/home">Go to the homepage</a>
+  <a class="is-focusable" href="/">Go to the homepage</a>
 
   {{>organism-header}}
 
-  <main id="content" itemscope itemtype="https://schema.org/WebPage">
+  <main id="content">
     {{#block "main"}}
       {{{contents}}}
     {{/block}}

@@ -3,32 +3,25 @@
 {{#content 'main'}}
 <article>
   <h1>{{title}}</h1>
-  
+
   {{{contents}}}
 
   {{#if data}}
-    <h3>{{data.date}}</h3>
-    <table class="schedule">
+    <h2>{{data.date}}</h2>
+    <ul class="schedule">
       {{#data.schedule}}
-      <tr class="schedule__row">
-        <td class="schedule__time"><time>{{time}}</time></td>
-        <td{{#if name }} class="schedule__talk"{{/if}}>
-          {{#if link }}
-            <a href="/speakers/{{link}}">
-          {{else}}
-            <em>
-          {{/if}}
+      <li class="schedule__slot{{#if link}} schedule__slot--talk{{/if}}">
+        <time>{{time}}</time>
+        <h2>
+          {{#if link }}<a href="/speakers/{{link}}">{{else}}<em>{{/if}}
           {{{title}}}
-          {{#if link }}
-            </a> 
-          {{else}}
-            </em>
-          {{/if}}
+          {{#if link }}</a>{{else}}</em>{{/if}}
           {{#if name }}&mdash; {{name}}{{/if}}
-        </td>
-      </tr>
+          {{!-- {{#if twitter }}<a href="https://twitter.com/{{twitter}}" rel="external noopener">@{{twitter}}</a>{{/if}} --}}
+        </h2>
+      </li>
       {{/data.schedule}}
-    </table>
+    </ul>
   {{/if}}
 </article>
 {{/content}}

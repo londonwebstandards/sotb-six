@@ -1,0 +1,50 @@
+.sponsors {
+  main {
+    margin: 0 auto;
+    max-width: $max-container-width;
+
+    @include above('large') {
+      display: grid;
+      grid-template-areas:
+        'aside headline'
+        'aside major'
+        'aside medium'
+        'aside small';
+      grid-template-columns: 1fr 60%;
+    }
+
+    h1 {
+      margin: size('padding-s');
+      grid-area: headline;
+
+      @include above('small') { // stylelint-disable-line max-nesting-depth
+        margin-bottom: size('padding-xl');
+      }
+
+      @include above('large') { // stylelint-disable-line max-nesting-depth
+        position: relative;
+        top: -#{size('padding-xl') * 2};
+      }
+    }
+
+    > *:nth-child(2) {
+      grid-area: headline;
+    }
+
+    > *:nth-child(3) {
+      grid-area: major;
+    }
+
+    > *:nth-child(4) {
+      grid-area: medium;
+    }
+
+    > *:nth-child(5) {
+      grid-area: small;
+    }
+
+    > *:last-child {
+      grid-area: aside;
+    }
+  }
+}

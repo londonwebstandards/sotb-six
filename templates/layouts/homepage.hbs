@@ -2,7 +2,7 @@
 
 {{#content "main"}}
   <section>
-    <h2 class="no-bg">Saturday, 8 September 2018 <br>Conway Hall, London</h2>
+    <h2 class="no-bg">Saturday, 14 September 2019 <br>Conway Hall, London</h2>
 
     <p>
       <a href="https://goo.gl/maps/76RqxhAjzFp" rel="nofollow external" class="button-icon button-icon--pin">Map</a>
@@ -13,7 +13,7 @@
     </p>
 
     <p>
-      Save the date: <a href="/downloads/stateofthebrowser2018.ics" rel="external">Download ICAL</a>
+      Save the date: <a href="/downloads/stateofthebrowser2019.ics" rel="external">Download ICAL</a>
     </p>
   </section>
 
@@ -35,14 +35,12 @@
     <p>All of the tickets get you exactly the same on the day.</p>
 
     <p>Those that choose a <strong>Diversity</strong> or <strong>Helper</strong> ticket will get a mention here, on the website, if you wish.</p>
-
-    <p><a href="/tickets" class="is-button">Buy tickets</a></p>
   </section>
 
   <section>
     <h2>Speakers</h2>
-    <p>We will be announcing more <a href="/speakers">Speakers</a> soon, but you don’t need to wait to grab a ticket.</p>
-    {{#if collections.speakers}}
+    <p>The latest speakers announced:</p>
+    {{#if collections.lastSpeakers}}
       {{>molecule-speaker-list--small}}
     {{/if}}
     <p><a href="/speakers" class="is-button">See all speakers</a></p>

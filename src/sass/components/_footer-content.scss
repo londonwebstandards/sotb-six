@@ -4,12 +4,17 @@
 
   @include above('small') {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: size('rhythm');
     grid-template-areas: 'info links';
     grid-template-columns: 60% 1fr;
   }
 
   &__information {
     grid-area: info;
+  }
+
+  img {
+    float: none;
+    max-width: 150px;
   }
 }
