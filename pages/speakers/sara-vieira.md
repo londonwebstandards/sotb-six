@@ -8,7 +8,7 @@ speaker:
   image: sara-vieira.jpg
   bio: |
     <p>Front-End Developer at <em>YLD</em>, open sorcerer, drummer and horror movie fangirl. The internet is Amazing.</p>
-lastmod: 2018-09-08
+lastmod: 2019-06-06
 private: false
 layout: speaker.hbs
 order: 7
@@ -19,6 +19,8 @@ talk:
     - link: https://reactjs.org/docs/fragments.html
     - link: https://letslearngraphql.com/
     - link: https://stop-div-fest.now.sh
+  youtube: -cg9w0uVMFA
+  slides: https://stop-div-fest.now.sh
 ---
 
 Frameworks are awesome, right? JSX and templates are the best thing since sliced bread!

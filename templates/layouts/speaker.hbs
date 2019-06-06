@@ -6,6 +6,32 @@
       <h1>{{ description }}</h1>
       {{{contents}}}
 
+      {{#if talk.youtube}}
+        <h2>Video:</h2>
+        <figure class="media  media--video">
+          <iframe src="https://www.youtube.com/embed/{{talk.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+      {{/if}}
+
+      {{#if talk.transcript}}
+        <h2>Transcript</h2>
+        <details>
+          <summary>
+            <strong>Read all →</strong>
+          </summary>
+          <blockquote>
+            <pre>{{talk.transcript}}</pre>
+          </blockquote>
+        </details>
+      {{/if}}
+
+      {{#if talk.slides}}
+        <h2>Slides:</h2>
+        <figure class="media  media--4-by-3">
+          <iframe src="{{talk.slides}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+      {{/if}}
+
       {{#if talk.links}}
         <h2>Further Reading and Links:</h2>
         <ul>

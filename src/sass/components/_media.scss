@@ -1,7 +1,6 @@
 ////
 /// Media
 /// @group components
-/// @link https://chrisburnell.com/styleguide/#figure
 ////
 
 // Contains embedded media properly and allows them to be dynamically resized
@@ -24,10 +23,21 @@
   }
 }
 
+.media--16-by-9,
 .media--video {
   padding-top: 56.65%
 }
 
+.media--4-by-3 {
+  padding-top: 75%;
+}
+
+.media--1-by-1,
+.media--square {
+  padding-top: 100%
+}
+
+.media--2-by-1,
 .media--video-chat {
   max-width: $max-paragraph-width;
   margin: 1rem auto 0;
