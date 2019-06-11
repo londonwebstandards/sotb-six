@@ -15,6 +15,7 @@ order: 6
 ogImage: /images/cards/rowan-merewood.png
 talk:
   links:
+    - link: https://docs.google.com/presentation/d/1KHTY3bn_5Q6j9wqI8xZlcHV06uezVZp2KNWMhCBo9nY/present?token=AC4w5VghPrVlpJ8xaEuSL7eQqj57rNJp0A%3A1559834424765&includes_info_params=1&eisi=COHzr4aU1eICFVGHHwodKUsNKg#slide=id.p
     - link: https://developers.google.com/web/
     - link: https://developers.google.com/web/updates/2018/03/emscripting-a-c-library
     - link: https://medium.com/@anikiki/paper-football-is-instant-7fea124fcd3c
