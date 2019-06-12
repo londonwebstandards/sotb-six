@@ -1,7 +1,11 @@
 {{#extend "page"}}
 
 {{#content "main"}}
-<h1 class="no-bg">Proudly sponsored by</h1>
+{{#if data }}
+  <h1 class="no-bg">Proudly sponsored by</h1>
+{{else}}
+  <h1 class="no-bg">See your company logo below by supporting us!</h1>
+{{/if}}
 {{#if data.headline}}
   <section>
     <ul class="sponsor-list sponsor-list--headline">
