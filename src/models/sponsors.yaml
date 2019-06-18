@@ -19,3 +19,7 @@
 #   - name: Responsive Design.is
 #     website: https://responsivedesign.is
 #     logo: /images/logos/responsivedesign.svg
+small:
+  - name: contra.agency
+    website: https://www.contra.agency/
+    logo: /images/logos/contra-colour.svg
