@@ -1,0 +1,15 @@
+{{#extend "page"}}
+
+{{#content "main"}}
+  <article>
+    <h1>{{title}}</h1>
+    {{{contents}}}
+    <ul class="list-grid">
+      {{#data}}
+        {{>organiser-card}}
+      {{/data}}
+    </ul>
+  </article>
+{{/content}}
+
+{{/extend}}
