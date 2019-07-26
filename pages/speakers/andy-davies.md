@@ -8,8 +8,8 @@ speaker:
   image: andy-davies.jpg
   bio: |
     <p>Andy is an Independent Web Performance Consultant and has helped some of the UK’s leading retailers, newspapers and financial services companies make their sites faster.</p>
-    <p>He co-author of 'Using WebPageTest' published by O'Reilly and author of 'The Pocket Guide to Web Performance'.</p>
-    <p>Andy is also a co-organiser of the London Web Performance meetup.</p>
+    <p>He is co-author of 'Using WebPageTest' published by O'Reilly and author of 'The Pocket Guide to Web Performance'.</p>
+    <p>Andy is also a co-organiser of the <a href="https://ldnwebperf.org" rel="external">London Web Performance meetup</a>.</p>
 lastmod: 2019-07-24
 private: false
 layout: speaker.hbs
