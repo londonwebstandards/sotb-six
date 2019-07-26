@@ -8,7 +8,7 @@ speaker:
   image: sanjay-purswani.jpg
   bio: |
     <p>Sanjay is a software engineer with a past life in design and animation. He worked at CompareTheMarket where he specialised in JavaScript, the front end and AMP, and now freelances as a full stack web developer specialising in the React/Node ecosystem.</p>
-lastmod: 2019-07-25
+lastmod: 2019-07-24
 private: false
 layout: speaker.hbs
 order: 2
