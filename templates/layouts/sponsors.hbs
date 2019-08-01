@@ -17,7 +17,7 @@
 {{/if}}
 {{#if data.major}}
   <section>
-    <h2>Major sponsors</h2>
+    <h2 id="major">Major sponsors</h2>
     <ul class="sponsor-list sponsor-list--major">
     {{#data.major}}
       {{>molecule-sponsor}}
@@ -27,7 +27,7 @@
 {{/if}}
 {{#if data.medium}}
   <section>
-    <h2>Medium sponsors</h2>
+    <h2 id="medium">Medium sponsors</h2>
     <ul class="sponsor-list sponsor-list--medium">
     {{#data.medium}}
       {{>molecule-sponsor}}
@@ -37,7 +37,7 @@
 {{/if}}
 {{#if data.small}}
   <section>
-    <h2>Small sponsors</h2>
+    <h2 id="small">Small sponsors</h2>
     <ul class="sponsor-list sponsor-list--small">
     {{#data.small}}
       {{>molecule-sponsor}}
@@ -47,7 +47,7 @@
 {{/if}}
 {{#if data.publicists}}
   <section>
-    <h2>Publicists</h2>
+    <h2 id="publicists">Publicists</h2>
     <ul class="sponsor-list sponsor-list--small">
     {{#data.publicists}}
       {{>molecule-sponsor}}
