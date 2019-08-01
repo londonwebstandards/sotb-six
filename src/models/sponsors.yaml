@@ -24,3 +24,10 @@ small:
     website: https://www.contra.agency/
     logo: /images/logos/contra-colour.svg
     copy: Contra is an award winning agency in London. We are a diverse team of CREATIVE thinkers, DIGITAL doers and FILM storytellers.
+publicists:
+  - name: Piccalilli
+    website: https://piccalil.li/
+    logo: /images/logos/piccalilli.png
+  - name: Responsive Design Weekly
+    website: http://responsivedesignweekly.com/
+    logo: /images/logos/responsivedesignweekly.svg
