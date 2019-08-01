@@ -45,6 +45,16 @@
     </ul>
   </section>
 {{/if}}
+{{#if data.publicists}}
+  <section>
+    <h2>Publicists</h2>
+    <ul class="sponsor-list sponsor-list--small">
+    {{#data.publicists}}
+      {{>molecule-sponsor}}
+    {{/data.publicists}}
+    </ul>
+  </section>
+{{/if}}
 <section>
   {{{contents}}}
 </section>
