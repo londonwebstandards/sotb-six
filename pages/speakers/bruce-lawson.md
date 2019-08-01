@@ -7,7 +7,7 @@ speaker:
   twitter: brucel
   image: bruce-lawson.jpg
   bio: |
-    <p>As well as being a highly-regarded fashion blogger and one of the editors of the W3C’s HTML5.3 specification, Bruce co-wrote “Introducing HTML5” and was on the committee drafting the British Standard for commissioning accessible websites. Previously, he’s been a front-end tech lead for a large UK legal website, a tutor to a princess’ daughter in Thailand, a movie extra in Mumbai, a tarot card reader in Istanbul, and a <a href="https://www.brucelawson.co.uk/category/my-music/" rel="external">musician</a>.</p>
+    <p>As well as being a highly-regarded fashion blogger and one of the editors of the W3C’s HTML5.3 specification, Bruce co-wrote “Introducing HTML5” and was on the committee drafting the British Standard for commissioning accessible websites. Previously, he’s been a front-end tech lead for a large UK legal website, a tutor to a princess’ daughter in Thailand, a movie extra in Mumbai, a tarot card reader in Istanbul, and a <a href="https://www.brucelawson.co.uk/category/my-music/">musician</a>.</p>
 lastmod: 2019-07-25
 private: false
 layout: speaker.hbs
