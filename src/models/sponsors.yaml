@@ -24,6 +24,10 @@ small:
     website: https://www.contra.agency/
     logo: /images/logos/contra-colour.svg
     copy: Contra is an award winning agency in London. We are a diverse team of CREATIVE thinkers, DIGITAL doers and FILM storytellers.
+  - name: King’s Digital Lab
+    website: https://www.kdl.kcl.ac.uk/
+    logo: /images/logos/kdl.png
+    copy: Digital researchers and data experts. We create digital tools to explore academic research in new ways.
 publicists:
   - name: Piccalilli
     website: https://piccalil.li/
