@@ -35,3 +35,6 @@ publicists:
   - name: Responsive Design Weekly
     website: http://responsivedesignweekly.com/
     logo: /images/logos/responsivedesignweekly.svg
+  - name: London CSS
+    website: https://www.meetup.com/London-CSS-Meetup/
+    logo: /images/logos/london-css-square.svg
