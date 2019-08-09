@@ -17,7 +17,7 @@ headline:
 #     copy: Google Chrome is a fast, easy to use and secure web browser that works seamlessly across devices. Our mission is to increase and improve meaningful engagement on the web by helping developers and businesses build high quality experiences. Through Chrome, we aim to build a better web by maintaining the highest standard of experiences, performance and security for users globally.
 medium:
   - name: Immediate Media Co.
-    website: https://www.immediate.co.uk/
+    website: http://www.immediate.co.uk/
     logo: /images/logos/immediate-media.svg
     copy:  Immediate is the UK’s leading and fastest-growing special interest content and platform company. We own some of the best known and best loved brands in the UK, including BBC Good Food, Radio Times and hitched.co.uk.
 small:
