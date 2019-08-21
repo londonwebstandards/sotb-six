@@ -20,6 +20,10 @@ medium:
     website: http://www.immediate.co.uk/
     logo: /images/logos/immediate-media.svg
     copy:  Immediate is the UK’s leading and fastest-growing special interest content and platform company. We own some of the best known and best loved brands in the UK, including BBC Good Food, Radio Times and hitched.co.uk.
+  - name: HalfStack
+    website: https://halfstackconf.com/
+    logo: /images/logos/halfstack.svg
+    copy: HalfStack is a series of fun, welcoming, single-day, single-track, UI-centric JS and web conferences. Returning to London on the 22nd of November, 2019!
 small:
   - name: contra.agency
     website: https://www.contra.agency/
