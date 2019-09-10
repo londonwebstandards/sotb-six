@@ -1,65 +1,60 @@
 date: Saturday 14 September 2019
 schedule:
-  - time: '9:15'
+  - time: '9:20'
     title: Registration opens
   - time: '9:50'
     title: Opening Introduction
   - time: '10:00'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '10:30'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '11:00'
+    title: 'How To Make Loveliness: an HTML Treasure Hunt'
+    name: Bruce Lawson
+    link: bruce-lawson
+    twitter: brucel
+  - time: '10:45'
+    title: 'Making standards work for everyone'
+    name: Sally Lait
+    link: sally-lait
+    twitter: sallylait
+  - time: '11:15'
     title: Coffee break
-  - time: '11:30'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
+  - time: '11:35'
+    title: 'Google AMP: The fastest thing on the internet.'
+    name: Sanjay Purswani
+    link: sanjay-purswani
+    twitter: sanj9000
   - time: '12:00'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '12:30'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '13:00'
+    title: 'When Grids Go Wrong: Debugging CSS Grid'
+    name: Michelle Barker
+    link: michelle-barker
+    twitter: MicheBarks
+  - time: '12:40'
+    title: 'Keeping it simple with CSS that scales'
+    name: Andy Bell
+    link: andy-bell
+    twitter: andybelldesign
+  - time: '13:10'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
   - time: '14:00'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '14:30'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '15:00'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '15:30'
+    title: 'Accessibility For Everyone'
+    name: Laura Kalbag
+    link: laura-kalbag
+    twitter: laurakalbag
+  - time: '14:40'
+    title: 'Performance… it’s for People'
+    name: Andy Davies
+    link: andy-davies
+    twitter: andydavies
+  - time: '15:10'
     title: Coffee break
-  - time: '16:00'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
-  - time: '16:30'
-    title: Speaker Talk<br>(to-be-announced)
-    # name:
-    # link:
-    # twitter:
+  - time: '15:30'
+    title: 'Level Up: Developing Developers'
+    name: Melinda Seckington
+    link: melinda-seckington
+    twitter: mseckington
+  - time: '16:10'
+    title: 'Inspired by CSS Grid'
+    name: Andy Clarke
+    link: andy-clarke
+    twitter: malarkey
   - time: '17:00'
     title: Closing remarks
   - time: '17:05'
