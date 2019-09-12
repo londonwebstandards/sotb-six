@@ -1,54 +1,54 @@
-# diversity:
-#   - name: Nick
-#     surname: Colley
-#     twitter: nickcolley
-#     image: nickcolley.jpg
-#   - name: Andy
-#     surname: Davies
-#     twitter: AndyDavies
-#     image: AndyDavies.jpg
-#   - name: James
-#     surname: Milner
-#     twitter: JamesLMilner
-#     image: JamesLMilner.jpg
-#   - name: Joey
-#     surname: Padasian
-#     twitter: joe_midi
-#     image: joe_midi.jpg
-#   - name: Mairead
-#     surname: Preece
-#     twitter: tiny_m
-#     image: tiny_m.jpg
-#   - name: Stephen
-#     surname: Spencer
-#     twitter: stephenspencer
-#     image: stephenspencer.png
-#   - name: Richard
-#     surname: Westenra
-#     twitter: RichardWestenra
-#     image: RichardWestenra.jpg
-#   - name: Patrick
-#     surname: Whitty-Clarke
-#     twitter: prefacestudios
-#     image: pwc.png
-# helpers:
-#   - name: Paul
-#     surname: Duncan
-#     twitter: dexterperrin
-#     image: dexterperrin.png
-#   - name: Nick
-#     surname: Fitzsimons
-#     twitter: NickFitz
-#     image: NickFitz.jpg
-#   - name: Trys
-#     surname: Mudford
-#     twitter: trysmudford
-#     image: trysmudford.jpg
-#   - name: Ana
-#     surname: Rodrigues
-#     twitter: ohhelloana
-#     image: ohhelloana.jpg
-#   - name: Prisca
-#     surname: Schmarsow
-#     twitter: prisca_eyedea
-#     image: prisca_eyedea.jpg
+diversity:
+  - name: Bede
+    surname: Kelly
+    twitter: bedekelly
+    image:
+  - name: Jessica
+    surname: Rose
+    twitter: jesslynnrose
+    image:
+  - name: Matthew
+    surname: Atkinson
+    image:
+  - name: Paul
+    surname: Lloyd
+    twitter: paulrobertlloyd
+    image:
+  - name: Maximilian
+    surname: Franzke
+    image:
+  - name: Christopher
+    surname: Williams
+    twitter: _ctwilliams
+    image:
+  - name: Nigel
+    surname: Clutterbuck
+    twitter: whiteboxwebby
+    image:
+  - name: Jonathan
+    surname: Cousins
+    twitter: evolutionxbox
+    image:
+helpers:
+  - name: Ollie
+    surname: Williams
+    image:
+  - name: Mark
+    surname: Squires
+    twitter: JamCow
+    image:
+  - name: Prisca
+    surname: Schmarsow
+    twitter: prisca_eyedea
+    image:
+  - name: Sam
+    surname: Esgate
+    image:
+  - name: Shaun
+    surname: Bulbrook
+    twitter: shaunbulbrook
+    image:
+  - name: Jo
+    surname: Dodd
+    twitter: jkdodd
+    image:
