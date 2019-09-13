@@ -1,54 +1,54 @@
-# diversity:
-#   - name: Nick
-#     surname: Colley
-#     twitter: nickcolley
-#     image: nickcolley.jpg
-#   - name: Andy
-#     surname: Davies
-#     twitter: AndyDavies
-#     image: AndyDavies.jpg
-#   - name: James
-#     surname: Milner
-#     twitter: JamesLMilner
-#     image: JamesLMilner.jpg
-#   - name: Joey
-#     surname: Padasian
-#     twitter: joe_midi
-#     image: joe_midi.jpg
-#   - name: Mairead
-#     surname: Preece
-#     twitter: tiny_m
-#     image: tiny_m.jpg
-#   - name: Stephen
-#     surname: Spencer
-#     twitter: stephenspencer
-#     image: stephenspencer.png
-#   - name: Richard
-#     surname: Westenra
-#     twitter: RichardWestenra
-#     image: RichardWestenra.jpg
-#   - name: Patrick
-#     surname: Whitty-Clarke
-#     twitter: prefacestudios
-#     image: pwc.png
-# helpers:
-#   - name: Paul
-#     surname: Duncan
-#     twitter: dexterperrin
-#     image: dexterperrin.png
-#   - name: Nick
-#     surname: Fitzsimons
-#     twitter: NickFitz
-#     image: NickFitz.jpg
-#   - name: Trys
-#     surname: Mudford
-#     twitter: trysmudford
-#     image: trysmudford.jpg
-#   - name: Ana
-#     surname: Rodrigues
-#     twitter: ohhelloana
-#     image: ohhelloana.jpg
-#   - name: Prisca
-#     surname: Schmarsow
-#     twitter: prisca_eyedea
-#     image: prisca_eyedea.jpg
+diversity:
+  - name: Bede
+    surname: Kelly
+    twitter: bedekelly
+    image: bedekelly.jpg
+  - name: Jessica
+    surname: Rose
+    twitter: jesslynnrose
+    image: jesslynnrose.jpg
+  - name: Matthew
+    surname: Atkinson
+    image: default.jpg
+  - name: Paul
+    surname: Lloyd
+    twitter: paulrobertlloyd
+    image: paulrobertlloyd.png
+  - name: Maximilian
+    surname: Franzke
+    image: default.jpg
+  - name: Christopher
+    surname: Williams
+    twitter: _ctwilliams
+    image: _ctwilliams.jpg
+  - name: Nigel
+    surname: Clutterbuck
+    twitter: whiteboxwebby
+    image: whiteboxwebby.jpg
+  - name: Jonathan
+    surname: Cousins
+    twitter: evolutionxbox
+    image: evolutionxbox.png
+helpers:
+  - name: Ollie
+    surname: Williams
+    image: default.jpg
+  - name: Mark
+    surname: Squires
+    twitter: JamCow
+    image: JamCow.jpg
+  - name: Prisca
+    surname: Schmarsow
+    twitter: prisca_eyedea
+    image: prisca_eyedea.jpg
+  - name: Sam
+    surname: Esgate
+    image: default.jpg
+  - name: Shaun
+    surname: Bulbrook
+    twitter: shaunbulbrook
+    image: shaunbulbrook.jpg
+  - name: Jo
+    surname: Dodd
+    twitter: jkdodd
+    image: jkdodd.jpg
