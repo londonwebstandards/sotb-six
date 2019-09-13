@@ -2,53 +2,53 @@ diversity:
   - name: Bede
     surname: Kelly
     twitter: bedekelly
-    image:
+    image: bedekelly.jpg
   - name: Jessica
     surname: Rose
     twitter: jesslynnrose
-    image:
+    image: jesslynnrose.jpg
   - name: Matthew
     surname: Atkinson
-    image:
+    image: default.jpg
   - name: Paul
     surname: Lloyd
     twitter: paulrobertlloyd
-    image:
+    image: paulrobertlloyd.png
   - name: Maximilian
     surname: Franzke
-    image:
+    image: default.jpg
   - name: Christopher
     surname: Williams
     twitter: _ctwilliams
-    image:
+    image: _ctwilliams.jpg
   - name: Nigel
     surname: Clutterbuck
     twitter: whiteboxwebby
-    image:
+    image: whiteboxwebby.jpg
   - name: Jonathan
     surname: Cousins
     twitter: evolutionxbox
-    image:
+    image: evolutionxbox.png
 helpers:
   - name: Ollie
     surname: Williams
-    image:
+    image: default.jpg
   - name: Mark
     surname: Squires
     twitter: JamCow
-    image:
+    image: JamCow.jpg
   - name: Prisca
     surname: Schmarsow
     twitter: prisca_eyedea
-    image:
+    image: prisca_eyedea.jpg
   - name: Sam
     surname: Esgate
-    image:
+    image: default.jpg
   - name: Shaun
     surname: Bulbrook
     twitter: shaunbulbrook
-    image:
+    image: shaunbulbrook.jpg
   - name: Jo
     surname: Dodd
     twitter: jkdodd
-    image:
+    image: jkdodd.jpg
