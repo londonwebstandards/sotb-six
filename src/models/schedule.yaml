@@ -22,15 +22,15 @@ schedule:
     link: /speakers/sanjay-purswani
     twitter: sanj9000
   - time: '12:00'
-    title: 'When Grids Go Wrong: Debugging CSS Grid'
-    name: Michelle Barker
-    link: /speakers/michelle-barker
-    twitter: MicheBarks
-  - time: '12:40'
     title: 'Keeping it simple with CSS that scales'
     name: Andy Bell
     link: /speakers/andy-bell
     twitter: andybelldesign
+  - time: '12:30'
+    title: 'When Grids Go Wrong: Debugging CSS Grid'
+    name: Michelle Barker
+    link: /speakers/michelle-barker
+    twitter: MicheBarks
   - time: '13:10'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
   - time: '14:00'
