@@ -3,7 +3,7 @@ title: Sponsors
 description: List of sponsors supporting State of the Browser
 draft: false
 layout: sponsors.hbs
-lastmod: 2019-08-09
+lastmod: 2021-05-11
 data: models/sponsors.yaml
 page_class: sponsors
 ---
@@ -12,7 +12,7 @@ page_class: sponsors
 
 ## Help us make State of the Browser even better.
 
-Sponsoring SOTB 2019 will give you access to 100s of web professionals at the event and around the world, more via our mailing list and more via our twitter account, event website and talks posted online (all talks are filmed).
+Sponsoring SOTB 2021 will give you access to 100s of web professionals at the event and around the world, more via our mailing list and more via our twitter account, event website and talks posted online (all talks are filmed).
 
 If you are interested into helping us:
 
