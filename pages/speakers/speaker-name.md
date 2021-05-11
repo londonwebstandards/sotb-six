@@ -5,14 +5,14 @@ speaker:
   lastname: Name
   website: htttps://example.com
   twitter: iamchrisburnell
-  image: speaker-name.jpg
+  image: /images/londonwebstandards-logo.png
   bio: |
     <p>HTML Bio</p>
 lastmod: 2021-05-11
 private: false
 layout: speaker.hbs
 order: 10
-ogImage: /images/cards/speaker-name.png
+ogImage: /images/londonwebstandards-logo.png
 # talk:
 #   links:
 #     - link:
