@@ -6,53 +6,53 @@ schedule:
     title: Opening Introduction
   - time: '10:00'
     title: 'Talk Title'
-    name: Bruce Lawson
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '10:45'
     title: 'Talk Title'
-    name: Sally Lait
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '11:15'
     title: Coffee break
   - time: '11:35'
     title: 'Talk Title'
-    name: Sanjay Purswani
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '12:00'
     title: 'Talk Title'
-    name: Andy Bell
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '12:30'
     title: 'Talk Title'
-    name: Michelle Barker
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '13:10'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
   - time: '14:00'
     title: 'Talk Title'
-    name: Laura Kalbag
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '14:40'
     title: 'Talk Title'
-    name: Andy Davies
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '15:10'
     title: Coffee break
   - time: '15:30'
     title: 'Talk Title'
-    name: Melinda Seckington
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '16:10'
     title: 'Talk Title'
-    name: Andy Clarke
+    name: Speaker Name
     link: /speakers/speaker-name
     twitter: speaker
   - time: '17:00'
