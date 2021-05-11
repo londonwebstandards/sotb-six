@@ -10,5 +10,5 @@
 #  (oOoOo)_)_)
 
 User-agent: *
-Sitemap: https://2019.stateofthebrowser.com/sitemap.xml
+Sitemap: https://2021.stateofthebrowser.com/sitemap.xml
 Disallow: /fonts/

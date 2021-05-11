@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ICalendarCreator//NONSGML//EN
+BEGIN:VEVENT
+DTSTART:20211030T100000
+DTEND:20211030T170000
+SUMMARY:State of the Browser 2021
+LOCATION:Conway Hall, 25 Red Lion Square, London WC1R 4RL
+DESCRIPTION:For speakers and schedule please visit: https://2021.stateofthebrowser.com/\n\nFor up-to-date information about the conference, follow us on Twitter: https://twitter.com/webstandards
+END:VEVENT
+END:VCALENDAR
