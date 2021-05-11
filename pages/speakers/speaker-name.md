@@ -3,8 +3,8 @@ title: Speaker Name
 description: 'Speaker Description'
 speaker:
   lastname: Name
-  website: htttps://example.com
-  twitter: iamchrisburnell
+  website: https://londonwebstandards.org
+  twitter: webstandards
   image: londonwebstandards-logo.png
   bio: |
     <p>HTML Bio</p>
