@@ -2,9 +2,9 @@
 {
   "title": "State of the Browser",
   "description": "State of the Browser is a one-day, single-track conference with widely varying talks about the modern web",
-  "domain": "2019.stateofthebrowser.com",
+  "domain": "2021.stateofthebrowser.com",
   "sharingImg": "/images/SOTB-default-sharing-img.png",
-  "date": "2019-09-14",
+  "date": "2021-10-30",
   "paths": {
     "styles": {
       "src": [ "src/sass/**/*.scss" ],
