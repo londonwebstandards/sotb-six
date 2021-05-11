@@ -5,5 +5,8 @@
   },
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
-  "eslint.packageManager": "npm"
+  "eslint.packageManager": "npm",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
