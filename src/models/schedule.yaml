@@ -1,60 +1,60 @@
-date: Saturday 14 September 2019
+date: Saturday 30 October 2021
 schedule:
   - time: '9:20'
     title: Registration opens
   - time: '9:50'
     title: Opening Introduction
   - time: '10:00'
-    title: 'How To Make Loveliness: an HTML Treasure Hunt'
+    title: 'Talk Title'
     name: Bruce Lawson
-    link: /speakers/bruce-lawson
-    twitter: brucel
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '10:45'
-    title: 'Making standards work for everyone'
+    title: 'Talk Title'
     name: Sally Lait
-    link: /speakers/sally-lait
-    twitter: sallylait
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '11:15'
     title: Coffee break
   - time: '11:35'
-    title: 'Google AMP: The fastest thing on the internet.'
+    title: 'Talk Title'
     name: Sanjay Purswani
-    link: /speakers/sanjay-purswani
-    twitter: sanj9000
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '12:00'
-    title: 'Keeping it simple with CSS that scales'
+    title: 'Talk Title'
     name: Andy Bell
-    link: /speakers/andy-bell
-    twitter: andybelldesign
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '12:30'
-    title: 'When Grids Go Wrong: Debugging CSS Grid'
+    title: 'Talk Title'
     name: Michelle Barker
-    link: /speakers/michelle-barker
-    twitter: MicheBarks
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '13:10'
     title: Lunch break (<a href="/lunch">see list of possible lunch locations</a>)
   - time: '14:00'
-    title: 'Accessibility For Everyone'
+    title: 'Talk Title'
     name: Laura Kalbag
-    link: /speakers/laura-kalbag
-    twitter: laurakalbag
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '14:40'
-    title: 'Performance… it’s for People'
+    title: 'Talk Title'
     name: Andy Davies
-    link: /speakers/andy-davies
-    twitter: andydavies
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '15:10'
     title: Coffee break
   - time: '15:30'
-    title: 'Level Up: Developing Developers'
+    title: 'Talk Title'
     name: Melinda Seckington
-    link: /speakers/melinda-seckington
-    twitter: mseckington
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '16:10'
-    title: 'Inspired by CSS Grid'
+    title: 'Talk Title'
     name: Andy Clarke
-    link: /speakers/andy-clarke
-    twitter: malarkey
+    link: /speakers/speaker-name
+    twitter: speaker
   - time: '17:00'
     title: Closing remarks
   - time: '17:05'
