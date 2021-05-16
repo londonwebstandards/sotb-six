@@ -12,7 +12,9 @@
   "author": "LWS <organisers@londonwebstandards.org>",
   "contributors": [
     "Ginestra Ferraro <ginestra.ferraro@londonwebstandards.org>",
-    "Matteo Pescarin <matteo.pescarin@londonwebstandards.org>"
+    "Matteo Pescarin <matteo.pescarin@londonwebstandards.org>",
+    "Dave Letorey <dave.letorey@londonwebstandards.org>",
+    "Chris Burnell <chris.burnell@londonwebstandards.org>"
   ],
   "license": "AGPLv3",
   "devDependencies": {
