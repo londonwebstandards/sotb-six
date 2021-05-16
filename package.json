@@ -16,7 +16,7 @@
     "Dave Letorey <dave.letorey@londonwebstandards.org>",
     "Chris Burnell <chris.burnell@londonwebstandards.org>"
   ],
-  "license": "AGPLv3",
+  "license": "MIT",
   "devDependencies": {
     "accoutrement-color": "^2.3.1",
     "accoutrement-init": "^1.1.2",
