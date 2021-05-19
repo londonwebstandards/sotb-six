@@ -1,58 +1,42 @@
-# State of the Browser
+# stateofthebrowser.com
 
 Static site for State of the Browser website.
 
-The website is viewable at <https://www.stateofthebrowser.com>.
+The website is viewable at <https://stateofthebrowser.com>.
 
-# Build pipeline
+This repository is currently licensed under the [MIT license](https://mit-license.org/).
 
-The project uses [Netlify](https://netlify.com) services, which will build and deploy at every push to master into production.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/09cefd52-4ac4-4339-8f89-a7ab8a612aa8/deploy-status)](https://app.netlify.com/sites/stateofthebrowser/deploys)
 
-The following command will simply build all files and make them ready for production:
+## Development
 
-    $ npm build
+If you're interested in understanding how we build and deploy our website, please read below and ask if you find anything is out of place or want to know more, and why not? join us! either by [raising an issue on our GitHub account](https://github.com/londonwebstandards/sotb-website/issues/new) or [contact us directly on Twitter](https://twitter.com/webstandards).
 
-All resulting files can be then committed to git.
+### Branching Strategy
 
-_If you have any queries please open a ticket or ask in the main Slack channel._
+To simplify development, reduce the amount of maintenance, and allow the flexibility for experimentation and radical changes, the current branching strategy is the following:
 
-# Development
+- `main` branch: this is used purely for administrative purposes. Contains mostly licenses, redirects and base scripts. Push restriction is set at GitHub level, and a PR needs to be created for any changes in this branch. I would also reccomend to run an `npm version patch` command to tag the branch correctly (see the manual or ask if you don't know how to use it).
+- `YYYY` branch: (e.g. `2019`, `2021`, ...) this is the year-related and contains the actual source files for the yearly release of the website. This might be a full rewrite or just a copy change.
+- `some-other-name` branch: this is a short-lived branch that is useful just to introduce new things into the intended branch.
 
-If you want to contribute, please either fork or branch off the `master` branch (if you are within the LWS org), and create a PR to merge into `master`.
+### Build pipeline
 
-Netlify will automatically build a new preview for every PR created, merging will be forbidden if the build doesn't pass.
+The project uses [Netlify](https://netlify.com) services, which will build and deploy at every push to the branch into production.
 
-## Requirements
+### Build script
 
-These are the basic requirements in order to edit and build the project:
+The following command is the only command that needs to be availabe in any branch if you want them to be albe to be built and published:
 
-### Node.js
+    $ npm run build
 
-The recommended way to have Node installed is through [nvm](https://github.com/creationix/nvm) (Node Version Manager). There's a handy `.nvmrc` in the root of the project, once you have `nvm` installed, just run the following command:
+This script will be invoked by Netlify at push time, filling in the `dist/` directory with production ready files.
 
-    $ nvm use
+If you need to change this behaviour please raise a ticket and possibly start a discussion with any developer available.
 
-If you don't want to use `nvm` you are free to use any other way to install Node, just be aware that diverting from the current recommended version, might trigger unexpected errors.
+> **Changing this setting will break things.**
 
-You can check the version of Node installed using the following command, e.g.:
 
-    $ node -v
-    v7.9.0
+## Local development
 
-### Installing all dependencies
-
-The following two commands need to be run in order to have all the dependencies fetched and installed before being able to run and build the project:
-
-    $ npm install
-
-## Building the project
-
-### For development purposes
-
-The following command will build the project for development
-
-    $ npm start
-
-It will automatically open it on a new window in your default browser. It will also trigger automatic refresh of the browser window every time any source file is being modified.
-
-The project can be accessed at <http://localhost:3000>.
+Every branch might have different requirements, and these should be up-to-date on a per-branch basis (if that's not the case, feel free to raise this as an issue).
