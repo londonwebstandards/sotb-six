@@ -16,9 +16,11 @@ If you're interested in understanding how we build and deploy our website, pleas
 
 To simplify development, reduce the amount of maintenance, and allow the flexibility for experimentation and radical changes, the current branching strategy is the following:
 
-- `main` branch: this is used purely for administrative purposes. Contains mostly licenses, redirects and base scripts. Push restriction is set at GitHub level, and a PR needs to be created for any changes in this branch. I would also reccomend to run an `npm version patch` command to tag the branch correctly (see the manual or ask if you don't know how to use it).
-- `YYYY` branch: (e.g. `2019`, `2021`, ...) this is the year-related and contains the actual source files for the yearly release of the website. This might be a full rewrite or just a copy change.
+- `main` branch: this is used purely for administrative purposes and should be set to be the default branch in GitHub. Contains mostly licenses, redirects and base scripts. Push restriction is set at GitHub level, and a PR needs to be created for any changes in this branch. I would also reccomend to run an `npm version patch` command to tag the branch correctly (see the manual or ask if you don't know how to use it).
+- `YYYY` branch: (e.g. `2019`, `2021`, ...) this is the year-related and contains the actual source files for the yearly release of the website. This might be a full rewrite or just a copy change of some previous year/branch.
 - `some-other-name` branch: this is a short-lived branch that is useful just to introduce new things into the intended branch.
+
+> **When opening a PR be extremely sure which branch you're going to be merging into!!!**
 
 ### Build pipeline
 
@@ -35,7 +37,6 @@ This script will be invoked by Netlify at push time, filling in the `dist/` dire
 If you need to change this behaviour please raise a ticket and possibly start a discussion with any developer available.
 
 > **Changing this setting will break things.**
-
 
 ## Local development
 
