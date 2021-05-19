@@ -1,6 +1,6 @@
 {
   "name": "sotb-website",
-  "version": "6.6.0",
+  "version": "6.6.1",
   "description": "State of the Browser static website.",
   "main": "README.md",
   "scripts": {
