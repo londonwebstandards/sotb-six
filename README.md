@@ -16,7 +16,7 @@ If you're interested in understanding how we build and deploy our website, pleas
 
 To simplify development, reduce the amount of maintenance, and allow the flexibility for experimentation and radical changes, the current branching strategy is the following:
 
-- `main` branch: this is used purely for administrative purposes and should be set to be the default branch in GitHub. Contains mostly licenses, redirects and base scripts. Push restriction is set at GitHub level, and a PR needs to be created for any changes in this branch. I would also reccomend to run an `npm version patch` command to tag the branch correctly (see the manual or ask if you don't know how to use it).
+- `main` branch: this is used purely for administrative purposes and should be set to be the default branch in GitHub. Contains mostly licenses, redirects and base scripts. Push restriction is set at GitHub level, and a PR needs to be created for any changes in this branch. I would also reccomend to run an `npm version` command to tag the branch correctly (see the manual or ask if you don't know how to use it).
 - `YYYY` branch: (e.g. `2019`, `2021`, ...) this is the year-related and contains the actual source files for the yearly release of the website. This might be a full rewrite or just a copy change of some previous year/branch.
 - `some-other-name` branch: this is a short-lived branch that is useful just to introduce new things into the intended branch.
 
@@ -33,6 +33,8 @@ The following command is the only command that needs to be availabe in any branc
     $ npm run build
 
 This script will be invoked by Netlify at push time, filling in the `dist/` directory with production ready files.
+
+In the `main` branch it will just copy the content of the folder `assets/` and copy it over to the `dist/` folder.
 
 If you need to change this behaviour please raise a ticket and possibly start a discussion with any developer available.
 
