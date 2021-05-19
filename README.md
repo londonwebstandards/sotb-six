@@ -40,6 +40,14 @@ If you need to change this behaviour please raise a ticket and possibly start a 
 
 > **Changing this setting will break things.**
 
-## Local development
+### Local development
 
 Every branch might have different requirements, and these should be up-to-date on a per-branch basis (if that's not the case, feel free to raise this as an issue).
+
+## How to create a new yearly release of the website
+
+1. Create a brand new branch, or branch off the branch you want to clone, naming it with the current year: e.g. `git checkout 2021; git checkout -b 2022`
+2. Update the dependencies and any requirements for building the website.
+3. Add the newly created year-branch in Netlify settings as "Branch deploy" under [Deploy contexts](https://app.netlify.com/sites/stateofthebrowser/settings/deploys#deploy-contexts).
+4. Remember to update the README.
+5. Update the redirect in the `main` branch under `assets/_redirects`. For more information, have a look at [the Netlify documentation](https://docs.netlify.com/routing/redirects/).
