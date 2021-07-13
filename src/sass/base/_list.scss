@@ -40,6 +40,11 @@ ol {
   }
 }
 
+dl {
+    display: flex;
+    flex-direction: column;
+}
+
 dt {
   width: auto;
   clear: left;
