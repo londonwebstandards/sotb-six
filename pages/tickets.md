@@ -36,5 +36,5 @@ https://ti.to/lws/sotb21
   <dt>How do Diversity Tickets work?</dt>
   <dd>With your purchase of a Diversity Ticket, you will receive a ticket to _State of the Browser_, **and** you will also enable another person to come and enjoy the conference as well.</dd>
   <dt>Who receives the extra ticket?</dt>
-  <dd>Anyone from an under-represented group or in a financial situation which makes buying a ticket normally difficult is encouraged to <a href="https://ti.to/lws/sotb21" title="Apply for a Diversity Ticket" rel="nofollow external">apply for a diversity ticket</a>.
+  <dd>Anyone from an under-represented group or in a financial situation which makes buying a ticket normally difficult is encouraged to <a href="https://docs.google.com/forms/d/e/1FAIpQLSd767T4I7HY7p9v_1NODUhts3xhNoL0QtGNO5BveYp8ruyKFg/viewform?usp=sf_link" title="Apply for a Diversity Ticket" rel="nofollow external">apply for a diversity ticket</a>.
 </dl>
