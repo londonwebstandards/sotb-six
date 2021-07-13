@@ -18,7 +18,7 @@ This year we have a range of tickets:
   <dd>This includes <strong>2</strong> tickets: one for yourself and one for another person who needs help getting a ticket to the event IRL.<br><a href="#diversity-tickets">More about Diversity Tickets →</a></dd>
   <dt>Virtual Diversity Ticket (£20)</dt>
   <dd>This includes <strong>2</strong> tickets: one for yourself and one for another person who needs help getting a ticket to the event virtually.<br><a href="#diversity-tickets">More about Diversity Tickets →</a></dd>
-  <dt>Helper Ticket (£40)</dt>
+  <dt>Helper Ticket (£10)</dt>
   <dd>This is the ticket you need if you think, <em><q>Wow this is cheap</q></em>, and you want to help out by donating an extra £10.</dd>
 </dl>
 
