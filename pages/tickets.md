@@ -15,7 +15,7 @@ This year we have a range of tickets:
   <dt>Virtual Ticket (£15)</dd>
   <dd>This ticket will get you access to a live stream of the event and access to the event Discord where you will be able to interact with other attendees, speakers, and organisers.</dd>
   <dt>IRL Diversity Ticket (£50)</dt>
-  <dd>This includes 2 tickets: one for yourself and one for another person who needs help getting a ticket to the event IRL. These tickets will get you both a seat at Conway Hall, providing the rules say we can be there, if not your tickets will become virtual tickets. We are sorry but we can not refund the difference as we still need to pay for the venue. If you are not happy to take the risk buy virtual tickets instead.<br><a href="#diversity-tickets">More about Diversity Tickets →</a></dd>
+  <dd>This includes 2 tickets: one for yourself and one for another person who needs help getting a ticket to the event IRL. These tickets will get you both a seat at Conway Hall, providing the rules say we can be there, if not your tickets will become virtual tickets. <strong>We are sorry but we can not refund the difference as we still need to pay for the venue</strong>. If you are not happy to take the risk buy virtual tickets instead.<br><a href="#diversity-tickets">More about Diversity Tickets →</a></dd>
   <dt>Virtual Diversity Ticket (£20)</dt>
   <dd>This includes <strong>2</strong> tickets: one for yourself and one for another person who needs help getting a ticket to the event virtually.<br><a href="#diversity-tickets">More about Diversity Tickets →</a></dd>
   <dt>Helper Ticket (£10)</dt>
